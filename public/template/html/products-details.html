@@ -1,0 +1,2461 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-nav-layout="vertical" data-theme-mode="light" data-header-styles="light" data-menu-styles="dark" data-toggled="close">
+
+<head>
+
+    <!-- Meta Data -->
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> synto - Bootstrap 5 Premium Admin & Dashboard Template </title>
+    <meta name="Description" content="Bootstrap Responsive Admin Web Dashboard HTML5 Template">
+    <meta name="Author" content="Spruko Technologies Private Limited">
+	<meta name="keywords" content="admin template,admin dashboard,template dashboard,admin panel,bootstrap admin,admin,dashboard,html,admin dashboard template,html template,bootstrap template,admin panel template,bootstrap admin template,bootstrap 5 admin template,html and css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/img/brand-logos/favicon.ico" type="image/x-icon">
+    
+    <!-- Choices JS -->
+    <script src="../assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
+
+    <!-- Main Theme Js -->
+    <script src="../assets/js/main.js"></script>
+    
+    <!-- Bootstrap Css -->
+    <link id="style" href="../assets/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" >
+
+    <!-- Style Css -->
+    <link href="../assets/css/styles.css" rel="stylesheet" >
+
+    <!-- Icons Css -->
+    <link href="../assets/css/icons.css" rel="stylesheet" >
+
+    <!-- Node Waves Css -->
+    <link href="../assets/libs/node-waves/waves.min.css" rel="stylesheet" > 
+
+    <!-- Simplebar Css -->
+    <link href="../assets/libs/simplebar/simplebar.min.css" rel="stylesheet" >
+    
+    <!-- Color Picker Css -->
+    <link rel="stylesheet" href="../assets/libs/flatpickr/flatpickr.min.css">
+    <link rel="stylesheet" href="../assets/libs/@simonwep/pickr/themes/nano.min.css">
+
+    <!-- Choices Css -->
+    <link rel="stylesheet" href="../assets/libs/choices.js/public/assets/styles/choices.min.css">
+
+
+<link rel="stylesheet" href="../assets/libs/swiper/swiper-bundle.min.css">
+
+
+</head>
+
+<body>
+
+    <!-- Start Switcher -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="switcher-canvas" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header border-bottom">
+        <h5 class="offcanvas-title text-default" id="offcanvasRightLabel">Switcher</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <nav class="border-bottom border-block-end-dashed">
+            <div class="nav nav-tabs nav-justified" id="switcher-main-tab" role="tablist">
+                <button class="nav-link active" id="switcher-home-tab" data-bs-toggle="tab" data-bs-target="#switcher-home"
+                    type="button" role="tab" aria-controls="switcher-home" aria-selected="true">Theme Styles</button>
+                <button class="nav-link" id="switcher-profile-tab" data-bs-toggle="tab" data-bs-target="#switcher-profile"
+                    type="button" role="tab" aria-controls="switcher-profile" aria-selected="false">Theme Colors</button>
+            </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active border-0" id="switcher-home" role="tabpanel" aria-labelledby="switcher-home-tab"
+                tabindex="0">
+                <div class="">
+                    <p class="switcher-style-head">Theme Color Mode:</p>
+                    <div class="row switcher-style gx-0">
+                        <div class="col-4">
+                            <div class="form-check switch-select">
+                                <label class="form-check-label" for="switcher-light-theme">
+                                    Light
+                                </label>
+                                <input class="form-check-input" type="radio" name="theme-style" id="switcher-light-theme"
+                                    checked>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-check switch-select">
+                                <label class="form-check-label" for="switcher-dark-theme">
+                                    Dark
+                                </label>
+                                <input class="form-check-input" type="radio" name="theme-style" id="switcher-dark-theme">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <p class="switcher-style-head">Directions:</p>
+                    <div class="row switcher-style gx-0">
+                        <div class="col-4">
+                            <div class="form-check switch-select">
+                                <label class="form-check-label" for="switcher-ltr">
+                                    LTR
+                                </label>
+                                <input class="form-check-input" type="radio" name="direction" id="switcher-ltr" checked>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-check switch-select">
+                                <label class="form-check-label" for="switcher-rtl">
+                                    RTL
+                                </label>
+                                <input class="form-check-input" type="radio" name="direction" id="switcher-rtl">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <p class="switcher-style-head">Navigation Styles:</p>
+                    <div class="row switcher-style gx-0">
+                        <div class="col-4">
+                            <div class="form-check switch-select">
+                                <label class="form-check-label" for="switcher-vertical">
+                                    Vertical
+                                </label>
+                                <input class="form-check-input" type="radio" name="navigation-style" id="switcher-vertical"
+                                    checked>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-check switch-select">
+                                <label class="form-check-label" for="switcher-horizontal">
+                                    Horizontal
+                                </label>
+                                <input class="form-check-input" type="radio" name="navigation-style"
+                                    id="switcher-horizontal">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="navigation-menu-styles">
+                    <p class="switcher-style-head">Vertical & Horizontal Menu Styles:</p>
+                    <div class="row switcher-style gx-0 pb-2 gy-2">
+                        <div class="col-4">
+                            <div class="form-check switch-select">
+                                <label class="form-check-label" for="switcher-menu-click">
+                                    Menu Click
+                                </label>
+                                <input class="form-check-input" type="radio" name="navigation-menu-styles"
+                                    id="switcher-menu-click">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-check switch-select">
+                                <label class="form-check-label" for="switcher-menu-hover">
+                                    Menu Hover
+                                </label>
+                                <input class="form-check-input" type="radio" name="navigation-menu-styles"
+                                    id="switcher-menu-hover">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-check switch-select">
+                                <label class="form-check-label" for="switcher-icon-click">
+                                    Icon Click
+                                </label>
+                                <input class="form-check-input" type="radio" name="navigation-menu-styles"
+                                    id="switcher-icon-click">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-check switch-select">
+                                <label class="form-check-label" for="switcher-icon-hover">
+                                    Icon Hover
+                                </label>
+                                <input class="form-check-input" type="radio" name="navigation-menu-styles"
+                                    id="switcher-icon-hover">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidemenu-layout-styles">
+                    <p class="switcher-style-head">Sidemenu Layout Styles:</p>
+                    <div class="row switcher-style gx-0 pb-2 gy-2">
+                        <div class="col-sm-6">
+                            <div class="form-check switch-select">
+                                <label class="form-check-label" for="switcher-default-menu">
+                                    Default Menu
+                                </label>
+                                <input class="form-check-input" type="radio" name="sidemenu-layout-styles"
+                                    id="switcher-default-menu" checked>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-check switch-select">
+                                <label class="form-check-label" for="switcher-closed-menu">
+                                    Closed Menu
+                                </label>
+                                <input class="form-check-input" type="radio" name="sidemenu-layout-styles"
+                                    id="switcher-closed-menu">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-check switch-select">
+                                <label class="form-check-label" for="switcher-icontext-menu">
+                                    Icon Text
+                                </label>
+                                <input class="form-check-input" type="radio" name="sidemenu-layout-styles"
+                                    id="switcher-icontext-menu">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-check switch-select">
+                                <label class="form-check-label" for="switcher-icon-overlay">
+                                    Icon Overlay
+                                </label>
+                                <input class="form-check-input" type="radio" name="sidemenu-layout-styles"
+                                    id="switcher-icon-overlay">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-check switch-select">
+                                <label class="form-check-label" for="switcher-detached">
+                                    Detached
+                                </label>
+                                <input class="form-check-input" type="radio" name="sidemenu-layout-styles"
+                                    id="switcher-detached">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-check switch-select">
+                                <label class="form-check-label" for="switcher-double-menu">
+                                    Double Menu
+                                </label>
+                                <input class="form-check-input" type="radio" name="sidemenu-layout-styles"
+                                    id="switcher-double-menu">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <p class="switcher-style-head">Page Styles:</p>
+                    <div class="row switcher-style gx-0">
+                        <div class="col-4">
+                            <div class="form-check switch-select">
+                                <label class="form-check-label" for="switcher-regular">
+                                    Regular
+                                </label>
+                                <input class="form-check-input" type="radio" name="page-styles" id="switcher-regular"
+                                    checked>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-check switch-select">
+                                <label class="form-check-label" for="switcher-classic">
+                                    Classic
+                                </label>
+                                <input class="form-check-input" type="radio" name="page-styles" id="switcher-classic">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-check switch-select">
+                                <label class="form-check-label" for="switcher-modern">
+                                    Modern
+                                </label>
+                                <input class="form-check-input" type="radio" name="page-styles" id="switcher-modern">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <p class="switcher-style-head">Layout Width Styles:</p>
+                    <div class="row switcher-style gx-0">
+                        <div class="col-4">
+                            <div class="form-check switch-select">
+                                <label class="form-check-label" for="switcher-full-width">
+                                    Full Width
+                                </label>
+                                <input class="form-check-input" type="radio" name="layout-width" id="switcher-full-width"
+                                    checked>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-check switch-select">
+                                <label class="form-check-label" for="switcher-boxed">
+                                    Boxed
+                                </label>
+                                <input class="form-check-input" type="radio" name="layout-width" id="switcher-boxed">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <p class="switcher-style-head">Menu Positions:</p>
+                    <div class="row switcher-style gx-0">
+                        <div class="col-4">
+                            <div class="form-check switch-select">
+                                <label class="form-check-label" for="switcher-menu-fixed">
+                                    Fixed
+                                </label>
+                                <input class="form-check-input" type="radio" name="menu-positions" id="switcher-menu-fixed"
+                                    checked>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-check switch-select">
+                                <label class="form-check-label" for="switcher-menu-scroll">
+                                    Scrollable
+                                </label>
+                                <input class="form-check-input" type="radio" name="menu-positions" id="switcher-menu-scroll">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <p class="switcher-style-head">Header Positions:</p>
+                    <div class="row switcher-style gx-0">
+                        <div class="col-4">
+                            <div class="form-check switch-select">
+                                <label class="form-check-label" for="switcher-header-fixed">
+                                    Fixed
+                                </label>
+                                <input class="form-check-input" type="radio" name="header-positions"
+                                    id="switcher-header-fixed" checked>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-check switch-select">
+                                <label class="form-check-label" for="switcher-header-scroll">
+                                    Scrollable
+                                </label>
+                                <input class="form-check-input" type="radio" name="header-positions"
+                                    id="switcher-header-scroll">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <p class="switcher-style-head">Loader:</p>
+                    <div class="row switcher-style gx-0">
+                        <div class="col-4">
+                            <div class="form-check switch-select">
+                                <label class="form-check-label" for="switcher-loader-enable">
+                                    Enable
+                                </label>
+                                <input class="form-check-input" type="radio" name="page-loader"
+                                    id="switcher-loader-enable">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-check switch-select">
+                                <label class="form-check-label" for="switcher-loader-disable">
+                                    Disable
+                                </label>
+                                <input class="form-check-input" type="radio" name="page-loader"
+                                    id="switcher-loader-disable" checked>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade border-0" id="switcher-profile" role="tabpanel" aria-labelledby="switcher-profile-tab" tabindex="0">
+                <div>
+                    <div class="theme-colors">
+                        <p class="switcher-style-head">Menu Colors:</p>
+                        <div class="d-flex switcher-style pb-2">
+                            <div class="form-check switch-select me-3">
+                                <input class="form-check-input color-input color-white" data-bs-toggle="tooltip"
+                                    data-bs-placement="top" title="Light Menu" type="radio" name="menu-colors"
+                                    id="switcher-menu-light">
+                            </div>
+                            <div class="form-check switch-select me-3">
+                                <input class="form-check-input color-input color-dark" data-bs-toggle="tooltip"
+                                    data-bs-placement="top" title="Dark Menu" type="radio" name="menu-colors"
+                                    id="switcher-menu-dark" checked>
+                            </div>
+                            <div class="form-check switch-select me-3">
+                                <input class="form-check-input color-input color-primary" data-bs-toggle="tooltip"
+                                    data-bs-placement="top" title="Color Menu" type="radio" name="menu-colors"
+                                    id="switcher-menu-primary">
+                            </div>
+                            <div class="form-check switch-select me-3">
+                                <input class="form-check-input color-input color-gradient" data-bs-toggle="tooltip"
+                                    data-bs-placement="top" title="Gradient Menu" type="radio" name="menu-colors"
+                                    id="switcher-menu-gradient">
+                            </div>
+                            <div class="form-check switch-select me-3">
+                                <input class="form-check-input color-input color-transparent"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" title="Transparent Menu"
+                                    type="radio" name="menu-colors" id="switcher-menu-transparent">
+                            </div>
+                        </div>
+                        <div class="px-4 pb-3 text-muted fs-11">Note:If you want to change color Menu dynamically change from below Theme Primary color picker</div>
+                    </div>
+                    <div class="theme-colors">
+                        <p class="switcher-style-head">Header Colors:</p>
+                        <div class="d-flex switcher-style pb-2">
+                            <div class="form-check switch-select me-3">
+                                <input class="form-check-input color-input color-white" data-bs-toggle="tooltip"
+                                    data-bs-placement="top" title="Light Header" type="radio" name="header-colors"
+                                    id="switcher-header-light" checked>
+                            </div>
+                            <div class="form-check switch-select me-3">
+                                <input class="form-check-input color-input color-dark" data-bs-toggle="tooltip"
+                                    data-bs-placement="top" title="Dark Header" type="radio" name="header-colors"
+                                    id="switcher-header-dark">
+                            </div>
+                            <div class="form-check switch-select me-3">
+                                <input class="form-check-input color-input color-primary" data-bs-toggle="tooltip"
+                                    data-bs-placement="top" title="Color Header" type="radio" name="header-colors"
+                                    id="switcher-header-primary">
+                            </div>
+                            <div class="form-check switch-select me-3">
+                                <input class="form-check-input color-input color-gradient" data-bs-toggle="tooltip"
+                                    data-bs-placement="top" title="Gradient Header" type="radio" name="header-colors"
+                                    id="switcher-header-gradient">
+                            </div>
+                            <div class="form-check switch-select me-3">
+                                <input class="form-check-input color-input color-transparent" data-bs-toggle="tooltip"
+                                    data-bs-placement="top" title="Transparent Header" type="radio" name="header-colors"
+                                    id="switcher-header-transparent">
+                            </div>
+                        </div>
+                        <div class="px-4 pb-3 text-muted fs-11">Note:If you want to change color Header dynamically change from below Theme Primary color picker</div>
+                    </div>
+                    <div class="theme-colors">
+                        <p class="switcher-style-head">Theme Primary:</p>
+                        <div class="d-flex flex-wrap align-items-center switcher-style">
+                            <div class="form-check switch-select me-3">
+                                <input class="form-check-input color-input color-primary-1" type="radio"
+                                    name="theme-primary" id="switcher-primary">
+                            </div>
+                            <div class="form-check switch-select me-3">
+                                <input class="form-check-input color-input color-primary-2" type="radio"
+                                    name="theme-primary" id="switcher-primary1">
+                            </div>
+                            <div class="form-check switch-select me-3">
+                                <input class="form-check-input color-input color-primary-3" type="radio" name="theme-primary"
+                                    id="switcher-primary2">
+                            </div>
+                            <div class="form-check switch-select me-3">
+                                <input class="form-check-input color-input color-primary-4" type="radio" name="theme-primary"
+                                    id="switcher-primary3">
+                            </div>
+                            <div class="form-check switch-select me-3">
+                                <input class="form-check-input color-input color-primary-5" type="radio" name="theme-primary"
+                                    id="switcher-primary4">
+                            </div>
+                            <div class="form-check switch-select ps-0 mt-1 color-primary-light">
+                                <div class="theme-container-primary"></div>
+                                <div class="pickr-container-primary"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-colors">
+                        <p class="switcher-style-head">Theme Background:</p>
+                        <div class="d-flex flex-wrap align-items-center switcher-style">
+                            <div class="form-check switch-select me-3">
+                                <input class="form-check-input color-input color-bg-1" type="radio"
+                                    name="theme-background" id="switcher-background">
+                            </div>
+                            <div class="form-check switch-select me-3">
+                                <input class="form-check-input color-input color-bg-2" type="radio"
+                                    name="theme-background" id="switcher-background1">
+                            </div>
+                            <div class="form-check switch-select me-3">
+                                <input class="form-check-input color-input color-bg-3" type="radio" 
+                                     name="theme-background" id="switcher-background2">
+                            </div>
+                            <div class="form-check switch-select me-3">
+                                <input class="form-check-input color-input color-bg-4" type="radio"
+                                    name="theme-background" id="switcher-background3">
+                            </div>
+                            <div class="form-check switch-select me-3">
+                                <input class="form-check-input color-input color-bg-5" type="radio"
+                                    name="theme-background" id="switcher-background4">
+                            </div>
+                            <div class="form-check switch-select ps-0 mt-1 tooltip-static-demo color-bg-transparent">
+                                <div class="theme-container-background"></div>
+                                <div class="pickr-container-background"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-image mb-3">
+                        <p class="switcher-style-head">Menu With Background Image:</p>
+                        <div class="d-flex flex-wrap align-items-center switcher-style">
+                            <div class="form-check switch-select m-2">
+                                <input class="form-check-input bgimage-input bg-img1" type="radio"
+                                    name="theme-bgimage" id="switcher-bg-img">
+                            </div>
+                            <div class="form-check switch-select m-2">
+                                <input class="form-check-input bgimage-input bg-img2" type="radio"
+                                    name="theme-bgimage" id="switcher-bg-img1">
+                            </div>
+                            <div class="form-check switch-select m-2">
+                                <input class="form-check-input bgimage-input bg-img3" type="radio" name="theme-bgimage"
+                                    id="switcher-bg-img2">
+                            </div>
+                            <div class="form-check switch-select m-2">
+                                <input class="form-check-input bgimage-input bg-img4" type="radio"
+                                    name="theme-bgimage" id="switcher-bg-img3">
+                            </div>
+                            <div class="form-check switch-select m-2">
+                                <input class="form-check-input bgimage-input bg-img5" type="radio"
+                                    name="theme-bgimage" id="switcher-bg-img4">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-grid canvas-footer"> 
+                <a href="javascript:void(0);" id="reset-all" class="btn btn-danger">Reset</a> 
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Switcher -->
+
+
+     <!-- Loader -->
+<div id="loader" >
+    <img src="../assets/img/media/loader.svg" alt="">
+</div>
+<!-- Loader -->
+
+    <div class="page">
+         <!-- app-header -->
+ <header class="app-header">
+
+    <!-- Start::main-header-container -->
+    <div class="main-header-container container-fluid">
+
+        <!-- Start::header-content-left -->
+        <div class="header-content-left">
+
+            <!-- Start::header-element -->
+            <div class="header-element">
+                <div class="horizontal-logo">
+                    <a href="index.html" class="header-logo">
+                        <img src="../assets/img/brand-logos/desktop-logo.png" alt="logo" class="desktop-logo">
+                        <img src="../assets/img/brand-logos/toggle-logo.png" alt="logo" class="toggle-logo">
+                        <img src="../assets/img/brand-logos/desktop-dark.png" alt="logo" class="desktop-dark">
+                        <img src="../assets/img/brand-logos/toggle-dark.png" alt="logo" class="toggle-dark">
+                        <img src="../assets/img/brand-logos/desktop-white.png" alt="logo" class="desktop-white">
+                        <img src="../assets/img/brand-logos/toggle-white.png" alt="logo" class="toggle-white">
+                    </a>
+                </div>
+            </div>
+            <!-- End::header-element -->
+            <!-- Start::header-element -->
+            <div class="header-element">
+                <!-- Start::header-link -->
+                <div class="">
+                    <a class="sidebar-toggle sidemenu-toggle header-link" data-bs-toggle="sidebar" href="javascript:void(0);">
+                      <span class="sr-only">Toggle Navigation</span>
+                      <i class="ri-arrow-right-circle-line header-icon"></i>
+                    </a>
+                  </div>
+                <!-- <a aria-label="Hide Sidebar" class="sidemenu-toggle header-link animated-arrow hor-toggle horizontal-navtoggle" data-bs-toggle="sidebar" href="javascript:void(0);"><span></span></a> -->
+                <!-- End::header-link -->
+            </div>
+            <!-- End::header-element -->
+
+
+        </div>
+        <!-- End::header-content-left -->
+
+        <!-- Start::header-content-right -->
+        <div class="header-content-right">
+
+
+            <!-- Start::header-element -->
+            <div class="header-element country-selector">
+                <!-- Start::header-link|dropdown-toggle -->
+                <a href="javascript:void(0);" class="header-link dropdown-toggle" data-bs-auto-close="outside" data-bs-toggle="dropdown">
+                    <img src="../assets/img/flags/10.png" alt="img" class="rounded-circle header-link-icon">
+                </a>
+                <!-- End::header-link|dropdown-toggle -->
+                <ul class="main-header-dropdown dropdown-menu dropdown-menu-end" data-popper-placement="none">
+                    <li>
+                        <a class="dropdown-item d-flex align-items-center" href="javascript:void(0);">
+                            <span class=" lh-1 me-2">
+                                <img src="../assets/img/flags/10.png" alt="img">
+                            </span>
+                            English
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item d-flex align-items-center" href="javascript:void(0);">
+                            <span class=" lh-1 me-2">
+                                <img src="../assets/img/flags/1.png" alt="img" >
+                            </span>
+                            Spanish
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item d-flex align-items-center" href="javascript:void(0);">
+                            <span class=" lh-1 me-2">
+                                <img src="../assets/img/flags/2.png" alt="img" >
+                            </span>
+                            French
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item d-flex align-items-center" href="javascript:void(0);">
+                            <span class=" lh-1 me-2">
+                                <img src="../assets/img/flags/3.png" alt="img" >
+                            </span>
+                            German
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item d-flex align-items-center" href="javascript:void(0);">
+                            <span class=" lh-1 me-2">
+                                <img src="../assets/img/flags/4.png" alt="img" >
+                            </span>
+                            Italian
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item d-flex align-items-center" href="javascript:void(0);">
+                            <span class=" lh-1 me-2">
+                                <img src="../assets/img/flags/5.png" alt="img" >
+                            </span>
+                            Russian
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- End::header-element -->
+            
+            <!-- Start::header-element -->
+            <div class="header-element header-search">
+                <!-- Start::header-link -->
+                <a href="javascript:void(0);" class="header-link" data-bs-toggle="modal" data-bs-target="#searchModal">
+                    <i class="ri-search-2-line header-link-icon"></i>
+                </a>
+                <!-- End::header-link -->
+            </div>
+            <!-- End::header-element -->
+
+            <!-- Start::header-element -->
+            <div class="header-element header-theme-mode">
+                <!-- Start::header-link|layout-setting -->
+                <a href="javascript:void(0);" class="header-link layout-setting">
+                    <span class="light-layout">
+                        <!-- Start::header-link-icon -->
+                    <i class="ri-moon-line header-link-icon"></i>
+                        <!-- End::header-link-icon -->
+                    </span>
+                    <span class="dark-layout">
+                        <!-- Start::header-link-icon -->
+                    <i class="ri-sun-line header-link-icon"></i>
+                        <!-- End::header-link-icon -->
+                    </span>
+                </a>
+                <!-- End::header-link|layout-setting -->
+            </div>
+            <!-- End::header-element -->
+            
+            <!-- Start::header-element -->
+            <div class="header-element header-fullscreen">
+                <!-- Start::header-link -->
+                <a onclick="openFullscreen();" href="javascript:void(0);" class="header-link">
+                    <i class="ri-fullscreen-line full-screen-open header-link-icon"></i>
+                    <i class="ri-fullscreen-line full-screen-close header-link-icon d-none"></i>
+                </a>
+                <!-- End::header-link -->
+            </div>
+            <!-- End::header-element -->
+
+            <!-- Start::header-element -->
+            <div class="header-element cart-dropdown">
+                <!-- Start::header-link|dropdown-toggle -->
+                <a href="javascript:void(0);" class="header-link dropdown-toggle" data-bs-auto-close="outside" data-bs-toggle="dropdown">
+                    <i class="ri-shopping-basket-line  header-link-icon"></i>
+                    <span class="badge bg-danger rounded-pill header-icon-badge" id="cart-icon-badge">4</span>
+                </a>
+                <!-- End::header-link|dropdown-toggle -->
+                <!-- Start::main-header-dropdown -->
+                <div class="main-header-dropdown dropdown-menu dropdown-menu-end" data-popper-placement="none">
+                    <div class="header-dropdown bg-primary text-fixed-white rounded-top">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <p class="mb-0 fs-15 fw-semibold">Shopping Cart</p>
+                            <span class="badge badge-light-2" id="cart-data">4 Items</span>
+                        </div>
+                    </div>
+                    <div><hr class="dropdown-divider"></div>
+                        <ul class="list-unstyled mb-0" id="header-cart-items-scroll">
+                            <li class="dropdown-item border-bottom-0">
+                                <div class="d-flex align-items-start cart-dropdown-item">
+                                    <img src="../assets/img/ecommerce/products/1.png" alt="img" class="avatar avatar  br-5 me-3 p-2 bg-gray-100">
+                                    <div class="flex-grow-1">
+                                        <div class="d-flex align-items-start justify-content-between mb-0">
+                                            <div class="mb-0 fs-14 text-default fw-medium">
+                                                <a href="cart.html">Black Heals For Women</a>
+                                            </div>
+                                            <div>
+                                                <a href="javascript:void(0);" class="header-cart-remove float-end dropdown-item-close"><i class="ri-close-circle-line"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="min-w-fit-content d-flex align-items-start justify-content-between">
+                                            <ul class="header-product-item d-flex">
+                                                <li>$699</li>
+                                                <li class="text-decoration-line-through text-muted">$999</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dropdown-item border-bottom-0">
+                                <div class="d-flex align-items-start cart-dropdown-item">
+                                    <img src="../assets/img/ecommerce/products/2.png" alt="img" class="avatar avatar  br-5 me-3 p-2 bg-gray-100">
+                                    <div class="flex-grow-1">
+                                        <div class="d-flex align-items-start justify-content-between mb-0">
+                                            <div class="mb-0 fs-14 text-default fw-medium">
+                                                <a href="cart.html">Tshirt For Men</a>
+                                            </div>
+                                            <div>
+                                                <a href="javascript:void(0);" class="header-cart-remove float-end dropdown-item-close"><i class="ri-close-circle-line"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="min-w-fit-content d-flex align-items-start justify-content-between">
+                                            <ul class="header-product-item">
+                                                <li>$245</li>
+                                                <li><span class="text-decoration-line-through text-muted">$599</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dropdown-item border-bottom-0">
+                                <div class="d-flex align-items-start cart-dropdown-item">
+                                    <img src="../assets/img/ecommerce/products/9.png" alt="img" class="avatar avatar  br-5 me-3 p-2 bg-gray-100">
+                                    <div class="flex-grow-1">
+                                        <div class="d-flex align-items-start justify-content-between mb-0">
+                                            <div class="mb-0 fs-14 text-default fw-medium">
+                                                <a href="cart.html">Travel Bag For Womens</a>
+                                            </div>
+                                            <div>
+                                                <a href="javascript:void(0);" class="header-cart-remove float-end dropdown-item-close"><i class="ri-close-circle-line"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="min-w-fit-content d-flex align-items-start justify-content-between">
+                                            <ul class="header-product-item d-flex">
+                                                <li>$299</li>
+                                                <li class="text-decoration-line-through text-muted">$399</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dropdown-item border-bottom-0">
+                                <div class="d-flex align-items-start cart-dropdown-item">
+                                    <img src="../assets/img/ecommerce/products/10.png" alt="img" class="avatar avatar  br-5 me-3 p-2 bg-gray-100">
+                                    <div class="flex-grow-1">
+                                        <div class="d-flex align-items-start justify-content-between mb-0">
+                                            <div class="mb-0 fs-14 text-default fw-medium">
+                                                <a href="cart.html">Leather Wallet For Grils</a>
+                                            </div>
+                                            <div>
+                                                <a href="javascript:void(0);" class="header-cart-remove float-end dropdown-item-close"><i class="ri-close-circle-line"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="min-w-fit-content d-flex align-items-start justify-content-between">
+                                            <ul class="header-product-item d-flex">
+                                                <li>$100</li>
+                                                <li class="text-decoration-line-through text-muted">$150</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="p-2 empty-footer-item border-top">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <span class="fs-13 fw-semibold op-9">Total</span>
+                                </div>
+                                <div class="text-end font-medium">
+                                    <span class="fs-13 fw-semibold op-9">$40,020</span>
+                                </div>
+                            </div>
+                            </div>
+                        <div class="p-3 empty-header-item border-top">
+                            <div class="d-grid">
+                                <a href="checkout.html" class="btn btn-primary">Proceed to checkout</a>
+                            </div>
+                        </div>
+                        <div class="p-5 empty-item d-none">
+                            <div class="text-center">
+                                <span class="avatar avatar-xxl avatar-rounded bg-primary-transparent">
+                                    <i class="ri-shopping-cart-2-line fs-2"></i>
+                                </span>
+                                <h6 class="fw-bold mb-1 mt-3">No Items In Cart</h6>
+                                <span class="mb-3 fw-normal fs-13 d-block">When you have Items added here , they will appear here.</span>
+                                <a href="products.html" class="btn btn-primary btn-wave btn-sm m-1" data-abc="true"><i class="bi bi-arrow-right me-1"></i>continue shopping </a>
+                            </div>
+                        </div>
+                    </div>
+                <!-- End::main-header-dropdown -->
+            </div>
+            <!-- End::header-element -->
+
+            <!-- Start::header-element -->
+            <div class="header-element notifications-dropdown">
+                <!-- Start::header-link|dropdown-toggle -->
+                <a href="javascript:void(0);" class="header-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" id="messageDropdown" aria-expanded="false">
+                    <i class="ri-notification-2-line header-link-icon animate-bell"></i>
+                    <span class="badge bg-success rounded-pill header-icon-badge pulse pulse-success" id="notification-icon-badge">4</span>
+                </a>
+                <!-- End::header-link|dropdown-toggle -->
+                <!-- Start::main-header-dropdown -->
+                <div class="main-header-dropdown dropdown-menu dropdown-menu-end" data-popper-placement="none">
+                    <div class="header-dropdown bg-primary text-fixed-white rounded-top">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <p class="mb-0 fs-15 fw-semibold">Notifications</p>
+                            <span class="badge badge-light-2" id="notifiation-data">Mark All Read</span>
+                        </div>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <ul class="list-unstyled mb-0" id="header-notification-scroll">
+                        <li class="dropdown-item"> 
+                            <div class="d-flex align-items-start">
+                                <a href="mail-inbox.html" class="stretched-link text-danger" style="position: relative;"></a>
+                                 <div class="pe-2">
+                                     <span class="avatar avatar-sm">
+                                        <img src="../assets/img/users/17.jpg" alt="img" class="rounded-sm">
+                                    </span>
+                                 </div>
+                                 <div class="flex-grow-1 d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <p class="mb-0 fw-semibold"><a href="mail-inbox.html">Elon Isk</a></p>
+                                        <span class="text-muted fw-normal fs-12 header-notification-text text-truncate">Hello there! How are you doing? Call me when...</span>
+                                         <p class="mb-0 text-muted fw-normal fs-12">2 min</p>
+                                    </div>
+                                    <div>
+                                        <a href="javascript:void(0);" class="min-w-fit-content text-muted me-1 dropdown-item-close1"><i class="ri-close-circle-line fs-16 op-8"></i></a>
+                                    </div>
+                                 </div>
+                            </div>
+                        </li>
+                        <li class="dropdown-item">
+                            <div class="d-flex align-items-start">
+                                 <div class="pe-2">
+                                     <span class="avatar avatar-sm">
+                                        <img src="../assets/img/users/2.jpg" alt="img" class="rounded-sm">
+                                    </span>
+                                 </div>
+                                 <div class="flex-grow-1 d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <p class="mb-0 fw-semibold"><a href="mail-inbox.html">Shakira Sen</a></p>
+                                        <span class="text-muted fw-normal fs-12 header-notification-text text-truncate">I would like to discuss about that assets...</span>
+                                         <p class="mb-0 text-muted fw-normal fs-12">09:43</p>
+                                    </div>
+                                    <div>
+                                        <a href="javascript:void(0);" class="min-w-fit-content text-muted me-1 dropdown-item-close1"><i class="ri-close-circle-line fs-16 op-8"></i></a>
+                                    </div>
+                                 </div>
+                            </div>
+                        </li>
+                        <li class="dropdown-item">
+                            <div class="d-flex align-items-start">
+                                 <div class="pe-2">
+                                     <span class="avatar avatar-sm">
+                                        <img src="../assets/img/users/21.jpg" alt="img" class="rounded-sm">
+                                    </span>
+                                 </div>
+                                 <div class="flex-grow-1 d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <p class="mb-0 fw-semibold"><a href="mail-inbox.html">Sebastian</a></p>
+                                        <span class="text-muted fw-normal fs-12 header-notification-text text-truncate">Shall we go to the cafe at downtown...</span>
+                                         <p class="mb-0 text-muted fw-normal fs-12">yesterday</p>
+                                    </div>
+                                    <div>
+                                        <a href="javascript:void(0);" class="min-w-fit-content text-muted me-1 dropdown-item-close1"><i class="ri-close-circle-line fs-16 op-8"></i></a>
+                                    </div>
+                                 </div>
+                            </div>
+                        </li>
+                        <li class="dropdown-item">
+                            <div class="d-flex align-items-start">
+                                 <div class="pe-2">
+                                     <span class="avatar avatar-sm">
+                                        <img src="../assets/img/users/11.jpg" alt="img" class="rounded-sm">
+                                    </span>
+                                 </div>
+                                 <div class="flex-grow-1 d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <p class="mb-0 fw-semibold"><a href="mail-inbox.html">Charlie Davieson</a></p>
+                                        <span class="text-muted fw-normal fs-12 header-notification-text text-truncate">Lorem ipsum dolor sit amet, consectetur</span>
+                                         <p class="mb-0 text-muted fw-normal fs-12">yesterday</p>
+                                    </div>
+                                    <div>
+                                        <a href="javascript:void(0);" class="min-w-fit-content text-muted me-1 dropdown-item-close1"><i class="ri-close-circle-line fs-16 op-8"></i></a>
+                                    </div>
+                                 </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="p-3 empty-header-item1 border-top">
+                        <div class="d-grid">
+                            <a href="mail-inbox.html" class="btn btn-primary">View All</a>
+                        </div>
+                    </div>
+                    <div class="p-5 empty-item1 d-none">
+                        <div class="text-center">
+                            <span class="avatar avatar-xl avatar-rounded bg-secondary-transparent">
+                                <i class="ri-notification-off-line fs-2"></i>
+                            </span>
+                            <h6 class="fw-semibold mt-3">No New Notifications</h6>
+                        </div>
+                    </div>
+                </div>
+                <!-- End::main-header-dropdown -->
+            </div>
+            <!-- End::header-element -->
+
+            <!-- Start::header-element -->
+            <div class="header-element header-shortcuts-dropdown">
+                <!-- Start::header-link|dropdown-toggle -->
+                <a href="javascript:void(0);" class="header-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" id="notificationDropdown" aria-expanded="false">
+                    <i class="ri-bookmark-line header-link-icon"></i>
+                </a>
+                <!-- End::header-link|dropdown-toggle -->
+                <!-- Start::main-header-dropdown -->
+                <div class="main-header-dropdown header-shortcuts-dropdown dropdown-menu pb-0 dropdown-menu-end" aria-labelledby="notificationDropdown">
+                    <div class="header-dropdown bg-primary text-fixed-white rounded-top">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <p class="mb-0 fs-15 fw-semibold">Related Apps</p>
+                        </div>
+                    </div>
+                    <div class="dropdown-divider mb-0"></div>
+                    <div class="main-header-shortcuts p-2" id="header-shortcut-scroll">
+                        <div class="row drop-icon-wrap my-2  p-2">
+                            <div class="col-4">
+                                <a href="mail-inbox.html" class=" d-grid justify-content-center    rounded p-1 ">
+                                    <div class="main-grid">
+                                        <span class="avatar p-2  bg-primary-transparent rounded-2 mx-auto">
+                                            <i class="ri ri-mail-line fs-24"></i>
+                                         </span>
+                                        <span class="mt-2 fs-12  fw-semibold text-center">Mail Box</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="chat.html" class=" d-grid justify-content-center mb-0   rounded p-1 ">
+                                    <div class="main-grid">
+                                        <span class="avatar p-2  bg-secondary-transparent rounded-2 mx-auto">
+                                            <i class="ri ri-chat-2-line fs-24"></i>
+                                         </span>
+                                        <span class="mt-2 fs-12  fw-semibold text-center">Chat</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="tasks.html" class=" d-grid justify-content-center   rounded p-1 ">
+                                    <div class="main-grid">
+                                        <span class="avatar p-2  bg-warning-transparent rounded-2 mx-auto">
+                                            <i class="ri ri-task-line  fs-24"></i>
+                                        </span>
+                                        <span class="mt-2 fs-12  fw-semibold text-center">Tasks</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-4 mt-3">
+                                <a href="calendar.html" class=" d-grid justify-content-center    rounded p-1 ">
+                                    <div class="main-grid">
+                                        <span class="avatar p-2  bg-danger-transparent rounded-2 mx-auto">
+                                            <i class="ri ri-calendar-event-line  fs-24"></i>
+                                        </span>
+                                        <span class="mt-2 fs-12  fw-semibold text-center">calendar</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-4 mt-3">
+                                <a href="filemanager.html" class=" d-grid justify-content-center  rounded p-1 ">
+                                    <div class="main-grid">
+                                        <span class="avatar p-2  bg-info-transparent rounded-2 mx-auto">
+                                            <i class="ri ri-file-copy-2-line   fs-24"></i>
+                                        </span>
+                                        <span class="mt-2 fs-12  fw-semibold text-center">FileManager</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-4 mt-3">
+                                <a href="contacts.html" class=" d-grid justify-content-center rounded p-1 ">
+                                    <div class="main-grid">
+                                        <span class="avatar p-2  bg-success-transparent rounded-2 mx-auto">
+                                            <i class="ri ri-group-line   fs-24"></i>
+                                        </span>
+                                        <span class="mt-2 fs-12  fw-semibold text-center">Contacts</span>
+                                    </div>
+                                </a>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="p-3 border-top">
+                        <div class="d-grid">
+                            <a href="javascript:void(0);" class="btn btn-primary">View All</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End::main-header-dropdown -->
+            </div>
+            <!-- End::header-element -->
+
+
+            <!-- Start::header-element -->
+            <div class="header-element">
+                <!-- Start::header-link|dropdown-toggle -->
+                <a href="javascript:void(0);" class="header-link dropdown-toggle" id="mainHeaderProfile" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                    <div class="d-flex align-items-center">
+                        <div class="">
+                            <img src="../assets/img/users/1.jpg" alt="img" width="30" height="30" class="rounded-circle">
+                        </div>
+                    </div>
+                </a>
+                <!-- End::header-link|dropdown-toggle -->
+                <div class="main-header-dropdown dropdown-menu pt-0 overflow-hidden header-profile-dropdown dropdown-menu-end" aria-labelledby="mainHeaderProfile">
+                    <div class="header-dropdown bg-primary text-fixed-white rounded-top">
+                        <div class="d-flex align-items-center">
+                            <div class="me-sm-2 me-0 avatar">
+                                <img src="../assets/img/users/1.jpg" alt="img" class="rounded-circle">
+                            </div>
+                            <div class="d-sm-block d-none">
+                                <p class="fw-semibold mb-0 lh-1">Json Taylor</p>
+                                <span class="op-7 fw-medium d-block fs-12">Web Designer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown-divider mb-0"></div>
+                    <ul class="list-unstyled mb-0">
+                        <li><a class="dropdown-item d-flex" href="profile.html"><i class="ti ti-user-circle fs-18 me-2"></i>Profile</a></li>
+                        <li><a class="dropdown-item d-flex" href="mail-inbox.html"><i class="ti ti-inbox fs-18 me-2"></i>Inbox</a></li>
+                        <li><a class="dropdown-item d-flex border-block-end" href="todo.html"><i class="ti ti-clipboard-check fs-18 me-2"></i>Task Manager</a></li>
+                        <li><a class="dropdown-item d-flex" href="mail-settings.html"><i class="ti ti-adjustments-horizontal fs-18 me-2"></i>Settings</a></li>
+                        <li><a class="dropdown-item d-flex border-block-end" href="index3.html"><i class="ti ti-wallet fs-18 me-2"></i>Bal: $7,12,950</a></li>
+                        <li><a class="dropdown-item d-flex" href="chat.html"><i class="ti ti-headset fs-18 me-2"></i>Support</a></li>
+                        <li><a class="dropdown-item d-flex" href="signin.html"><i class="ti ti-logout fs-18 me-2"></i>Log Out</a></li>
+                    </ul>
+                    </div>
+            </div>  
+            <!-- End::header-element -->
+
+            <!-- Start::header-element -->
+            <div class="header-element">
+                <!-- Start::header-link|switcher-icon -->
+                <a href="javascript:void(0);" class="header-link switcher-icon" data-bs-toggle="offcanvas" data-bs-target="#switcher-canvas">
+                    <i class="ri-settings-5-line animate-spin header-link-icon"></i>
+                </a>
+                <!-- End::header-link|switcher-icon -->
+            </div>
+            <!-- End::header-element -->
+
+        </div>
+        <!-- End::header-content-right -->
+
+    </div>
+    <!-- End::main-header-container -->
+
+</header>
+<!-- /app-header -->
+        <!-- Start::app-sidebar -->
+<aside class="app-sidebar" id="sidebar">
+
+    <!-- Start::main-sidebar-header -->
+    <div class="main-sidebar-header">
+        <a href="index.html" class="header-logo">
+            <img src="../assets/img/brand-logos/desktop-logo.png" alt="logo" class="main-logo desktop-logo">
+            <img src="../assets/img/brand-logos/toggle-logo.png" alt="logo" class="main-logo toggle-logo">
+            <img src="../assets/img/brand-logos/desktop-dark.png" alt="logo" class="main-logo desktop-dark">
+            <img src="../assets/img/brand-logos/toggle-dark.png" alt="logo" class="main-logo toggle-dark">
+             <img src="../assets/img/brand-logos/desktop-white.png" alt="logo" class="desktop-white"> 
+            <img src="../assets/img/brand-logos/toggle-white.png" alt="logo" class="toggle-white"> 
+        </a>
+    </div>
+    <!-- End::main-sidebar-header -->
+
+    <!-- Start::main-sidebar -->
+    <div class="main-sidebar " id="sidebar-scroll">
+
+        <!-- Start::nav -->
+        <nav class="main-menu-container nav nav-pills flex-column sub-open">
+            <div class="slide-left" id="slide-left"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191" width="24"
+                    height="24" viewBox="0 0 24 24">
+                    <path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path>
+                </svg></div>
+            <ul class="main-menu">
+                <!-- Start::slide__category -->
+                <li class="slide__category"><span class="category-name">Main</span></li>
+                <!-- End::slide__category -->
+
+                <!-- Start::slide -->
+                <li class="slide  has-sub">
+                    <a href="javascript:void(0);" class="side-menu__item">
+                        <i class="ri-home-8-line side-menu__icon"></i>
+                        <span class="side-menu__label">Dashboards</span>
+                        <i class="ri ri-arrow-right-s-line side-menu__angle"></i>
+                    </a>
+                    <ul class="slide-menu child1">
+                        <li class="slide side-menu__label1"><a href="javascript:void(0)">Dashboards</a></li>
+                        <li class="slide"><a href="index.html" class="side-menu__item">Sales</a></li>
+                        <li class="slide"><a href="index2.html" class="side-menu__item">Ecommerce</a></li>
+                        <li class="slide"><a href="index3.html" class="side-menu__item">Crypto</a></li>
+                        <li class="slide"><a href="index4.html" class="side-menu__item">Jobs</a></li>
+                        <li class="slide"><a href="index5.html" class="side-menu__item">NFT</a></li>
+                        <li class="slide"><a href="index6.html" class="side-menu__item">Analytics</a></li>
+                        <li class="slide"><a href="index7.html" class="side-menu__item">Projects</a></li>
+                        <li class="slide"><a href="index8.html" class="side-menu__item">HRM</a></li>
+                        <li class="slide"><a href="index9.html" class="side-menu__item">CRM</a></li>
+                        <li class="slide"><a href="index10.html" class="side-menu__item">Personal</a></li>
+                        <li class="slide"><a href="index11.html" class="side-menu__item">Stocks</a></li>
+                        <li class="slide"><a href="index12.html" class="side-menu__item">Course</a></li>
+                    </ul>
+                </li>
+                <!-- End::slide -->
+
+                <!-- Start::slide -->
+                <li class="slide">
+                    <a href="widgets.html" class="side-menu__item">
+                        <i class="ri-apps-2-line side-menu__icon"></i>
+                        <span class="side-menu__label">Widgets</span>
+                    </a>
+                </li>
+                <!-- End::slide -->
+
+                <!-- Start::slide__category -->
+                <li class="slide__category"><span class="category-name">General</span></li>
+                <!-- End::slide__category -->
+
+                <!-- Start::slide -->
+                <li class="slide has-sub">
+                    <a href="javascript:void(0);" class="side-menu__item">
+                        <i class="ri-inbox-line side-menu__icon"></i>
+                        <span class="side-menu__label">Components</span>
+                        <i class="ri ri-arrow-right-s-line side-menu__angle"></i>
+                    </a>
+                    <ul class="slide-menu child1">
+                        <li class="slide side-menu__label1"><a href="javascript:void(0)">Components</a></li>
+                        <li class="slide"><a href="accordion.html" class="side-menu__item">Accordion</a></li>
+                        <li class="slide"><a href="alerts.html" class="side-menu__item">Alerts</a></li>
+                        <li class="slide"><a href="avatars.html" class="side-menu__item">Avatars</a></li>
+                        <li class="slide"><a href="badges.html" class="side-menu__item">Badges</a></li>
+                        <li class="slide"><a href="blockquotes.html" class="side-menu__item">Blockquotes</a></li>
+                        <li class="slide"><a href="buttons.html" class="side-menu__item">Buttons</a></li>
+                        <li class="slide"><a href="borders.html" class="side-menu__item">Borders</a></li>
+                        <li class="slide"><a href="cards.html" class="side-menu__item">Cards</a></li>
+                        <li class="slide"><a href="collapse.html" class="side-menu__item">Collapse</a></li>
+                        <li class="slide"><a href="list-group.html" class="side-menu__item">List Group</a></li>
+                        <li class="slide"><a href="list.html" class="side-menu__item">List</a></li>
+                        <li class="slide"><a href="indicators.html" class="side-menu__item">Indicators</a></li>
+                        <li class="slide"><a href="progress.html" class="side-menu__item">Progress</a></li>
+                        <li class="slide"><a href="skeleton.html" class="side-menu__item">Skeleton</a></li>
+                        <li class="slide"><a href="spinners.html" class="side-menu__item">Spinners</a></li>
+                        <li class="slide"><a href="toast.html" class="side-menu__item">Toast</a></li>
+                        <li class="slide"><a href="typography.html" class="side-menu__item">Typography</a></li>
+                    </ul>
+                </li>
+                <!-- End::slide -->
+
+                <!-- Start::slide -->
+                <li class="slide has-sub">
+                    <a href="javascript:void(0);" class="side-menu__item">
+                        <i class="ri-cpu-line side-menu__icon"></i>
+                        <span class="side-menu__label">Elements</span>
+                        <i class="ri ri-arrow-right-s-line side-menu__angle"></i>
+                    </a>
+                    <ul class="slide-menu child1">
+                        <li class="slide side-menu__label1"><a href="javascript:void(0)">Elements</a></li>
+                        <li class="slide"><a href="navbar.html" class="side-menu__item">Navbar</a></li>
+                        <li class="slide"><a href="tabs.html" class="side-menu__item">Navs &amp;Tabs</a></li>
+                        <li class="slide"><a href="scrollspy.html" class="side-menu__item">Scrollspy</a></li>
+                        <li class="slide"><a href="breadcrumb.html" class="side-menu__item">Breadcrumb</a></li>
+                        <li class="slide"><a href="pagination.html" class="side-menu__item">Pagination</a></li>
+                        <li class="slide"><a href="grid.html" class="side-menu__item">Grids</a></li>
+                        <li class="slide"><a href="columns.html" class="side-menu__item"> Columns</a></li>
+                    </ul>
+                </li>
+                <!-- End::slide -->
+
+                <!-- Start::slide -->
+                <li class="slide has-sub">
+                    <a href="javascript:void(0);" class="side-menu__item">
+                        <i class="ri-file-text-line side-menu__icon"></i>
+                        <span class="side-menu__label">Forms</span>
+                        <i class="ri ri-arrow-right-s-line side-menu__angle"></i>
+                    </a>
+                    <ul class="slide-menu child1">
+                        <li class="slide side-menu__label1"><a href="javascript:void(0)">Forms</a></li>
+                        <li class="slide"><a href="form-elements.html" class="side-menu__item">Form Elements</a></li>
+                        <li class="slide"><a href="advanced-forms.html" class="side-menu__item">Advanced Forms</a></li>
+                        <li class="slide"><a href="form-input-group.html" class="side-menu__item">Form-Input-Group</a></li>
+                        <li class="slide"><a href="file-upload.html" class="side-menu__item">File Uploads</a></li>
+                        <li class="slide"><a href="form-checkbox.html" class="side-menu__item">Form-Checkbox</a></li>
+                        <li class="slide"><a href="form-radio.html" class="side-menu__item">Form-Radio</a></li>
+                        <li class="slide"><a href="form-switch.html" class="side-menu__item">Form-Switch</a></li>
+                        <li class="slide"><a href="form-select.html" class="side-menu__item">Form-Select</a></li>
+                        <li class="slide"><a href="form_select2.html" class="side-menu__item">Form-Select2</a></li>
+                        <li class="slide"><a href="form-layouts.html" class="side-menu__item">Form-Layouts</a></li>
+                        <li class="slide"><a href="form-validations.html" class="side-menu__item">Form-Validations</a>
+                        </li>
+                        <li class="slide"><a href="quil-editor.html" class="side-menu__item">Form-Editor</a></li>
+                    </ul>
+                </li>
+                <!-- End::slide -->
+
+                <!-- Start::slide -->
+                <li class="slide has-sub">
+                    <a href="javascript:void(0);" class="side-menu__item">
+                        <i class="ri-stack-line side-menu__icon"></i>
+                        <span class="side-menu__label">Advanced Ui</span>
+                        <i class="ri ri-arrow-right-s-line side-menu__angle"></i>
+                    </a>
+                    <ul class="slide-menu child1">
+                        <li class="slide side-menu__label1"><a href="javascript:void(0)">Advanced Ui</a></li>
+                        <li class="slide"><a href="rangeslider.html" class="side-menu__item">Range slider</a></li>
+                        <li class="slide"><a href="calendar.html" class="side-menu__item">Calendar</a></li>
+                        <li class="slide"><a href="carousel.html" class="side-menu__item">Carousel</a></li>
+                        <li class="slide"><a href="gallery.html" class="side-menu__item">Gallery</a></li>
+                        <li class="slide"><a href="sweetalert.html" class="side-menu__item">Sweetalert</a></li>
+                        <li class="slide"><a href="ratings.html" class="side-menu__item">Rating</a></li>
+                        <li class="slide"><a href="draggable.html" class="side-menu__item">Draggable Cards</a></li>
+                        <li class="slide"><a href="notifications.html" class="side-menu__item">Notifications</a></li>
+                        <li class="slide"><a href="treeview.html" class="side-menu__item">Treeview</a></li>
+                        <li class="slide"><a href="swiperjs.html" class="side-menu__item">Swiperjs</a></li>
+                        <li class="slide has-sub"><a href="javascript:void(0);" class="side-menu__item">File manager<i
+                                    class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
+                            <ul class="slide-menu child2">
+                                <li class="slide"><a href="filemanager.html" class="side-menu__item">File manager</a>
+                                </li>
+                                <li class="slide"><a href="filemanager-list.html" class="side-menu__item">File manager
+                                        List</a></li>
+                                <li class="slide"><a href="file-details.html" class="side-menu__item">File Details</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <!-- End::slide -->
+
+                <!-- Start::slide -->
+                <li class="slide has-sub">
+                    <a href="javascript:void(0);" class="side-menu__item">
+                        <i class="ri-file-list-3-line side-menu__icon"></i>
+                        <span class="side-menu__label">Basic Ui</span>
+                        <i class="ri ri-arrow-right-s-line side-menu__angle"></i>
+                    </a>
+                    <ul class="slide-menu child1">
+                        <li class="slide side-menu__label1"><a href="javascript:void(0)">Basic Ui</a></li>
+                        <li class="slide"><a href="dropdown.html" class="side-menu__item">Dropdown</a></li>
+                        <li class="slide"><a href="modal.html" class="side-menu__item">Modal</a></li>
+                        <li class="slide"><a href="offcanvas.html" class="side-menu__item">Offcanvas</a></li>
+                        <li class="slide"><a href="tooltips.html" class="side-menu__item"> Tooltips</a></li>
+                        <li class="slide"><a href="popovers.html" class="side-menu__item">Popovers </a></li>
+                        <li class="slide has-sub"><a href="javascript:void(0);" class="side-menu__item">Tables<i
+                                    class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
+                            <ul class="slide-menu child2">
+                                <li class="slide"><a href="tables.html" class="side-menu__item">Basic Tables</a></li>
+                                <li class="slide"><a href="datatables.html" class="side-menu__item">Data Tables</a></li>
+                                <li class="slide"><a href="edittable.html" class="side-menu__item">Edit Table</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <!-- End::slide -->
+
+
+                <!-- Start::slide__category -->
+                <li class="slide__category"><span class="category-name">Levels</span></li>
+                <!-- End::slide__category -->
+
+                <!-- Start::slide -->
+                <li class="slide has-sub">
+                    <a href="javascript:void(0);" class="side-menu__item">
+                        <i class="ri-node-tree side-menu__icon"></i>
+                        <span class="side-menu__label">NestedMenu</span>
+                        <i class="ri ri-arrow-right-s-line side-menu__angle"></i>
+                    </a>
+                    <ul class="slide-menu child1">
+                        <li class="slide side-menu__label1"><a href="javascript:void(0)">Nested Menu</a></li>
+                        <li class="slide"><a href="javascript:void(0);" class="side-menu__item">Nested-1</a></li>
+                        <li class="slide has-sub"><a href="javascript:void(0);" class="side-menu__item">Nested-2<i
+                                    class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
+                            <ul class="slide-menu child2">
+                                <li class="slide"><a href="javascript:void(0);" class="side-menu__item">Nested-2-1</a>
+                                </li>
+                                <li class="slide has-sub"><a href="javascript:void(0);"
+                                        class="side-menu__item">Nested-2-2<i
+                                            class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
+                                    <ul class="slide-menu child3">
+                                        <li class="slide"><a href="javascript:void(0);"
+                                                class="side-menu__item">Nested-2-2-1</a></li>
+                                        <li class="slide"><a href="javascript:void(0);"
+                                                class="side-menu__item">Nested-2-2-2</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <!-- End::slide -->
+
+                <!-- Start::slide__category -->
+                <li class="slide__category"><span class="category-name">Maps &amp; charts</span></li>
+                <!-- End::slide__category -->
+
+                <!-- Start::slide -->
+                <li class="slide has-sub">
+                    <a href="javascript:void(0);" class="side-menu__item">
+                        <i class="ri-map-pin-user-line side-menu__icon"></i>
+                        <span class="side-menu__label">Maps</span>
+                        <i class="ri ri-arrow-right-s-line side-menu__angle"></i>
+                    </a>
+                    <ul class="slide-menu child1">
+                        <li class="slide side-menu__label1"><a href="javascript:void(0)">Maps</a></li>
+                        <li class="slide"><a href="google-maps.html" class="side-menu__item">Google Maps</a></li>
+                        <li class="slide"><a href="leaflet-maps.html" class="side-menu__item">Leaflet Maps</a></li>
+                        <li class="slide"><a href="vector-maps.html" class="side-menu__item">Vector Maps</a></li>
+                    </ul>
+                </li>
+                <!-- End::slide -->
+
+                <!-- Start::slide -->
+                <li class="slide has-sub">
+                    <a href="javascript:void(0);" class="side-menu__item">
+                        <i class="ri-pie-chart-2-line side-menu__icon"></i>
+                        <span class="side-menu__label">Charts</span>
+                        <i class="ri ri-arrow-right-s-line side-menu__angle"></i>
+                    </a>
+                    <ul class="slide-menu child1">
+                        <li class="slide side-menu__label1"><a href="javascript:void(0)">Charts</a></li>
+                        <li class="slide"><a href="apex-charts.html" class="side-menu__item">ApexCharts</a></li>
+                        <li class="slide"><a href="chartjs.html" class="side-menu__item">ChartJS</a></li>
+                        <li class="slide"><a href="echartjs.html" class="side-menu__item">EchartJs</a></li>
+                    </ul>
+                </li>
+                <!-- End::slide -->
+
+
+                <!-- Start::slide__category -->
+                <li class="slide__category"><span class="category-name">Pages</span></li>
+                <!-- End::slide__category -->
+
+                <!-- Start::slide -->
+                <li class="slide has-sub">
+                    <a href="javascript:void(0);" class="side-menu__item">
+                        <i class="ri-book-open-line side-menu__icon"></i>
+                        <span class="side-menu__label">Pages</span>
+                        <i class="ri ri-arrow-right-s-line side-menu__angle"></i>
+                    </a>
+                    <ul class="slide-menu child1">
+                        <li class="slide side-menu__label1"><a href="javascript:void(0)">Pages</a></li>
+                        <li class="slide has-sub"><a href="javascript:void(0);" class="side-menu__item">Profile<i
+                                    class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
+                            <ul class="slide-menu child2">
+                                <li class="slide"><a href="profile.html" class="side-menu__item">Home</a></li>
+                                <li class="slide"><a href="profile-settings.html" class="side-menu__item">Profile
+                                        Settings</a></li>
+                            </ul>
+                        </li>
+                        <li class="slide has-sub"><a href="javascript:void(0);" class="side-menu__item">Invoice<i
+                                    class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
+                            <ul class="slide-menu child2">
+                                <li class="slide"><a href="invoice-list.html" class="side-menu__item">Invoice List</a>
+                                </li>
+                                <li class="slide"><a href="invoice.html" class="side-menu__item">Invoice Details</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="slide has-sub"><a href="javascript:void(0);" class="side-menu__item">Blog<i
+                                    class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
+                            <ul class="slide-menu child2">
+                                <li class="slide"><a href="blog.html" class="side-menu__item">Blog</a></li>
+                                <li class="slide"><a href="blog-details.html" class="side-menu__item">Blog Details</a>
+                                </li>
+                                <li class="slide"><a href="blog-edit.html" class="side-menu__item">Edit Blog</a></li>
+                            </ul>
+                        </li>
+                        <li class="slide has-sub"><a href="javascript:void(0);" class="side-menu__item">Mail<i
+                                    class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
+                            <ul class="slide-menu child2">
+                                <li class="slide"><a href="mail-inbox.html" class="side-menu__item">Mail</a></li>
+                                <li class="slide"><a href="chat.html" class="side-menu__item">Chat</a></li>
+                                <li class="slide"><a href="mail-settings.html" class="side-menu__item">Mail-settings</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="slide has-sub"><a href="javascript:void(0);" class="side-menu__item">Ecommerce<i
+                                    class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
+                            <ul class="slide-menu child2">
+                                <li class="slide"><a href="products.html" class="side-menu__item">Products</a></li>
+                                <li class="slide"><a href="product-list.html" class="side-menu__item">Product list</a>
+                                </li>
+                                <li class="slide"><a href="add-product.html" class="side-menu__item">Add Product</a>
+                                </li>
+                                <li class="slide"><a href="edit-product.html" class="side-menu__item">Edit Product</a>
+                                </li>
+                                <li class="slide"><a href="products-details.html"
+                                        class="side-menu__item">product-details</a></li>
+                                <li class="slide"><a href="cart.html" class="side-menu__item">Cart</a></li>
+                                <li class="slide"><a href="checkout.html" class="side-menu__item">Checkout</a></li>
+                                <li class="slide"><a href="orders.html" class="side-menu__item">Orders</a></li>
+                                <li class="slide"><a href="order-details.html" class="side-menu__item">Order Details</a>
+                                </li>
+                                <li class="slide"><a href="wishlist.html" class="side-menu__item">Wishlist</a></li>
+                            </ul>
+                        </li>
+                        <li class="slide"><a href="about.html" class="side-menu__item">About Us</a></li>
+                        <li class="slide"><a href="contacts.html" class="side-menu__item">Contacts</a></li>
+                        <li class="slide"><a href="pricing.html" class="side-menu__item">Pricing tables</a></li>
+                        <li class="slide"><a href="timeline.html" class="side-menu__item">Timeline</a></li>
+                        <li class="slide"><a href="team.html" class="side-menu__item">Team</a></li>
+                        <li class="slide"><a href="landing.html" class="side-menu__item">Landing</a></li>
+                        <li class="slide"><a href="todo.html" class="side-menu__item">Todo list</a></li>
+                        <li class="slide"><a href="tasks.html" class="side-menu__item">Tasks</a></li>
+                        <li class="slide"><a href="reviews.html" class="side-menu__item">Reviews</a></li>
+                        <li class="slide"><a href="faqs.html" class="side-menu__item">Faq's</a></li>
+                        <li class="slide"><a href="contactus.html" class="side-menu__item">Contact Us</a></li>
+                        <li class="slide"><a href="terms.html" class="side-menu__item">Terms &amp; conditions</a></li>
+                        <li class="slide"><a href="empty.html" class="side-menu__item">Empty</a></li>
+                    </ul>
+                </li>
+                <!-- End::slide -->
+
+                <!-- Start::slide -->
+                <li class="slide has-sub">
+                    <a href="javascript:void(0);" class="side-menu__item">
+                        <i class="ri-camera-lens-line side-menu__icon"></i>
+                        <span class="side-menu__label">Icons</span>
+                        <i class="ri ri-arrow-right-s-line side-menu__angle"></i>
+                    </a>
+                    <ul class="slide-menu child1">
+                        <li class="slide side-menu__label1"><a href="javascript:void(0)">Icons</a></li>
+                        <li class="slide"><a href="tabler-icons.html" class="side-menu__item">Tabler Icons</a></li>
+                        <li class="slide"><a href="remix-icons.html" class="side-menu__item">Remix Icons</a></li>
+                    </ul>
+                </li>
+                <!-- End::slide -->
+
+                <!-- Start::slide -->
+                <li class="slide has-sub">
+                    <a href="javascript:void(0);" class="side-menu__item">
+                        <i class="ri-error-warning-line side-menu__icon"></i>
+                        <span class="side-menu__label">Authentication</span>
+                        <i class="ri ri-arrow-right-s-line side-menu__angle"></i>
+                    </a>
+                    <ul class="slide-menu child1">
+                        <li class="slide side-menu__label1"><a href="javascript:void(0)">Authentication</a></li>
+                        <li class="slide has-sub"><a href="javascript:void(0);" class="side-menu__item">Sign-In<i
+                                    class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
+                            <ul class="slide-menu child2">
+                                <li class="slide"><a href="signin.html" class="side-menu__item">Basic</a></li>
+                                <li class="slide"><a href="signin-cover.html" class="side-menu__item">Cover-1</a></li>
+                                <li class="slide"><a href="signin-cover2.html" class="side-menu__item">Cover-2</a></li>
+                            </ul>
+                        </li>
+                        <li class="slide has-sub"><a href="javascript:void(0);" class="side-menu__item">Sign-Up<i
+                                    class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
+                            <ul class="slide-menu child2">
+                                <li class="slide"><a href="signup.html" class="side-menu__item">Basic</a></li>
+                                <li class="slide"><a href="signup-cover.html" class="side-menu__item">Cover-1</a></li>
+                                <li class="slide"><a href="signup-cover2.html" class="side-menu__item">Cover-2</a></li>
+                            </ul>
+                        </li>
+                        <li class="slide has-sub"><a href="javascript:void(0);" class="side-menu__item">Create
+                                Password<i class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
+                            <ul class="slide-menu child2">
+                                <li class="slide"><a href="createpassword.html" class="side-menu__item">Basic</a></li>
+                                <li class="slide"><a href="createpassword-cover.html"
+                                        class="side-menu__item">Cover-1</a></li>
+                                <li class="slide"><a href="createpassword-cover2.html"
+                                        class="side-menu__item">Cover-2</a></li>
+                            </ul>
+                        </li>
+                        <li class="slide has-sub"><a href="javascript:void(0);" class="side-menu__item">Forgot
+                                Password<i class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
+                            <ul class="slide-menu child2">
+                                <li class="slide"><a href="forgot.html" class="side-menu__item">Basic</a></li>
+                                <li class="slide"><a href="forgot-cover.html" class="side-menu__item">Cover-1</a></li>
+                                <li class="slide"><a href="forgot-cover2.html" class="side-menu__item">Cover-2</a></li>
+                            </ul>
+                        </li>
+                        <li class="slide has-sub"><a href="javascript:void(0);" class="side-menu__item">Reset Password<i
+                                    class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
+                            <ul class="slide-menu child2">
+                                <li class="slide"><a href="reset.html" class="side-menu__item">Basic</a></li>
+                                <li class="slide"><a href="reset-cover.html" class="side-menu__item">Cover-1</a></li>
+                                <li class="slide"><a href="reset-cover2.html" class="side-menu__item">Cover-2</a></li>
+                            </ul>
+                        </li>
+                        <li class="slide has-sub"><a href="javascript:void(0);" class="side-menu__item">Lockscreen<i
+                                    class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
+                            <ul class="slide-menu child2">
+                                <li class="slide"><a href="lockscreen.html" class="side-menu__item">Basic</a></li>
+                                <li class="slide"><a href="lockscreen-cover.html" class="side-menu__item">Cover-1</a>
+                                </li>
+                                <li class="slide"><a href="lockscreen-cover2.html" class="side-menu__item">Cover-2</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="slide has-sub"><a href="javascript:void(0);" class="side-menu__item">Two-Step
+                                Verfication<i class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
+                            <ul class="slide-menu child2">
+                                <li class="slide"><a href="verification.html" class="side-menu__item">Basic</a></li>
+                                <li class="slide"><a href="verification-cover.html" class="side-menu__item">Cover-1</a>
+                                </li>
+                                <li class="slide"><a href="verification-cover2.html" class="side-menu__item">Cover-2</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="slide"><a href="maintenance.html" class="side-menu__item">Under Maintenance</a></li>
+                        <li class="slide"><a href="construction.html" class="side-menu__item">Under Construction</a>
+                        </li>
+                        <li class="slide"><a href="comingsoon.html" class="side-menu__item">Coming Soon</a></li>
+                        <li class="slide has-sub"><a href="javascript:void(0);" class="side-menu__item">Error Pages<i
+                                    class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
+                            <ul class="slide-menu child2">
+                                <li class="slide"><a href="404.html" class="side-menu__item">404Error</a></li>
+                                <li class="slide"><a href="500.html" class="side-menu__item">500Error</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <!-- End::slide -->
+
+            </ul>
+            <div class="slide-right" id="slide-right"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191" width="24"
+                    height="24" viewBox="0 0 24 24">
+                    <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path>
+                </svg></div>
+        </nav>
+        <!-- End::nav -->
+
+    </div>
+    <!-- End::main-sidebar -->
+
+</aside>
+<!-- End::app-sidebar -->
+
+        <!-- Start::app-content -->
+        <div class="main-content app-content">
+            <div class="container-fluid">
+
+                <!-- Start::page-header -->
+                <!-- Page Header -->
+                <div class="d-md-flex d-block align-items-center justify-content-between my-4 page-header-breadcrumb">
+                    <h1 class="page-title fw-medium fs-24 mb-0">Products Details</h1>
+                    <div class="ms-md-1 ms-0">
+                        <nav>
+                            <ol class="breadcrumb mb-0">
+                                <li class="breadcrumb-item"><a href="javascript:void(0);">Ecommerce</a></li>
+                                <li class="breadcrumb-item active d-inline-flex" aria-current="page">Products Details</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+                <!-- Page Header Close -->
+                  <!-- End::page-header -->
+
+
+                <!-- Start::row-1 -->
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="card custom-card">
+                            <div class="card-body">
+                                <div class="row gx-5">
+                                    <div class="col-xxl-5 col-xl-12">
+                                        <div class="row">
+                                            <div class="col-xxl-12">
+                                                <div class="swiper swiper-preview-details bg-light product-details-page">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide" id="img-container">
+                                                            <img class="img-fluid" src="../assets/img/ecommerce/product-details/1.png" alt="img">
+                                                        </div>
+                                                        <div class="swiper-slide image-container">
+                                                            <img class="img-fluid" src="../assets/img/ecommerce/product-details/2.png" alt="img">
+                                                        </div>
+                                                        <div class="swiper-slide image-container">
+                                                            <img class="img-fluid" src="../assets/img/ecommerce/product-details/3.png" alt="img">
+                                                        </div>
+                                                        <div class="swiper-slide image-container">
+                                                            <img class="img-fluid" src="../assets/img/ecommerce/product-details/4.png" alt="img">
+                                                        </div>
+                                                        <div class="swiper-slide image-container">
+                                                            <img class="img-fluid" src="../assets/img/ecommerce/product-details/5.png" alt="img">
+                                                        </div>
+                                                        <div class="swiper-slide image-container">
+                                                            <img class="img-fluid" src="../assets/img/ecommerce/product-details/6.png" alt="img">
+                                                        </div>
+                                                        <div class="swiper-slide image-container">
+                                                            <img class="img-fluid" src="../assets/img/ecommerce/product-details/7.png" alt="img">
+                                                        </div>
+                                                        <div class="swiper-slide image-container">
+                                                            <img class="img-fluid" src="../assets/img/ecommerce/product-details/8.png" alt="img">
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-button-next"></div>
+                                                    <div class="swiper-button-prev"></div>
+                                                </div>
+                                                <div class="swiper swiper-view-details mt-2">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <img class="img-fluid" src="../assets/img/ecommerce/product-details/1.png" alt="img">
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <img class="img-fluid" src="../assets/img/ecommerce/product-details/2.png" alt="img">
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <img class="img-fluid" src="../assets/img/ecommerce/product-details/3.png" alt="img">
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <img class="img-fluid" src="../assets/img/ecommerce/product-details/4.png" alt="img">
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <img class="img-fluid" src="../assets/img/ecommerce/product-details/5.png" alt="img">
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <img class="img-fluid" src="../assets/img/ecommerce/product-details/6.png" alt="img">
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <img class="img-fluid" src="../assets/img/ecommerce/product-details/7.png" alt="img">
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <img class="img-fluid" src="../assets/img/ecommerce/product-details/8.png" alt="img">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-7 col-xl-12">
+                                        <div class="row gx-3">
+                                            <div class="col-xl-7 mt-xxl-0 mt-3  px-0">
+                                                <div>
+                                                    <p class="fs-20 fw-bold ">Dolar 20000mAh 18W Fast Charging Power Bank | Dual Output (Type C, 1 USB) and Dual Input (Type C, Micro USB) Ports</p>
+                                                    <span class="fs-14 mb-4 me-3">
+                                                        <i class="ri-star-s-fill text-warning align-middle"></i>
+                                                        <span class="text-muted ms-1">4.2 Rating</span>
+                                                    </span> 
+                                                     <span class="fs-14 mb-4 me-3">
+                                                        <i class="bx bxs-circle fs-8 op-8 text-muted align-middle"></i>
+                                                        <span class="text-muted ms-1">2,262 Reviews</span>
+                                                    </span> 
+                                                     <span class="fs-14 mb-4">
+                                                        <i class="bx bxs-circle  fs-8 op-8 text-muted align-middle"></i>
+                                                        <span class="text-muted ms-1">3,252 Units Sold</span>
+                                                    </span>
+                                                    <p class="fs-14 mt-3"><strong class="text-primary">81%</strong> of buyers
+                                                        enjoyed this product! <strong class="text-success">(105 votes)</strong> </p>
+                                                    <p class="fw-bold fs-14">Description :<p>
+                                                    <p class="text-muted fs-14">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas sint exercitationem veritatis harum maiores 
+                                                        corporis perspiciatis quos accusantium velit. Deserunt tenetur rerum nemo illum. Dolor laboriosam atque acc
+                                                        usantium perspiciatis rerum</p>
+                                                    </div>
+                                                    <div class="">
+                                                        <div class="d-sm-flex mb-3 align-items-center">
+                                                            <span class="fw-bold fs-14 wd-100">Status :</span>
+                                                            <span class="text-success ms-5 fs-14 fw-semibold"> Available In Stock</span>
+                                                        </div>
+                                                        <div class="d-sm-flex mb-3 align-items-center">
+                                                            <span class="fw-bold fs-14 wd-100">Price :</span>
+                                                            <div class="d-flex align-items-center  ms-5 ">
+                                                                <h4 class="text-primary fw-semibold">$2000</h4>
+                                                                <h5 class=" fw-semibold ms-2 text-muted">$2999</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-sm-flex mb-3 align-items-center">
+                                                            <span class="fw-bold fs-14 wd-100">Colors  :</span>
+                                                            <div class="ms-5 wd-150 remove-choice">
+                                                                <select class="form-control" data-trigger name="product-size-add" id="product-size-add">
+                                                                    <option value="White">White</option>
+                                                                    <option value="Black">Black</option>
+                                                                    <option value="Red">Red</option>
+                                                                    <option value="Orange">Orange</option>
+                                                                    <option value="Yellow">Yellow</option>
+                                                                    <option value="Green">Green</option>
+                                                                    <option value="Blue">Blue</option>
+                                                                    <option value="Pink">Pink</option>
+                                                                    <option value="Purple">Purple</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-sm-flex mb-3 align-items-center">
+                                                            <span class="fw-bold fs-14 wd-100">Capacity  :</span>
+                                                            <div class="ms-5 wd-150 remove-choice">
+                                                                <select class="form-control" data-trigger name="product-size-adde" id="product-size-adde">
+                                                                    <option value="Choice 1">1000 mAh</option>
+                                                                    <option value="Choice 2">1200 mAh</option>
+                                                                    <option value="Choice 3">1500 mAh</option>
+                                                                    <option value="Choice 4">2000 mAh</option>
+                                                                    <option value="Choice 5">3000 mAh</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-sm-flex mb-3">
+                                                            <a href="wishlist.html" class="btn btn-outline-primary border-0"><i class="ri-heart-2-line me-2"></i>Add To Favourites</a>
+                                                            <div class="ms-3 fs-14">
+                                                                <a href="javascript:void(0);" class="btn btn-outline-danger border-0"><i class="ri-share-forward-line me-2"></i>Compare Product</a>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-sm-flex mb-3 align-items-center">
+                                                            <span class="fw-bold fs-14 wd-100">Share :</span>
+                                                            <div class="d-flex  ms-sm-5 ">
+                                                                    <button class="btn btn-icon btn-outline-light me-1"><i class="ri ri-github-line text-muted fs-18 lh-1"></i></button>
+                                                                    <button class="btn btn-icon btn-outline-light me-1"><i class="ri ri-instagram-line  text-muted fs-18 lh-1"></i></button>
+                                                                    <button class="btn btn-icon btn-outline-light me-1"><i class="ri-twitter-x-line  text-muted fs-18 lh-1"></i></button>
+                                                                    <button class="btn btn-icon btn-outline-light me-1"><i class="ri ri-linkedin-line  text-muted fs-18 lh-1"></i></button>
+                                                                    <button class="btn btn-icon btn-outline-light"><i class="ri ri-facebook-circle-line  text-muted fs-18 lh-1"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            <div class="col-xl-5 mt-xxl-0 mt-3">
+                                                <div class="card custom-card">
+                                                    <div class="card-body  p-3 bg-success text-fixed-white">
+                                                        <div class="d-flex align-items-center justify-content-between">
+                                                            <div>
+                                                                <p class="fs-20 mb-1">30% Off</p>
+                                                                <p class="op-9 fs-12 mb-0">Grab it fast has limited Stock</p>
+                                                            </div>
+                                                            <span class="badge bg-dark-transparent text-fixed-white">Untill Mar 9th 2023</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card custom-card">
+                                                    <div class="card-header">
+                                                        <div class="card-title">Set Order</div>
+                                                    </div>
+                                                    <div class="card-body px-0 pt-0">
+                                                        <table class="table text-nowrap table-borderless mb-3">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="pb-0"><span class="text-muted">Item  :</span></td>
+                                                                    <td class="pb-0">
+                                                                        <span class="avatar avatar-md">
+                                                                            <img src="../assets/img/ecommerce/product-details/6.png" class="" alt="Product-image">
+                                                                        </span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="pb-0"><span class="text-muted">Color  :</span></td>
+                                                                    <td class="text-start pb-0">
+                                                                        <span class="">Red</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="pb-0"><span class="text-muted">Capacity :</span></td>
+                                                                    <td class="text-start pb-0">
+                                                                        <span class="">2000 mAh</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="pb-0"><span class="text-muted">Quantity  :</span></td>
+                                                                    <td class="text-start pb-0">
+                                                                        <div class="input-group rounded flex-nowrap order-qnt">
+                                                                            <button class="btn btn-icon btn-primary input-group-text product-quantity-minus border-end-0" ><i class="ri-subtract-line"></i></button>
+                                                                            <input type="text" class="form-control form-control-sm w-0 text-center" aria-label="quantity" id="product-quantity" value="2">
+                                                                            <button class="btn btn-icon btn-primary input-group-text product-quantity-plus border-start-0" ><i class="ri-add-line"></i></button>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="pb-0"><span class="text-muted">Total :</span></td>
+                                                                    <td class="text-start pb-0">
+                                                                        <span class="">$2000</span>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <span class="fw-semibold px-3 op-8 fs-14">Expected Delivery By Feb 25 ,2023 </span>
+                                                        <div class="d-grid mt-3 px-3">
+                                                              <a href="cart.html" class="btn btn-primary m-1">Add To Cart</a>
+                                                              <a href="checkout.html" class="btn btn-outline-primary m-1">Buy Now</a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <p class="fs-14 text-muted text-center px-3 mt-3">Any Issue Reagarding Product ? <a href="javascript:void(0);" class="text-primary inline-flex">
+                                                    <i class="ri-information-line me-2"></i>Report</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-9">
+                        <div class="card custom-card">
+                            <div class="card-body p-0">
+                                <ul class="nav nav-tabs tab-style-2 d-sm-flex d-block" id="myTab1" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link py-3 active" id="order-tab" data-bs-toggle="tab"
+                                            data-bs-target="#order-tab-pane" type="button" role="tab"
+                                            aria-controls="order-tab" aria-selected="true">Description</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link py-3 " id="confirmed-tab" data-bs-toggle="tab"
+                                            data-bs-target="#confirm-tab-pane" type="button" role="tab"
+                                            aria-controls="confirmed-tab" aria-selected="false">Ratings</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link py-3" id="shipped-tab" data-bs-toggle="tab"
+                                            data-bs-target="#shipped-tab-pane" type="button" role="tab"
+                                            aria-controls="shipped-tab" aria-selected="false">Reviews</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link py-3" id="delivered-tab" data-bs-toggle="tab"
+                                            data-bs-target="#delivered-tab-pane" type="button" role="tab"   aria-controls="delivered-tab" aria-selected="false">Ship and Return</button>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="order-tab-pane" role="tabpanel"
+                                        aria-labelledby="order-tab-pane" tabindex="0">
+                                        <ul class="ps-3 mb-0 fs-14">
+                                            <li class="mb-3">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti 
+                                                atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, 
+                                                similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</li>
+                                            <li class="mb-3">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized .</li>
+                                            <li>But I must explain to you how all this mistaken idea of denouncing pleasure and 
+                                                praising pain was born and I will give you a complete account of the system.</li>
+                                        </ul>
+                                        <h6 class="mt-3">Specifications :</h6>
+                                        <div class="row">
+                                            <div class="col-xl-6">
+                                                <div class="table-responsive">
+                                                    <table class="table text-nowrap table-borderless mb-3">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class=""><span class="text-muted fs-14">Brand </span></td>
+                                                                <td class=""><span class="text-muted fs-14"> :</span></td>
+                                                                <td class=""><span class="text-muted fs-14">Dolar</span></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class=""><span class="text-muted fs-14">Connector Type </span></td>
+                                                                <td class=""><span class="text-muted fs-14"> :</span></td>
+                                                                <td class=""><span class="text-muted fs-14">USB</span></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class=""><span class="text-muted fs-14">Battery Capacity</span></td>
+                                                                <td class=""><span class="text-muted fs-14"> :</span></td>
+                                                                <td class=""><span class="text-muted fs-14">2000 mAh</span></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class=""><span class="text-muted fs-14">Special Feature</span></td>
+                                                                <td class=""><span class="text-muted fs-14"> :</span></td>
+                                                                <td class=""><span class="text-muted fs-14">Fast charge</span></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class=""><span class="text-muted fs-14">Weight</span></td>
+                                                                <td class=""><span class="text-muted fs-14"> :</span></td>
+                                                                <td class=""><span class="text-muted fs-14">500grms</span></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <div class="table-responsive">
+                                                    <table class="table text-nowrap table-borderless mb-3">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class=""><span class="text-muted fs-14">Waranty </span></td>
+                                                                <td class=""><span class="text-muted fs-14"> :</span></td>
+                                                                <td class=""><span class="text-muted fs-14">6 Months</span></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class=""><span class="text-muted fs-14">Ports</span></td>
+                                                                <td class=""><span class="text-muted fs-14"> :</span></td>
+                                                                <td class=""><span class="text-muted fs-14">Dual Ports</span></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class=""><span class="text-muted fs-14">Dimensions</span></td>
+                                                                <td class=""><span class="text-muted fs-14"> :</span></td>
+                                                                <td class=""><span class="text-muted fs-14">32.25 * 25.2 *36.3 cm</span></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class=""><span class="text-muted fs-14">Display</span></td>
+                                                                <td class=""><span class="text-muted fs-14"> :</span></td>
+                                                                <td class=""><span class="text-muted fs-14">Wireless</span></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class=""><span class="text-muted fs-14">Origin</span></td>
+                                                                <td class=""><span class="text-muted fs-14"> :</span></td>
+                                                                <td class=""><span class="text-muted fs-14">India</span></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade text-muted" id="confirm-tab-pane"
+                                        role="tabpanel" aria-labelledby="confirm-tab-pane" tabindex="0">
+                                        <div class="row justify-content-center">
+                                            <div class="col-xl-6">
+                                                <div class="text-center">
+                                                    <h5 class="">Customer Rating</h5>
+                                                    <div class="avatar avatar-md bg-warning-transparent avatar-rounded fs-18">4.5</div>
+                                                    <div class="product-rating">
+                                                        <i class="ri ri-star-fill text-warning fs-18"></i>
+                                                        <i class="ri ri-star-fill text-warning fs-18"></i>
+                                                        <i class="ri ri-star-fill text-warning fs-18"></i>
+                                                        <i class="ri ri-star-fill text-warning fs-18"></i>
+                                                        <i class="ri ri-star-half-fill text-warning fs-18"></i>
+                                                    </div>
+                                                    <span>Based On 25,256 Ratings</span>
+                                                    <div class="d-flex align-items-center mt-3"> 
+                                                        <span class="me-2 fs-14">5</span>
+                                                        <span class="me-2"><i class="ri ri-star-fill text-warning fs-18"></i></span>
+                                                        <div class="progress progress-animate progress-sm w-100" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"> 
+                                                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" style="width: 95%"></div>
+                                                        </div> 
+                                                        <div class="ms-2  fs-14">15,252</div> 
+                                                    </div>
+                                                    <div class="d-flex align-items-center mt-2"> 
+                                                        <span class="me-2 fs-14">4</span>
+                                                        <span class="me-2"><i class="ri ri-star-fill text-warning fs-18"></i></span>
+                                                        <div class="progress progress-animate progress-sm w-100" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"> 
+                                                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" style="width: 75%"></div>
+                                                        </div> 
+                                                        <div class="ms-2  fs-14">5,235</div> 
+                                                    </div>
+                                                    <div class="d-flex align-items-center mt-2"> 
+                                                        <span class="me-2 fs-14">3</span>
+                                                        <span class="me-2"><i class="ri ri-star-fill text-warning fs-18"></i></span>
+                                                        <div class="progress progress-animate progress-sm w-100" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"> 
+                                                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" style="width: 55%"></div>
+                                                        </div> 
+                                                        <div class="ms-2  fs-14">2,876</div> 
+                                                    </div>
+                                                    <div class="d-flex align-items-center mt-2"> 
+                                                        <span class="me-2 fs-14">2</span>
+                                                        <span class="me-2"><i class="ri ri-star-fill text-warning fs-18"></i></span>
+                                                        <div class="progress progress-animate progress-sm w-100" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"> 
+                                                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" style="width: 45%"></div>
+                                                        </div> 
+                                                        <div class="ms-2  fs-14">1,352</div> 
+                                                    </div>
+                                                    <div class="d-flex align-items-center mt-2"> 
+                                                        <span class="me-2 fs-14">1</span>
+                                                        <span class="me-2"><i class="ri ri-star-fill text-warning fs-18"></i></span>
+                                                        <div class="progress progress-animate progress-sm w-100" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"> 
+                                                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" style="width: 30%"></div>
+                                                        </div> 
+                                                        <div class="ms-2 fs-14">852</div> 
+                                                    </div>
+                                                </div>
+                                             </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade text-muted" id="shipped-tab-pane" role="tabpanel"
+                                        aria-labelledby="shipped-tab-pane" tabindex="0">
+                                        <div class="card custom-card">
+                                            <div class="card-header justify-content-between">
+                                                <div class="d-flex align-items-top flex-wrap">
+                                                    <div class="me-2">
+                                                        <span class="avatar avatar-xs avatar-rounded">
+                                                            <img src="../assets/img/users/2.jpg" alt="">
+                                                        </span>
+                                                    </div>
+                                                    <div class="flex-fill">
+                                                        <p class="fw-semibold mb-0 fs-14">Dolar Paul</p>
+                                                        <span class="text-muted fs-12">29 September,2023</span>
+                                                    </div>
+                                                </div>
+                                                <div class="product-rating">
+                                                    <i class="ri ri-star-fill text-warning fs-18"></i>
+                                                    <i class="ri ri-star-fill text-warning fs-18"></i>
+                                                    <i class="ri ri-star-fill text-warning fs-18"></i>
+                                                    <i class="ri ri-star-fill text-warning fs-18"></i>
+                                                    <i class="ri ri-star-half-fill text-warning fs-18"></i>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <h6 class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h6>
+                                                <p>Very nice ! On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized.</p>
+                                                <span  class="avatar avatar-md rounded-1 p-1 border">
+                                                    <img src="../assets/img/ecommerce/product-details/6.png" alt="Product-image">
+                                                </span>
+                                                <span  class="avatar avatar-md rounded-1 p-1 border">
+                                                    <img src="../assets/img/ecommerce/product-details/2.png" alt="Product-image">
+                                                </span>
+                                                <span  class="avatar avatar-md rounded-1 p-1 border">
+                                                    <img src="../assets/img/ecommerce/product-details/5.png" alt="Product-image">
+                                                </span>
+                                            </div>
+                                            <div class="card-footer">
+                                                <div class="d-flex  justify-content-between">
+                                                        <a href="javascript:void(0);" class="btn btn-danger-light btn-sm rounded-pill"><i class="ri ri-heart-line me-1"></i>56</a>
+                                                        <a href="javascript:void(0);" class="btn btn-primary-light btn-sm rounded-pill"><i class="ri ri-arrow-go-back-line me-1"></i>Reply</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card custom-card">
+                                            <div class="card-header justify-content-between">
+                                                <div class="d-flex align-items-top flex-wrap">
+                                                    <div class="me-2">
+                                                        <span class="avatar avatar-xs avatar-rounded">
+                                                            <img src="../assets/img/users/5.jpg" alt="">
+                                                        </span>
+                                                    </div>
+                                                    <div class="flex-fill">
+                                                        <p class="fw-semibold mb-0 fs-14">Socrates Imualte</p>
+                                                        <span class="text-muted fs-12">25 September,2023</span>
+                                                    </div>
+                                                </div>
+                                                <div class="product-rating">
+                                                    <i class="ri ri-star-fill text-warning fs-18"></i>
+                                                    <i class="ri ri-star-fill text-warning fs-18"></i>
+                                                    <i class="ri ri-star-fill text-warning fs-18"></i>
+                                                    <i class="ri ri-star-fill text-warning fs-18"></i>
+                                                    <i class="ri ri-star-half-fill text-warning fs-18"></i>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <h6 class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h6>
+                                                <p>Very nice ! On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized.</p>
+                                                <span  class="avatar avatar-md rounded-1 p-1 border">
+                                                    <img src="../assets/img/ecommerce/product-details/6.png" alt="Product-image">
+                                                </span>
+                                                <span  class="avatar avatar-md rounded-1 p-1 border">
+                                                    <img src="../assets/img/ecommerce/product-details/2.png" alt="Product-image">
+                                                </span>
+                                                <span  class="avatar avatar-md rounded-1 p-1 border">
+                                                    <img src="../assets/img/ecommerce/product-details/5.png" alt="Product-image">
+                                                </span>
+                                            </div>
+                                            <div class="card-footer">
+                                                <div class="d-flex  justify-content-between">
+                                                        <a href="javascript:void(0);" class="btn btn-danger-light btn-sm rounded-pill"><i class="ri ri-heart-line me-1"></i>56</a>
+                                                        <a href="javascript:void(0);" class="btn btn-primary-light btn-sm rounded-pill"><i class="ri ri-arrow-go-back-line me-1"></i>Reply</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade text-muted" id="delivered-tab-pane" role="tabpanel" tabindex="0">
+                                       <p class="fs-14">You can exchange the product up to 30 days after delivery. Shipping on your first exchange for any item is free of charge. 
+                                            If you decide to exchange that item again (i.e. more than once) you will be responsible for any forward and return shipping fees.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="card custom-card">
+                            <div class="card-header">
+                                <div class="card-title">Most Searched Products</div>
+                            </div>
+                            <div class="card-body p-0">
+                                <div class="table-responsive">
+                                    <table class="table text-nowrap">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <a href="javascript:void(0);">
+                                                        <div class="d-flex align-items-top">
+                                                            <div class="similar-products-image me-2">
+                                                                <img src="../assets/img/ecommerce/products/1.png" alt="">
+                                                            </div>
+                                                            <div class="flex-fill">
+                                                                <p class="mb-1 fs-14 fw-semibold similar-product-name text-truncate">Black Heals For Women</p>
+                                                                <p class="mb-0">
+                                                                    <span class="text-warning">4.4<i class="ri-star-s-fill ms-1"></i></span>
+                                                                    <span class="text-muted ms-1">(13,256)</span>
+                                                                </p>
+                                                            </div>
+                                                            <div class="text-center">
+                                                                <p class="mb-0 fs-16 fw-semibold text-primary">
+                                                                    $699
+                                                                </p>
+                                                                <p class="mb-0 text-muted">
+                                                                    <s>$999</s>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="javascript:void(0);">
+                                                        <div class="d-flex align-items-top">
+                                                            <div class="similar-products-image me-2">
+                                                                <img src="../assets/img/ecommerce/products/2.png" alt="">
+                                                            </div>
+                                                            <div class="flex-fill">
+                                                                <p class="mb-1 fs-14 fw-semibold similar-product-name text-truncate">Tshirt For Men </p>
+                                                                <p class="mb-0">
+                                                                    <span class="text-warning">4.0<i class="ri-star-s-fill ms-1"></i></span>
+                                                                    <span class="text-muted ms-1">(15,256)</span>
+                                                                </p>
+                                                            </div>
+                                                            <div class="text-center">
+                                                                <p class="mb-0 fs-16 fw-semibold text-primary">
+                                                                    $245
+                                                                </p>
+                                                                <p class="mb-0 text-muted">
+                                                                    <s>$599</s>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="javascript:void(0);">
+                                                        <div class="d-flex align-items-top">
+                                                            <div class="similar-products-image me-2">
+                                                                <img src="../assets/img/ecommerce/products/3.png" alt="">
+                                                            </div>
+                                                            <div class="flex-fill">
+                                                                <p class="mb-1 fs-14 fw-semibold similar-product-name text-truncate">Blue Jacket For Men</p>
+                                                                <p class="mb-0">
+                                                                    <span class="text-warning">3.8<i class="ri-star-s-fill ms-1"></i></span>
+                                                                    <span class="text-muted ms-1">(10,456)</span>
+                                                                </p>
+                                                            </div>
+                                                            <div class="text-center">
+                                                                <p class="mb-0 fs-16 fw-semibold text-primary">
+                                                                    $1999
+                                                                </p>
+                                                                <p class="mb-0 text-muted">
+                                                                    <s>$2599</s>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="javascript:void(0);">
+                                                        <div class="d-flex align-items-top">
+                                                            <div class="similar-products-image me-2">
+                                                                <img src="../assets/img/ecommerce/products/4.png" alt="">
+                                                            </div>
+                                                            <div class="flex-fill">
+                                                                <p class="mb-1 fs-14 fw-semibold similar-product-name text-truncate">Dolor Wireless Airpods</p>
+                                                                <p class="mb-0">
+                                                                    <span class="text-warning">4.5<i class="ri-star-s-fill ms-1"></i></span>
+                                                                    <span class="text-muted ms-1">(20,263)</span>
+                                                                </p>
+                                                            </div>
+                                                            <div class="text-center">
+                                                                <p class="mb-0 fs-16 fw-semibold text-primary">
+                                                                    $399
+                                                                </p>
+                                                                <p class="mb-0 text-muted">
+                                                                    <s>$599</s>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="javascript:void(0);">
+                                                        <div class="d-flex align-items-top">
+                                                            <div class="similar-products-image me-2">
+                                                                <img src="../assets/img/ecommerce/products/5.png" alt="">
+                                                            </div>
+                                                            <div class="flex-fill">
+                                                                <p class="mb-1 fs-14 fw-semibold similar-product-name text-truncate">Dolor Rose Frangrance Perfume </p>
+                                                                <p class="mb-0">
+                                                                    <span class="text-warning">4.5<i class="ri-star-s-fill ms-1"></i></span>
+                                                                    <span class="text-muted ms-1">(20,263)</span>
+                                                                </p>
+                                                            </div>
+                                                            <div class="text-center">
+                                                                <p class="mb-0 fs-16 fw-semibold text-primary">
+                                                                    $199
+                                                                </p>
+                                                                <p class="mb-0 text-muted">
+                                                                    <s>$299</s>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="d-grid">
+                                                    <a href="products.html" class="btn btn-primary">Shop Now</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-12">
+                        <div class="card custom-card">
+                            <div class="row">
+                                <div class="col-xl-3 border-end">
+                                    <div class="card custom-card border-0 mb-0">
+                                        <div class="card-body">
+                                            <div class="d-flex">
+                                                <svg class="product-svg my-auto" id="SvgjsSvg1023" xmlns="http://www.w3.org/2000/svg"
+                                                version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" >
+                                                <defs id="SvgjsDefs1024"></defs>
+                                                <g id="SvgjsG1025"><svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"
+                                                    viewBox="0 0 512 512">
+                                                    <path
+                                                      d="M67.158 205.5h2.347a6 6 0 0 0 0-12h-2.347a6 6 0 0 0 0 12zm43.491-12H92.92a6 6 0 0 0 0 12h17.729a6 6 0 0 0 0-12zm23.795 12h127.085a6 6 0 0 0 0-12H134.444a6 6 0 1 0 0 12zm-67.286-50h2.347a6 6 0 0 0 0-12h-2.347a6 6 0 0 0 0 12zm43.491-12H92.92a6 6 0 0 0 0 12h17.729a6 6 0 0 0 0-12zm23.795 12h127.085a6 6 0 0 0 0-12H134.444a6 6 0 1 0 0 12zm-67.286-50h2.347a6 6 0 0 0 0-12h-2.347a6 6 0 0 0 0 12zm43.491-12H92.92a6 6 0 0 0 0 12h17.729a6 6 0 0 0 0-12zm23.795 12h127.085a6 6 0 0 0 0-12H134.444a6 6 0 0 0 0 12zm-67.286 150h2.347a6 6 0 0 0 0-12h-2.347a6 6 0 0 0 0 12zm43.491-12H92.92a6 6 0 0 0 0 12h17.729a6 6 0 0 0 0-12zm100.88 0h-77.085a6 6 0 1 0 0 12h77.085a6 6 0 0 0 0-12zM208.6 344.212h-12.822a6 6 0 0 0 0 12H208.6a6 6 0 0 0 0-12zm-34.072 0h-44.5a6 6 0 1 0 0 12h44.5a6 6 0 1 0 0-12z"
+                                                      fill="#6366f1" class="color000 svgShape !fill-primary"></path>
+                                                    <path
+                                                      d="m466.126 325.3-.015-.1a15.948 15.948 0 0 0-15.832-13.54h-57.7l-4.763-34.168-.014-.1a17.869 17.869 0 0 0-17.737-15.17h-13v-12.181a45.478 45.478 0 0 0-55.465-44.4V172.59h68.331a6 6 0 0 0 6-6V68.666A43.217 43.217 0 0 0 334.8 25.552V25.5H75.761a48.722 48.722 0 0 0-48.667 48.667V419.5a6 6 0 0 0 9.748 4.686l29.07-23.253 29.069 23.253a6 6 0 0 0 7.5 0l29.065-23.251 29.063 23.251a6 6 0 0 0 7.5 0l29.064-23.251 18.815 15.052-3.018 21.654a6.043 6.043 0 0 0-.058.828 29.942 29.942 0 0 0 29.908 29.908h75.927a26.1 26.1 0 0 0 24.809 18.123h115.3a26.081 26.081 0 0 0 26.052-26.052 6.042 6.042 0 0 0-.057-.828Zm-121.067-75.259v12.174h-67.018v-12.174a33.509 33.509 0 0 1 67.018 0Zm18.866-181.375v91.924h-62.331V68.666a31.166 31.166 0 1 1 62.331 0Zm-163.01 319.9a6 6 0 0 0-7.5 0l-29.065 23.251-29.063-23.251a6 6 0 0 0-7.5 0l-29.058 23.25-29.069-23.252a6 6 0 0 0-7.5 0l-23.07 18.454V74.167A36.709 36.709 0 0 1 75.761 37.5h227.178a43.036 43.036 0 0 0-13.345 31.166V210.2a45.537 45.537 0 0 0-23.553 39.846v12.174h-13a17.869 17.869 0 0 0-17.737 15.17l-.015.1-17.38 124.67Zm24 50.29 22.253-159.65a5.926 5.926 0 0 1 5.875-4.99h13v20.076a6 6 0 0 0 12 0v-20.077h67.018v20.076a6 6 0 0 0 12 0v-20.076h13a5.926 5.926 0 0 1 5.875 4.989l4.523 32.451h-28.328A15.948 15.948 0 0 0 336.3 325.2l-.015.1-18.27 131.078h-75.2a17.928 17.928 0 0 1-17.905-17.523ZM458.854 474.5h-115.3a14.069 14.069 0 0 1-14.047-13.672l18.653-133.811a4.006 4.006 0 0 1 3.971-3.362h98.148a4.006 4.006 0 0 1 3.971 3.362l18.65 133.811a14.069 14.069 0 0 1-14.046 13.672Z"
+                                                      fill="#6366f1" class="color000 svgShape !fill-primary"></path>
+                                                    <path
+                                                      d="M434.342 335.6a6 6 0 0 0-6 6v19.182a27.137 27.137 0 0 1-54.274 0V341.6a6 6 0 0 0-12 0v19.182a39.137 39.137 0 0 0 78.274 0V341.6a6 6 0 0 0-6-6zM102 310.021h.065a6 6 0 0 0 .064-12l-28.294-.3L62.5 297.6h-.065a6 6 0 0 0-.064 12l11.341.122a11 11 0 0 1 9.161 5.105l-20.556-.22h-.065a6 6 0 0 0-.063 12l20.566.221a11 11 0 0 1-9.278 4.907l-11.342-.122h-.065a6 6 0 0 0-4.17 10.31l28.059 27.091a6 6 0 0 0 8.335-8.633l-17.479-16.874a22.972 22.972 0 0 0 18.906-16.546l6.1.065h.066a6 6 0 0 0 .063-12l-6.087-.065a22.817 22.817 0 0 0-1.957-5.028z"
+                                                      fill="#6366f1" class="color000 svgShape !fill-primary"></path>
+                                                  </svg></g>
+                                              </svg>
+                                                <div>
+                                                    <span class="fw-semibold truncate">Secured Payments</span>
+                                                    <p class="mb-0">Make Payments easily and securily</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 border-end">
+                                    <div class="card custom-card border-0 mb-0">
+                                        <div class="card-body">
+                                            <div class="d-flex">
+                                                <svg class="product-svg my-auto" id="SvgjsSvg1014" xmlns="http://www.w3.org/2000/svg"
+                                                version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" >
+                                                <defs id="SvgjsDefs1015"></defs>
+                                                <g id="SvgjsG1016"><svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"
+                                                    viewBox="0 0 128 128">
+                                                    <path
+                                                      d="M53.91024 99.66314L36.999 122.13726l-.14745-12.93677a1.94223 1.94223 0 0 0-.75973-1.51221 2.03942 2.03942 0 0 0-1.67961-.37329l-14.68137 3.23444L33.98545 94.5136A25.4139 25.4139 0 0 1 32.69925 90L14.69479 110.25543a2.90162 2.90162 0 0 0-.31053 3.31372 3.009 3.009 0 0 0 2.995 1.49689 1.84633 1.84633 0 0 0 .19335-.03247L32.879 111.6607l.15527 13.50671a2.93332 2.93332 0 0 0 2.06735 2.68268 3.03615 3.03615 0 0 0 3.33-1.02057l18.32513-24.35065A18.70661 18.70661 0 0 1 53.91024 99.66314zM102.49034 102.58l-3.26762-.00427H97.18863l7.08825 7.97375L89.5946 107.315a2.032 2.032 0 0 0-1.67968.37329 1.94223 1.94223 0 0 0-.75973 1.51221l-.14648 12.9339L70.51187 100.21368a15.30967 15.30967 0 0 1-2.93408 2.69885l18.04908 23.98A3.005 3.005 0 0 0 87.95984 128a3.08023 3.08023 0 0 0 .94338-.14893 2.954 2.954 0 0 0 2.0712-2.7428l.15331-13.44659 15.30634 3.37189a1.84632 1.84632 0 0 0 .19335.03247 3.00161 3.00161 0 0 0 2.996-1.49786 2.9181 2.9181 0 0 0-.34862-3.35571zM62.00229 20.99969A28.99954 28.99954 0 1 0 91.001 50.00024 29.03275 29.03275 0 0 0 62.00229 20.99969zm0 53.99915A24.9996 24.9996 0 1 1 87.0012 50.00024 25.02721 25.02721 0 0 1 62.00229 74.99883z"
+                                                      fill="#6366f1" class="color000 svgShape !fill-primary"></path>
+                                                    <path
+                                                      d="M75.281,45.18585l-7.95083-1.12109-3.54477-6.97156a2.00038,2.00038,0,0,0-3.56625,0L56.6744,44.06475l-7.95083,1.12109a2.00012,2.00012,0,0,0-1.09468,3.43353l5.71655,5.40912-1.34662,7.62292a2.00024,2.00024,0,0,0,2.87878,2.12885l7.12469-3.63568L69.127,63.78027a2.00024,2.00024,0,0,0,2.87878-2.12885L70.65914,54.0285l5.71655-5.40912A2.00012,2.00012,0,0,0,75.281,45.18585Zm-8.153,6.67664a1.99759,1.99759,0,0,0-.59568,1.80078l.8359,4.72943-4.45684-2.27441a1.9986,1.9986,0,0,0-1.81828,0l-4.45684,2.27441.8359-4.72943a1.99759,1.99759,0,0,0-.59568-1.80078l-3.48325-3.29584,4.87088-.68652A1.99977,1.99977,0,0,0,59.768,46.806l2.23428-4.39447L64.23657,46.806a1.99977,1.99977,0,0,0,1.50384,1.07416l4.87088.68652Z"
+                                                      fill="#6366f1" class="color000 svgShape !fill-primary"></path>
+                                                    <path
+                                                      d="M72.16884,91.71636c.753-.17682,2.4272.59741,3.8329,1.29138V88.59948a7.799,7.799,0,0,0-4.74107-.77954c-2.2792.53223-3.91292,2.71869-5.49292,4.83392-.99214,1.32806-2.49208,3.33588-3.29087,3.34467H62.473c-.791,0-2.38466-2.042-3.33677-3.26263-1.62786-2.08594-3.31138-4.2431-5.61011-4.73041a4.84557,4.84557,0,0,0-1.01363-.10352c-1.953,0-3.9969,1.06934-5.98314,2.10931-1.50482.78906-3.783,1.97852-4.53691,1.62988-.6572-.30176-1.17475-2.7724-1.48431-4.249-.54685-2.60834-1.11226-5.30652-3.01354-6.75867-1.88761-1.44238-4.67948-1.32812-7.3864-1.2168-1.45111.06152-4.15509.1709-4.62187-.38672-.4951-.5957.15234-3.10736.54-4.60931.65232-2.52826,1.32611-5.14343.29-7.20593-1.04976-2.079-3.59457-3.15521-6.05638-4.19525-1.3476-.56927-3.8553-1.62982-4.0301-2.34467-.17284-.71191,1.57415-2.76166,2.51259-3.86224,1.71868-2.01752,3.49594-4.10345,3.4725-6.42957-.02637-2.31055-1.84172-4.3515-3.59848-6.32611-.96675-1.08588-2.76648-3.10931-2.60633-3.83588.15527-.69922,2.62489-1.79974,3.952-2.39056,2.45009-1.0918,4.98416-2.2207,5.99974-4.33295.9941-2.06244.2705-4.65326-.42869-7.15906-.4199-1.502-1.122-4.01654-.625-4.64056.51951-.65039,3.21666-.59277,4.82889-.55469,2.63465.05957,5.35035.11719,7.12664-1.30078,1.85051-1.47552,2.35927-4.16589,2.85144-6.76746.28319-1.49408.75583-3.996,1.4267-4.31927.73044-.35352,3.10924.832,4.53008,1.542,2.36806,1.18262,4.81131,2.40424,7.07391,1.87885,2.27724-.53119,3.91-2.71674,5.49-4.83093C59.228,6.01653,60.72891,4.00781,61.52966,4h.00488c.791,0,2.38369,2.041,3.33579,3.26263,1.62688,2.0849,3.30943,4.24213,5.60815,4.73035,2.2626.48047,4.66581-.7851,6.99872-2.00775,1.50482-.78809,3.77327-1.97357,4.533-1.63184.65915.30371,1.17671,2.77637,1.48724,4.25385.54685,2.60742,1.11128,5.30463,3.01354,6.75873,1.88664,1.43939,4.67753,1.32025,7.38249,1.21381,1.45306-.0625,4.15509-.17187,4.62285.3877.497.59473-.15136,3.10834-.53806,4.60931-.65232,2.52826-1.32611,5.14349-.289,7.204,1.04878,2.0791,3.59457,3.15619,6.05735,4.1972,1.34662.56934,3.85432,1.62988,4.02814,2.34271.17284.71094-1.57415,2.76172-2.51259,3.86224-1.71868,2.01758-3.49594,4.10345-3.47153,6.4267.02539,2.31342,1.84269,4.35638,3.59945,6.33093.96578,1.08594,2.76453,3.10736,2.6034,3.83392-.15429.70117-2.62586,1.80273-3.95393,2.39355-.30919.13782-.6196.27631-.92824.41724.26714.09418.53367.19092.79379.30743a10.03377,10.03377,0,0,1,3.22252,2.26093c2.25094-1.06488,4.28613-2.31586,4.77195-4.51489.60251-2.72162-1.49408-5.07806-3.52133-7.35632-1.08882-1.22363-2.579-2.89935-2.58778-3.71576-.00879-.82617,1.45013-2.538,2.51649-3.789,1.97159-2.31348,4.00959-4.706,3.35435-7.4032-.65036-2.668-3.5516-3.89447-6.35714-5.081-1.5429-.65234-3.65609-1.5459-4.04377-2.31244-.36034-.7168.18944-2.84863.59079-4.40521.72555-2.8125,1.54681-5.99994-.26268-8.17078-1.72942-2.07422-4.84647-1.94531-7.86-1.82227-1.71282.07031-4.05256.166-4.78885-.39551-.72067-.55072-1.18745-2.77631-1.52825-4.40125C86.801,8.87585,86.17019,5.86614,83.682,4.71966c-2.54383-1.166-5.34742.30078-8.0602,1.72168-1.46576.76758-3.47348,1.81927-4.31231,1.63959-.873-.18549-2.26748-1.97357-3.286-3.27924C66.17106,2.42675,64.261-.01264,61.48864.00006c-2.78015.0293-4.64921,2.53119-6.45773,4.952-.98629,1.32031-2.33779,3.12885-3.19322,3.329-.85153.19336-2.89148-.82025-4.37969-1.56244-2.73035-1.36328-5.55445-2.77338-8.05531-1.56543-2.48622,1.2002-3.06139,4.2392-3.617,7.17859-.30663,1.61816-.72555,3.83295-1.41693,4.38373-.6445.51465-2.89831.46484-4.54375.42871-3.08971-.06738-6.28976-.13867-8.04359,2.05957-1.77336,2.2226-.88473,5.40417-.10058,8.21082.40526,1.45013,1.01753,3.64252.67673,4.34851-.37987.79-2.48524,1.72852-4.02326,2.41309-2.77136,1.23529-5.63745,2.51166-6.22922,5.17957-.60251,2.72363,1.49505,5.081,3.52328,7.36029,1.08784,1.2226,2.578,2.8974,2.5868,3.7099.00879.82806-1.45111,2.541-2.51747,3.79193-1.97159,2.31342-4.00959,4.70593-3.35435,7.4032.65134,2.66986,3.55356,3.89642,6.36007,5.08289,1.54192.65137,3.65414,1.54492,4.04084,2.31055.36034.7168-.18944,2.85052-.59079,4.40717-.72555,2.81146-1.54778,5.9989.26171,8.17078,1.73137,2.0722,4.84744,1.9433,7.85806,1.82123,1.70989-.07031,4.05353-.168,4.79276.39844.72067.5498,1.18647,2.77533,1.52728,4.40033.61032,2.9101,1.24018,5.91882,3.72738,7.06238,2.54383,1.1748,5.34938-.29785,8.0641-1.71967,1.46283-.7666,3.4686-1.81836,4.31134-1.6377.872.18555,2.26748,1.97357,3.287,3.27924,1.84172,2.36133,3.74691,4.8017,6.489,4.8017h.04687c2.7782-.03027,4.64628-2.53217,6.45382-4.95111C69.96,93.72613,71.31244,91.91558,72.16884,91.71636Z"
+                                                      fill="#6366f1" class="color000 svgShape !fill-primary"></path>
+                                                    <path
+                                                      d="M115.22324,84.58056a5.60744,5.60744,0,0,0-5.074-8.44965l-3.52652-.00287a7.5752,7.5752,0,0,0,.11071-1.69342c-.18871-1.71136-.68619-6.22174-4.44542-7.88336a6.18128,6.18128,0,0,0-2.53151-.55225q-.144,0-.28783.0072a6.004,6.004,0,0,0-3.442,1.33276,6.53012,6.53012,0,0,0-2.20645,5.81995c.00738.14569.01648.29059.01648.432v.49341c-.52274,1.06165-2.03049,3.42163-2.562,4.25336l-.02673.04193c-.30815.09192-.659.19452-1.01967.29883a3.97691,3.97691,0,0,0-2.2272-.67963H84.00133a4.00382,4.00382,0,0,0-3.99983,3.99994V93.99853a4.00382,4.00382,0,0,0,3.99983,3.99994h3.99983a3.96114,3.96114,0,0,0,2.53383-.93054c.073.0011.14227.00488.21728.00488.35143,0,.76925-.01251,1.18879-.02594.20336-.00647.40733-.01331.59989-.01764a6.76032,6.76032,0,0,0,1.83159.82379,4.0015,4.0015,0,0,0,1.03108.137l12.00314.0033a5.80986,5.80986,0,0,0,5.84874-5.75677c0-.03119-.00024-.06207-.00073-.09308a5.67142,5.67142,0,0,0,1.14607-3.42084c0-.16193-.00714-.32074-.02057-.47583a5.654,5.654,0,0,0,.88192-3.03613A5.111,5.111,0,0,0,115.22324,84.58056Zm-27.22208,9.418H84.00133V81.99877h3.99983Zm22.14808-10.5246s1.11311.85413,1.11311,1.73669a1.80642,1.80642,0,0,1-1.85295,1.75671,2.74184,2.74184,0,0,1,.9916,1.75525,1.80538,1.80538,0,0,1-1.84758,1.759,3.06474,3.06474,0,0,1,.70224,1.75488,1.80328,1.80328,0,0,1-1.84892,1.75684L95.41026,93.99c-.6445-.1731-1.11976-.68451-1.7368-.90259a2.998,2.998,0,0,0-.78134-.06262c-.26793,0-.57761.00885-.89114.01862V82.32818a14.83735,14.83735,0,0,0,1.888-.6192c.23766-.50226,3.94758-5.93549,3.94758-7.00708v-1.111c0-1.0957-.3001-2.33557.67539-3.11786a2.03882,2.03882,0,0,1,1.15675-.47192q.04394-.0022.08783-.0022a2.26188,2.26188,0,0,1,.91451.21082c1.57232.69495,1.92612,3.20734,2.08524,4.65a23.82308,23.82308,0,0,1-1.28968,5.264l8.68267.00714a1.66944,1.66944,0,0,1,1.85093,1.585A1.8057,1.8057,0,0,1,110.14924,83.47393Z"
+                                                      fill="#6366f1" class="color000 svgShape !fill-primary"></path>
+                                                  </svg></g>
+                                              </svg>
+                                                <div>
+                                                    <span class="fw-semibold truncate fs-14 op-9">High Quality Products</span>
+                                                    <p class="mb-0">Make Payments easily and securily</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 border-end">
+                                    <div class="card custom-card border-0 mb-0">
+                                        <div class="card-body">
+                                            <div class="d-flex">
+                                                <svg class="product-svg my-auto" id="SvgjsSvg1012" xmlns="http://www.w3.org/2000/svg"
+                                                    version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" >
+                                                    <defs id="SvgjsDefs1013"></defs>
+                                                    <g id="SvgjsG1014"><svg xmlns="http://www.w3.org/2000/svg" id="svg6485" version="1.1"
+                                                        viewBox="0 0 32 32">
+                                                        <g id="layer1" transform="translate(0 -1020.362)" fill="#6366f1"
+                                                            class="color000 svgShape !fill-primary">
+                                                            <path
+                                                            style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;;isolation:auto;mix-blend-mode:normal"
+                                                            id="path12487" fill="#6366f1" fill-opacity="1" fill-rule="nonzero" stroke="none"
+                                                            stroke-dasharray="none" stroke-dashoffset="0" stroke-linecap="round"
+                                                            stroke-linejoin="round" stroke-miterlimit="4" stroke-opacity="1" stroke-width="1"
+                                                            d="M4.975 1027.362c-1.1 0-2 .9-2 2v7.5a.5.5 0 1 0 1 0v-7.5c0-.563.437-1 1-1h15c.563 0 1 .437 1 1v10c0 .563-.437 1-1 1h-6.5a.5.5 0 1 0 0 1h6.5c1.1 0 2-.9 2-2v-8h4.19c.417 0 .634.123.841.33.164.164.302.406.434.67h-3.932a.5.5 0 1 0 0 1H24v3.66c0 .735.608 1.34 1.342 1.34H30v1.5h-.8a.5.5 0 1 0 0 1h.8v.5c0 .563-.437 1-1 1h-2a2.758 2.758 0 0 0-2.75-2.75 2.758 2.758 0 0 0-2.75 2.75h-9a2.758 2.758 0 0 0-2.75-2.75 2.758 2.758 0 0 0-2.75 2.75H4.5a.488.488 0 0 1-.5-.5v-.5h1.493a.5.5 0 1 0 0-1H1.5a.5.5 0 1 0 0 1H3v.5c0 .823.678 1.5 1.5 1.5h2.696a2.757 2.757 0 0 0 2.554 1.75c1.16 0 2.152-.73 2.555-1.75h9.39a2.757 2.757 0 0 0 2.555 1.75c1.16 0 2.152-.73 2.555-1.75H29c1.1 0 2-.9 2-2v-.922a.5.5 0 0 0 0-.16v-2.418a.5.5 0 0 0-.045-.205l-2.5-5.502c-.172-.38-.382-.81-.742-1.17a2.165 2.165 0 0 0-1.549-.623h-4.189v-1c0-1.1-.9-2-2-2h-15zm10.502 4.084a.5.5 0 0 0-.344.15l-3.656 3.622-1.656-1.658a.5.5 0 1 0-.71.707l2.01 2.01a.5.5 0 0 0 .707 0l4.008-3.971a.5.5 0 0 0-.36-.862zm9.523 1.916h2.907l1.816 4h-4.38a.329.329 0 0 1-.343-.34v-3.66zm-22.55 5a.5.5 0 0 0 .05 1h4a.5.5 0 1 0 0-1h-4a.5.5 0 0 0-.05 0zm7.3 2.25c.973 0 1.75.778 1.75 1.75 0 .973-.777 1.75-1.75 1.75-.972 0-1.75-.777-1.75-1.75 0-.972.778-1.75 1.75-1.75zm14.5 0c.973 0 1.75.778 1.75 1.75 0 .973-.777 1.75-1.75 1.75-.972 0-1.75-.777-1.75-1.75 0-.972.778-1.75 1.75-1.75zm-14.5 1a.75.75 0 0 0-.75.75.75.75 0 0 0 .75.75.75.75 0 0 0 .75-.75.75.75 0 0 0-.75-.75zm14.5 0a.75.75 0 0 0-.75.75.75.75 0 0 0 .75.75.75.75 0 0 0 .75-.75.75.75 0 0 0-.75-.75z"
+                                                            clip-rule="nonzero" color="#000" color-interpolation="sRGB"
+                                                            color-rendering="auto"
+                                                            display="inline" image-rendering="auto" opacity="1"
+                                                            shape-rendering="auto" text-rendering="auto"
+                                                            visibility="visible"
+                                                            class="color000 svgShape !fill-primary">
+                                                            </path>
+                                                        </g>
+                                                        </svg></g>
+                                                    </svg>
+                                                <div>
+                                                    <span class="fw-semibold truncate  fs-14 op-9">Free Delivery</span>
+                                                    <p class="mb-0">100% free charges on Every Delivery</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3">
+                                    <div class="card custom-card border-0 mb-0">
+                                        <div class="card-body">
+                                            <div class="d-flex">
+                                                <svg class="product-svg my-auto" id="SvgjsSvg1021" xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" >
+                                                <defs id="SvgjsDefs1022"></defs>
+                                                <g id="SvgjsG1023"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                    <path
+                                                      d="M32 61.5c-13.239 0-24.788-8.942-28.086-21.747a1.001 1.001 0 0 1 .72-1.218c.53-.134 1.08.185 1.218.72C8.921 51.175 19.674 59.5 32 59.5c14.888 0 27-12.112 27-27a1 1 0 1 1 2 0c0 15.99-13.01 29-29 29zm-28-29a1 1 0 0 1-1-1c0-15.99 13.01-29 29-29 13.239 0 24.788 8.942 28.086 21.747a1.001 1.001 0 0 1-1.938.498C55.079 12.825 44.326 4.5 32 4.5c-14.888 0-27 12.112-27 27a1 1 0 0 1-1 1z"
+                                                      fill="#6366f1" class="color000 svgShape !fill-primary"></path>
+                                                    <path
+                                                      d="M4 32.5a.997.997 0 0 1-.707-.293l-3-3a.999.999 0 1 1 1.414-1.414l3 3A.999.999 0 0 1 4 32.5z"
+                                                      fill="#6366f1" class="color000 svgShape !fill-primary"></path>
+                                                    <path
+                                                      d="M4 32.5a.999.999 0 0 1-.707-1.707l3-3a.999.999 0 1 1 1.414 1.414l-3 3A.997.997 0 0 1 4 32.5zm59 3a.997.997 0 0 1-.707-.293l-3-3a.999.999 0 1 1 1.414-1.414l3 3A.999.999 0 0 1 63 35.5z"
+                                                      fill="#6366f1" class="color000 svgShape !fill-primary"></path>
+                                                    <path
+                                                      d="M57 35.5a.999.999 0 0 1-.707-1.707l3-3a.999.999 0 1 1 1.414 1.414l-3 3A.997.997 0 0 1 57 35.5zM13.998 54.945a1 1 0 0 1-1-1V28.49a1 1 0 1 1 2 0v25.455a1 1 0 0 1-1 1zm36.004.002a1 1 0 0 1-1-1V28.49a1 1 0 1 1 2 0v25.457a1 1 0 0 1-1 1z"
+                                                      fill="#6366f1" class="color000 svgShape !fill-primary"></path>
+                                                    <path d="M50.002 29.49H13.998a1 1 0 1 1 0-2h36.004a1 1 0 1 1 0 2z" fill="#6366f1"
+                                                      class="color000 svgShape !fill-primary"></path>
+                                                    <path
+                                                      d="M13.997 29.49a1 1 0 0 1-.857-1.515l3-5.002a1 1 0 0 1 1.715 1.029l-3 5.002a.997.997 0 0 1-.858.486zm36.006 0a.998.998 0 0 1-.858-.485l-3-5.002a1 1 0 1 1 1.715-1.029l3 5.002a1 1 0 0 1-.857 1.514z"
+                                                      fill="#6366f1" class="color000 svgShape !fill-primary"></path>
+                                                    <path d="M47.002 24.488H16.998a1 1 0 1 1 0-2h30.004a1 1 0 1 1 0 2z" fill="#6366f1"
+                                                      class="color000 svgShape !fill-primary"></path>
+                                                    <path
+                                                      d="M27.999 29.49a1 1 0 0 1-.981-1.197l1-5.002a.993.993 0 0 1 1.177-.784 1 1 0 0 1 .784 1.177l-1 5.002a1 1 0 0 1-.98.804zm8 0a.998.998 0 0 1-.979-.804l-1-5.002a1 1 0 0 1 1.961-.393l1 5.002a1 1 0 0 1-.982 1.197z"
+                                                      fill="#6366f1" class="color000 svgShape !fill-primary"></path>
+                                                    <path
+                                                      d="M27.998 35.49a1 1 0 0 1-1-1v-6a1 1 0 1 1 2 0v6a1 1 0 0 1-1 1zm8.002 0a1 1 0 0 1-1-1v-6a1 1 0 1 1 2 0v6a1 1 0 0 1-1 1z"
+                                                      fill="#6366f1" class="color000 svgShape !fill-primary"></path>
+                                                    <path
+                                                      d="M36.001 35.49c-.08 0-.162-.01-.243-.03l-4-1a1 1 0 0 1 .484-1.94l4 1a1 1 0 0 1-.241 1.97z"
+                                                      fill="#6366f1" class="color000 svgShape !fill-primary"></path>
+                                                    <path
+                                                      d="M27.997 35.49a1 1 0 0 1-.241-1.97l4.002-1a.997.997 0 0 1 1.212.728.998.998 0 0 1-.728 1.212l-4.002 1c-.081.02-.163.03-.243.03zm13.007 12.002H22.996a1 1 0 1 1 0-2h18.008a1 1 0 1 1 0 2zm0-3.992H22.996a1 1 0 1 1 0-2h18.008a1 1 0 1 1 0 2zm-5.002 7.994h-8.004a1 1 0 1 1 0-2h8.004a1 1 0 1 1 0 2z"
+                                                      fill="#6366f1" class="color000 svgShape !fill-primary"></path>
+                                                  </svg></g>
+                                              </svg>
+                                                <div>
+                                                    <span class="fw-semibold truncate fs-14 op-9">Free Returns</span>
+                                                    <p class="mb-0">Cash Back offers on every purchase</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!--End::row-1 -->
+
+            </div>
+        </div>
+        <!-- End::app-content -->
+
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="input-group">
+            <a href="javascript:void(0);" class="input-group-text border-0 bg-transparent" id="Search-Grid"><i class="ri ri-search-2-line header-link-icon fs-14"></i></a>
+            <input type="search" class="form-control form-control-sm border-0 px-2" placeholder="Search" aria-label="Username">
+            <a href="javascript:void(0);" class="input-group-text border-0 bg-transparent" id="voice-search"><i class="ri ri-mic-2-line  header-link-icon"></i></a>
+            <a href="javascript:void(0);" class="btn btn-light btn-icon border-0 bg-transparent" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="ri ri-more-2-line"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="javascript:void(0);">Action</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0);">Another action</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0);">Something else here</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="javascript:void(0);">Separated link</a></li>
+            </ul>
+          </div>
+          <div class="mt-4">
+            <p class="fw-semibold text-muted mb-2">Are You Looking For...</p>
+            <span class="search-tags"><i class="ri ri-user-line me-2"></i>Team<a href="javascript:void(0)" class="tag-addon bg-transparent header-remove-btn"><i class="fe fe-x"></i></a></span>
+            <span class="search-tags"><i class="ri ri-file-text-line me-2"></i>Forms<a href="javascript:void(0)" class="tag-addon bg-transparent header-remove-btn"><i class="fe fe-x"></i></a></span>
+            <span class="search-tags"><i class="ri ri-map-pin-line me-2"></i>Maps<a href="javascript:void(0)" class="tag-addon bg-transparent header-remove-btn"><i class="fe fe-x"></i></a></span>
+            <span class="search-tags"><i class="ri ri-server-line me-2"></i>Widgets<a href="javascript:void(0)" class="tag-addon bg-transparent header-remove-btn"><i class="fe fe-x"></i></a></span>
+          </div>
+          <div class="my-4">
+            <p class="fw-semibold text-muted mb-2">Recent Search :</p>
+            <div class="p-2 border br-5 d-flex align-items-center text-muted mb-2 alert">
+              <a href="notifications.html"><span>Notifications</span></a>
+              <a class="ms-auto lh-1" href="javascript:void(0);" data-bs-dismiss="alert" aria-label="Close"><i class="fe fe-x text-muted"></i></a>
+            </div>
+            <div class="p-2 border br-5 d-flex align-items-center text-muted mb-2 alert">
+              <a href="alerts.html"><span>Alerts</span></a>
+              <a class="ms-auto lh-1" href="javascript:void(0);" data-bs-dismiss="alert" aria-label="Close"><i class="fe fe-x text-muted"></i></a>
+            </div>
+            <div class="p-2 border br-5 d-flex align-items-center text-muted mb-0 alert">
+              <a href="mail-inbox.html"><span>Mail</span></a>
+              <a class="ms-auto lh-1" href="javascript:void(0);" data-bs-dismiss="alert" aria-label="Close"><i class="fe fe-x text-muted"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="btn-group ms-auto">
+            <button class="btn btn-sm btn-primary-light">Search</button>
+            <button class="btn btn-sm btn-primary">Clear Recents</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+        <!-- Footer Start -->
+<footer class="footer mt-auto py-3 bg-white text-center">
+    <div class="container">
+        <span class="text-center">Copyright © <span id="year">2023</span>
+             <a href="javascript:void(0)" class="text-primary">Synto</a>.
+              Designed with <span class="ri ri-heart-fill text-danger"></span> by
+             <a class="text-primary" href="javascript:void(0)"> Spruko </a> All rights reserved </span>
+    </div>
+</footer>
+<!-- Footer End -->
+
+    </div>
+
+    
+<!-- Scroll To Top -->
+<div class="scrollToTop">
+    <span class="arrow"><i class="ri-arrow-up-s-fill fs-20"></i></span>
+</div>
+<div id="responsive-overlay"></div>
+<!-- Scroll To Top -->
+
+<!-- Popper JS -->
+<script src="../assets/libs/@popperjs/core/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Defaultmenu JS -->
+<script src="../assets/js/defaultmenu.min.js"></script>
+
+<!-- Node Waves JS-->
+<script src="../assets/libs/node-waves/waves.min.js"></script>
+
+<!-- Sticky JS -->
+<script src="../assets/js/sticky.js"></script>
+
+<!-- Simplebar JS -->
+<script src="../assets/libs/simplebar/simplebar.min.js"></script>
+<script src="../assets/js/simplebar.js"></script>
+
+<!-- Color Picker JS -->
+<script src="../assets/libs/@simonwep/pickr/pickr.es5.min.js"></script>
+
+
+    
+<!-- Custom-Switcher JS -->
+<script src="../assets/js/custom-switcher.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="../assets/libs/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Internal product-details JS -->
+    <script src="../assets/js/product-details.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../assets/js/custom.js"></script>
+
+</body>
+
+</html>

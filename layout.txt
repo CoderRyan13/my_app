@@ -1,0 +1,258 @@
+@extends ('layouts.app')
+
+@section ('title') SBM | @stop
+
+@section ('style_includes')
+@stop
+
+@section ('styles')
+@stop
+
+@section ('content')
+<div class="col-xl-12">
+    
+</div>
+@stop
+
+@section ('script_includes')
+@stop
+
+@section ('scripts')
+				
+<script>
+
+</script>
+
+@stop
+
+
+
+SEND VALUES
+	$('.add-customer-data').prop({name: data.name, phone: data.phone, address: data.address});
+
+
+DATE PICKER
+    <div class="input-group mb-2">
+        <div class="input-group-text text-muted"> <i class="ri-calendar-line"></i> </div>
+        <input type="text" id="date" name="start" class="form-control to_date" placeholder="Choose a Start Date:"  value='{{$val_start_date}}'/>
+    </div>
+
+
+DROP DOWN CARD 
+    <div class="card custom-card">
+        <div class="card-header justify-content-between border-bottom-0">
+            <div class="fs-5 text-green">
+                Item Info
+            </div>
+            <a href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#collapseCard1" aria-expanded="false" aria-controls="collapseCard1">
+                <i class="ri-arrow-down-s-line fs-18 collapse-open"></i>
+                <i class="ri-arrow-up-s-line collapse-close fs-18"></i>
+            </a>
+        </div>
+        <div class="collapse show border-top" id="collapseCard1">
+            <div class='row my-3'>
+                
+            </div>
+        </div>
+    </div>
+
+MODAL
+    <div class="row">
+        <button type="button" class="btn btn-primary mb-2 w-25 open-modal" data-bs-toggle="modal" data-bs-target="#openModal">Open Modal</button>
+        <div class="modal fade" id="openModal" tabindex="-1"	aria-labelledby="openModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h6 class="modal-title" id="openModalLabel1">#</h6>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">#</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	$('.open-modal').trigger('click');
+	$('.modal-title').html(`Select New Owner`);
+	$('.modal-body').html(`
+		<div class="row">
+			<select class="change_ownership_clients_search form-control" id="change_ownership_customer" name="customer" data-placeholder="Enter Customer Name"></select>
+		</div>
+		<div class="text-end mt-3">
+			<button type="button" class="btn btn-secondary me-2" data-bs-dismiss="modal">Cancel</button>
+			<button type="button" class="btn btn-primary add-attachment">Add</button>
+		</div>
+	`);
+	$('.add-attachment').prop({name: name});
+
+	$('.btn-close').trigger('click');
+	let name = this.name;
+
+ALERT/CONFIRM
+    Swal.fire({
+        title: 'Are you sure you want to publish this memo?',
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes!'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            
+        }
+    });
+
+TIMER POP UP 
+	Swal.fire({ title: '<i class="ti ti-loader"></i> Retrieving data...', timer: 2000, timerProgressBar: true,}).then((result) => {});
+
+POPUP ALERT
+	display_alert ('Copy Permission Type', 'Permission Type Copied Successfully', 1); -> 0 - Danger, 1 - Success
+
+TABS
+    <div class="card custom-card">
+		<div class="card-header">
+			<div class="card-title fs-5">
+				Dashboard
+			</div>
+		</div>
+		<div class="card-body">
+			<div class="sticky-div">
+				<ul class="nav nav-pills justify-content-center nav-style-2 mb-3" role="tablist">
+					<li class="nav-item">
+						<a class="nav-link active" data-bs-toggle="tab" role="tab" aria-current="page"
+						href="#blog-memo" aria-selected="true"><i class="fs-5 ti ti-message-circle me-1"></i>Memos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" data-bs-toggle="tab" role="tab" aria-current="page"
+						href="#phone-extensions" aria-selected="false"><i class="fs-5 ti ti-phone-call me-1"></i>Phone Extensions</a>
+					</li>
+				</ul>
+			</div>
+			<div class="tab-content">
+				<div class="tab-pane show active text-muted" id="blog-memo" role="tabpanel">
+					<h6 class="widget-title searchBar"></h6>
+					<div class="card-body">
+						<ul class="nav nav-tabs tab-style-1 d-sm-flex d-block" role="tablist">
+							<li class="nav-item memos">
+								<a class="nav-link active" data-bs-toggle="tab" data-bs-target="#memo_announcements"
+									aria-current="page" href="#memo_announcements">Announcements</a>
+							</li>
+							<li class="nav-item memos">
+								<a class="nav-link" data-bs-toggle="tab" data-bs-target="#memo_general"
+									href="#memo_general">Memo History</a>
+							</li>
+							<li class="nav-item memos_search d-none">
+								<a class="nav-link search_link" data-bs-toggle="tab" data-bs-target="#memo_search"
+									href="#memo_search">Search Results</a>
+							</li>
+							<li>
+								<input id="filter_memo" class="form-control form-control-sm" type="text" placeholder="Search Here" aria-label=" example">
+							</li>
+						</ul>
+						<div class="tab-content">
+							<div class="tab-pane active" id="memo_announcements" role="tabpanel">Announcements</div>
+							<div class="tab-pane" id="memo_general" role="tabpanel">Memo History</div>
+							<div class="tab-pane" id="memo_search" role="tabpanel"></div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane text-muted" id="phone-extensions" role="tabpanel">
+					Phone extensions content
+				</div>
+			</div>
+		</div>
+	</div>
+
+REPLACE PROMPT
+	let result = prompt(`Making a copy of " ${name} " \nEnter new permission name`);
+
+	if(result != null) {
+		$.ajax({
+			type		: 'POST'
+			, data		: {'id':id, 'name':result}
+			, url		: "{{url ('/')}}/admin/copy_perm_type"
+			, dataType	: 'text'
+			, success	: function (data) {
+				window.location.assign ('');
+				display_alert ('Copy Permission Type', 'Permission Type Copied Successfully', 1);
+			}
+			, error		: function (request, status, error) {
+				console.log (request.status, request.responseText);
+			}
+			, async		: false
+		});
+	};
+
+CUSTOM SWITCH
+	<div class="form-group col-xl-4 d-flex">
+		<label class='switch mb-2'>
+			<input checked="checked" id="add_coupons" type="checkbox">
+			<span class="slider round"></span>
+		</label>
+		<div class="ms-2">COUPONS</div>
+	</div>
+
+	<style>
+		.switch {
+		position: relative;
+		display: inline-block;
+		width: 46px;
+		height: 16px;
+		}
+
+
+		.switch input {
+		opacity: 0;
+		width: 0;
+		height: 0;
+		}
+
+
+		.slider {
+		position: absolute;
+		cursor: pointer;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: #ccc;
+		-webkit-transition: .4s;
+		transition: .4s;
+		}
+
+		.slider:before {
+		position: absolute;
+		content: "";
+		height: 24px;
+		width: 24px;
+		left: -2px;
+		bottom: -4px;
+		background-color: white;
+		-webkit-transition: .4s;
+		transition: .4s;
+		}
+
+		input:checked + .slider {
+		background-color: #22C55E;
+		}
+
+		input:focus + .slider {
+		box-shadow: 0 0 1px #22C55E;
+		}
+
+		input:checked + .slider:before {
+		-webkit-transform: translateX(26px);
+		-ms-transform: translateX(26px);
+		transform: translateX(26px);
+		}
+
+
+		.slider.round {
+		border-radius: 34px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
+
+		.slider.round:before {
+		border-radius: 50%;
+		}
+	</style>

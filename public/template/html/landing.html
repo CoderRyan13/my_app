@@ -1,0 +1,1809 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-nav-layout="horizontal" data-nav-style="menu-click" data-menu-position="fixed" data-theme-mode="light">
+
+<head>
+
+    <!-- Meta Data -->
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> synto - Bootstrap 5 Premium Admin & Dashboard Template </title>
+    <meta name="Description" content="Bootstrap Responsive Admin Web Dashboard HTML5 Template">
+    <meta name="Author" content="Spruko Technologies Private Limited">
+
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/img/brand-logos/favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap Css -->
+    <link id="style" href="../assets/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" >
+
+    <!-- Style Css -->
+    <link href="../assets/css/styles.css" rel="stylesheet" >
+
+    <!-- Icons Css -->
+    <link href="../assets/css/icons.css" rel="stylesheet" >
+
+    <!-- Node Waves Css -->
+    <link href="../assets/libs/node-waves/waves.min.css" rel="stylesheet" >
+
+    <!-- SwiperJS Css -->
+    <link rel="stylesheet" href="../assets/libs/swiper/swiper-bundle.min.css">
+
+    <!-- Color Picker Css -->
+    <link rel="stylesheet" href="../assets/libs/flatpickr/flatpickr.min.css">
+    <link rel="stylesheet" href="../assets/libs/@simonwep/pickr/themes/nano.min.css">
+
+    <!-- Choices Css -->
+    <link rel="stylesheet" href="../assets/libs/choices.js/public/assets/styles/choices.min.css">
+
+    <script>
+        if(localStorage.syntolandingdarktheme){
+            document.querySelector("html").setAttribute("data-theme-mode","dark")
+        }
+        if(localStorage.syntolandingrtl){
+            document.querySelector("html").setAttribute("dir","rtl")
+            document.querySelector("#style")?.setAttribute("href", "../assets/libs/bootstrap/css/bootstrap.rtl.min.css");
+        }
+    </script>
+
+
+</head>
+
+<body class="landing-body">
+
+    <!-- Start Switcher -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="switcher-canvas" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header border-bottom">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Switcher</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="">
+                <p class="switcher-style-head">Theme Color Mode:</p>
+                <div class="row switcher-style">
+                    <div class="col-4">
+                        <div class="form-check switch-select">
+                            <label class="form-check-label" for="switcher-light-theme">
+                                Light
+                            </label>
+                            <input class="form-check-input" type="radio" name="theme-style" id="switcher-light-theme"
+                                checked>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-check switch-select">
+                            <label class="form-check-label" for="switcher-dark-theme">
+                                Dark
+                            </label>
+                            <input class="form-check-input" type="radio" name="theme-style" id="switcher-dark-theme">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <p class="switcher-style-head">Directions:</p>
+                <div class="row switcher-style">
+                    <div class="col-4">
+                        <div class="form-check switch-select">
+                            <label class="form-check-label" for="switcher-ltr">
+                                LTR
+                            </label>
+                            <input class="form-check-input" type="radio" name="direction" id="switcher-ltr" checked>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-check switch-select">
+                            <label class="form-check-label" for="switcher-rtl">
+                                RTL
+                            </label>
+                            <input class="form-check-input" type="radio" name="direction" id="switcher-rtl">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="theme-colors">
+                <p class="switcher-style-head">Theme Primary:</p>
+                <div class="d-flex align-items-center switcher-style">
+                    <div class="form-check switch-select me-3">
+                        <input class="form-check-input color-input color-primary-1" type="radio"
+                            name="theme-primary" id="switcher-primary">
+                    </div>
+                    <div class="form-check switch-select me-3">
+                        <input class="form-check-input color-input color-primary-2" type="radio"
+                            name="theme-primary" id="switcher-primary1">
+                    </div>
+                    <div class="form-check switch-select me-3">
+                        <input class="form-check-input color-input color-primary-3" type="radio" name="theme-primary"
+                            id="switcher-primary2">
+                    </div>
+                    <div class="form-check switch-select me-3">
+                        <input class="form-check-input color-input color-primary-4" type="radio" name="theme-primary"
+                            id="switcher-primary3">
+                    </div>
+                    <div class="form-check switch-select me-3">
+                        <input class="form-check-input color-input color-primary-5" type="radio" name="theme-primary"
+                            id="switcher-primary4">
+                    </div>
+                    <div class="form-check switch-select me-3 ps-0 mt-1 color-primary-light">
+                        <div class="theme-container-primary"></div>
+                        <div class="pickr-container-primary"></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p class="switcher-style-head">reset:</p>
+                <div class="text-center">
+                    <button id="reset-all" class="btn btn-danger mt-3">Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Switcher -->
+
+    <div class="landing-page-wrapper">
+
+         <!-- app-header -->
+        <header class="app-header">
+
+            <!-- Start::main-header-container -->
+            <div class="main-header-container container-fluid">
+
+                <!-- Start::header-content-left -->
+                <div class="header-content-left">
+
+                    <!-- Start::header-element -->
+                    <div class="header-element">
+                        <div class="horizontal-logo">
+                            <a href="index.html" class="header-logo">
+                                <img src="../assets/img/brand-logos/toggle-logo.png" alt="logo" class="toggle-logo">
+                                <img src="../assets/img/brand-logos/toggle-dark.png" alt="logo" class="toggle-dark">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- End::header-element -->
+
+                    <!-- Start::header-element -->
+                    <div class="header-element">
+                        <!-- Start::header-link -->
+                        <a href="javascript:void(0);" class="sidemenu-toggle header-link" data-bs-toggle="sidebar">
+                            <span class="open-toggle">
+                                <i class="ri-menu-3-line fs-20"></i>
+                            </span>
+                        </a>
+                        <!-- End::header-link -->
+                    </div>
+                    <!-- End::header-element -->
+
+                </div>
+                <!-- End::header-content-left -->
+
+                <!-- Start::header-content-right -->
+                <div class="header-content-right">
+
+                    <!-- Start::header-element -->
+                    <div class="header-element align-items-center">
+                        <!-- Start::header-link|switcher-icon -->
+                        <div class="btn-list d-lg-none d-block">
+                            <a href="signup.html" class="btn btn-primary-light">
+                                Sign Up
+                            </a>
+                            <button class="btn btn-icon btn-success switcher-icon" data-bs-toggle="offcanvas" data-bs-target="#switcher-canvas">
+                                <i class="ri-settings-3-line"></i>
+                            </button>
+                        </div>
+                        <!-- End::header-link|switcher-icon -->
+                    </div>
+                    <!-- End::header-element -->
+
+                </div>
+                <!-- End::header-content-right -->
+
+            </div>
+            <!-- End::main-header-container -->
+
+        </header>
+        <!-- /app-header -->
+
+        <!-- Start::app-sidebar -->
+        <aside class="app-sidebar sticky" id="sidebar">
+
+            <div class="">
+                <!-- Start::main-sidebar -->
+                <div class="main-sidebar">
+
+                    <!-- Start::nav -->
+                    <nav class="main-menu-container nav nav-pills sub-open mx-xl-5">
+                        <div class="landing-logo-container">
+                            <div class="horizontal-logo">
+                                <a href="index.html" class="header-logo">
+                                    <img src="../assets/img/brand-logos/desktop-logo.png" alt="logo" class="desktop-logo">
+                                    <img src="../assets/img/brand-logos/desktop-white.png" alt="logo" class="desktop-white">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slide-left" id="slide-left"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191" width="24" height="24" viewBox="0 0 24 24"> <path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path> </svg></div>
+                        <ul class="main-menu">
+                            <!-- Start::slide -->
+                            <li class="slide">
+                                <a class="side-menu__item" href="#home">
+                                    <span class="side-menu__label">Home</span>
+                                </a>
+                            </li>
+                            <!-- End::slide -->
+                            <!-- Start::slide -->
+                            <li class="slide">
+                                <a href="#services" class="side-menu__item">
+                                    <span class="side-menu__label">Services</span>
+                                </a>
+                            </li>
+                            <!-- End::slide -->
+                            <!-- Start::slide -->
+                            <li class="slide has-sub">
+                                <a href="javascript:void(0);" class="side-menu__item">
+                                    <span class="side-menu__label me-2">More</span>
+                                    <i class="fe fe-chevron-right side-menu__angle op-8"></i>
+                                </a>
+                                <ul class="slide-menu child1">
+                                    <li class="slide">
+                                        <a href="#Mobile" class="side-menu__item">Mobile View</a>
+                                    </li>
+                                    <li class="slide">
+                                        <a href="#our-mission" class="side-menu__item">Responsive</a>
+                                    </li>
+                                    <li class="slide">
+                                        <a href="#features" class="side-menu__item">Features</a>
+                                    </li>
+                                    <li class="slide">
+                                        <a href="#statistics" class="side-menu__item">Statistics</a>
+                                    </li>
+                                    <li class="slide">
+                                        <a href="#testimonials" class="side-menu__item">Testimonials</a>
+                                    </li>
+                                    <li class="slide has-sub">
+                                        <a href="javascript:void(0);" class="side-menu__item">Level-2
+                                            <i class="fe fe-chevron-right side-menu__angle"></i></a>
+                                        <ul class="slide-menu child2">
+                                            <li class="slide">
+                                                <a href="javascript:void(0);" class="side-menu__item">Level-2-1</a>
+                                            </li>
+                                            <li class="slide has-sub">
+                                                <a href="javascript:void(0);" class="side-menu__item">Level-2-2
+                                                    <i class="fe fe-chevron-right side-menu__angle"></i></a>
+                                                <ul class="slide-menu child3">
+                                                    <li class="slide">
+                                                        <a href="javascript:void(0);" class="side-menu__item">Level-2-2-1</a>
+                                                    </li>
+                                                    <li class="slide has-sub">
+                                                        <a href="javascript:void(0);" class="side-menu__item">Level-2-2-2</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- End::slide -->
+                            <!-- Start::slide -->
+                            <li class="slide">
+                                <a href="#pricing" class="side-menu__item">
+                                    <span class="side-menu__label">Pricing</span>
+                                </a>
+                            </li>
+                            <!-- End::slide -->
+                            <!-- Start::slide -->
+                            <li class="slide">
+                                <a href="#team" class="side-menu__item">
+                                    <span class="side-menu__label">Team</span>
+                                </a>
+                            </li>
+                            <!-- End::slide -->
+                            <!-- Start::slide -->
+                            <li class="slide">
+                                <a href="#faq" class="side-menu__item">
+                                    <span class="side-menu__label">Faq's</span>
+                                </a>
+                            </li>
+                            <!-- End::slide -->
+                            <!-- Start::slide -->
+                            <li class="slide">
+                                <a href="#blog" class="side-menu__item">
+                                    <span class="side-menu__label">Blogs</span>
+                                </a>
+                            </li>
+                            <!-- End::slide -->
+                            <!-- Start::slide -->
+                            <li class="slide">
+                                <a href="#contact" class="side-menu__item">
+                                    <span class="side-menu__label">Contact</span>
+                                </a>
+                            </li>
+                            <!-- End::slide --> 
+                            <li class="d-lg-flex d-none">
+                                <span class="btn-list d-lg-flex d-none mt-lg-2 mt-xl-0 mt-0">
+                                    <a href="signup.html" class="btn btn-wave btn-dark">
+                                        Sign Up
+                                    </a>
+                                    <a href="signup.html" class="btn btn-wave btn-primary">
+                                        Get Started
+                                    </a>
+                                    <button class="btn btn-wave btn-icon btn-secondary  switcher-icon" data-bs-toggle="offcanvas" data-bs-target="#switcher-canvas">
+                                        <i class="ri-settings-3-line"></i>
+                                    </button>
+                                </span>
+                            </li>
+                        </ul>
+                        <div class="slide-right" id="slide-right"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191" width="24" height="24" viewBox="0 0 24 24"> <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path> </svg></div>
+                       
+                    </nav>
+                    <!-- End::nav -->
+
+                </div>
+                <!-- End::main-sidebar -->
+            </div>
+
+        </aside>
+        <!-- End::app-sidebar -->
+
+        <!-- Start::app-content -->
+        <div class="main-content landing-main px-0">
+
+            <!-- Start:: Section-1 -->
+            <div class="landing-banner" id="home">
+                <section class="section">
+                    <div class=" main-banner-container pb-lg-0">
+                        <div class="row align-items-center">
+                            <div class="col-xxl-7">
+                                <div class="py-lg-5">
+                                    <h1 class="landing-banner-heading mb-3">Start Building Today With <span class="text-secondary">synto !</span></h1>
+                                    <div class="fs-18 mb-5 text-fixed-white op-7">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga aspernatur labore animi eum consequatur enim, quia delectus architecto,
+                                         quasi rem molestiae autem cumque recusandae ratione saepe quo magni ea eligendi.Fuga aspernaturlabore animi eum consequatur
+                                         enim, quia delectus architecto, quasi rem molestiae autem cumque recusandae ratione saepe quo magni ea eligendi.
+                                    </div>
+                                    <a href="index.html" class="m-1 btn btn-secondary me-1">
+                                        See How it Works
+                                        <i class="ri-arrow-right-line ms-2 align-middle"></i>
+                                    </a>
+                                    <a href="index.html" class="m-1 btn btn-danger">
+                                        Discover More 
+                                        <i class="ri-arrow-right-line ms-2 align-middle"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xxl-5">
+                                <div class="text-end landing-main-image landing-heading-img">
+                                    <img src="../assets/img/landing/banner.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- End:: Section-1 -->
+
+            <!-- Start:: Section-2 -->
+            <section class="section section-bg " id="services">
+                <div class="text-center position-relative">
+                    <h3 class="fw-bold fs-36 mb-2">Our Services</h3>
+                    <div class="row justify-content-center">
+                        <div class="col-xl-10">
+                            <p class="text-muted fs-15 mb-5 fw-normal">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur quam saepe enim maxime! Eligendi quas itaque voluptatibus,
+                                 aspernatur illo, natus cumque odio, molestiae obcaecati ducimus sit ratione recusandae perferendis culpa?</p>
+                        </div>
+                    </div>
+                    <div class="row  g-2 justify-content-center">
+                        <div class="col-xl-12">
+                            <div class="row justify-content-evenly">
+                                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-3">
+                                    <div class="p-4 text-center rounded-2 bg-white border">
+                                        <span class="mb-3 avatar avatar-lg avatar-rounded bg-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="fill-transparent stroke-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.5c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 012.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 00.322-1.672V3a.75.75 0 01.75-.75A2.25 2.25 0 0116.5 4.5c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 01-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 00-1.423-.23H5.904M14.25 9h2.25M5.904 18.75c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 01-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 10.203 4.167 9.75 5 9.75h1.053c.472 0 .745.556.5.96a8.958 8.958 0 00-1.302 4.665c0 1.194.232 2.333.654 3.375z"></path>
+                                              </svg>
+                                          </span>
+                                          <h5 class="fw-semibold mb-2 text-default">Design Quality</h5>
+                                        <p class="mb-1 fs-16  text-muted ">
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur quam saepe enim maxime!
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-3">
+                                    <div class="p-4 text-center rounded-2 bg-white border">
+                                        <span class="mb-3 avatar avatar-lg avatar-rounded bg-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="fill-transparent stroke-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"></path>
+                                              </svg>
+                                          </span>
+                                          <h5 class="fw-semibold mb-2 text-default">Customization</h5>
+                                        <p class="mb-1 fs-16  text-muted ">
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur quam saepe enim maxime!
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-3">
+                                    <div class="p-4 text-center rounded-2 bg-white border">
+                                        <span class="mb-3 avatar avatar-lg avatar-rounded bg-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="fill-transparent stroke-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"></path>
+                                              </svg>
+                                          </span>
+                                          <h5 class="fw-semibold mb-2 text-default">Documentation</h5>
+                                        <p class="mb-1 fs-16  text-muted ">
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur quam saepe enim maxime!
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-3">
+                                    <div class="p-4 text-center rounded-2 bg-white border">
+                                        <span class="mb-3 avatar avatar-lg avatar-rounded bg-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="fill-transparent stroke-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 7.5h-.75A2.25 2.25 0 004.5 9.75v7.5a2.25 2.25 0 002.25 2.25h7.5a2.25 2.25 0 002.25-2.25v-7.5a2.25 2.25 0 00-2.25-2.25h-.75m0-3l-3-3m0 0l-3 3m3-3v11.25m6-2.25h.75a2.25 2.25 0 012.25 2.25v7.5a2.25 2.25 0 01-2.25 2.25h-7.5a2.25 2.25 0 01-2.25-2.25v-.75"></path>
+                                              </svg>
+                                          </span>
+                                          <h5 class="fw-semibold mb-2 text-default">Regular Updates</h5>
+                                        <p class="mb-1 fs-16  text-muted ">
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur quam saepe enim maxime!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End:: Section-2 -->
+
+            <!-- Start:: Section-3 -->
+            <section class="section " id="Mobile">
+                <div class=" text-center">
+                    <div class="row justify-content-between align-items-center mx-0">
+                    <div class="col-xxl-5 col-xl-5 col-lg-5 customize-image text-center">
+                        <div class="text-lg-end">
+                            <img src="../assets/img/landing/3.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 pt-5 pb-0 px-lg-2 px-5 text-start">
+                        <h3 class="fw-bold fs-2 mb-2">Mobile Responsive View</h3>
+                        <h5 class="text-lg-start fw-semibold mb-0">Present your awesome product</h5>
+                        <p class="text-muted fs-16">Meet our team who are experts in Web designing and Development.</p>
+                           <p class="text-muted fs-16">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. .</p> 
+                          <p class="text-muted fs-16">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                        <button class="mt-2 btn btn-primary">Read More<i class="ri-arrow-right-line"></i></button>
+                    </div> 
+                    </div>
+                </div> 
+            </section>
+            <!-- End:: Section-3 -->
+            
+            <!-- Start:: Section-4 -->
+            <section class="section  section-bg" id="our-mission">
+                <div class=" text-center">
+                    <div class="row justify-content-between align-items-center mx-0">
+                        <div class="col-xxl-6 col-xl-6 col-lg-6 pt-5 pb-0 px-lg-2 px-5 text-start">
+                            <h3 class="fw-bold fs-2 fs-2 mb-2">Responsive Template</h3>
+                            <p class="text-muted fs-16">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. .</p>
+                               <p class="text-muted fs-16">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p> 
+                           <button class="mt-2 btn btn-primary">Read More<i class="ri-arrow-right-line"></i></button>
+                        </div> 
+                        <div class="col-xxl-5 col-xl-5 col-lg-5 customize-image text-center">
+                            <div class="">
+                                <img src="../assets/img/landing/4.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </section>
+            <!-- End:: Section-4 -->
+
+            <!-- Start:: Section-5 -->
+            <section class="section landing-Features px-0">
+                <div class="container text-center">
+                    <h2 class="fw-semibold mb-2 text-fixed-white ">We Design and Develop For your business.</h2>
+                    <div class="row justify-content-center">
+                        <div class="col-xl-10">
+                            <p class="text-fixed-white op-8 fs-15 mb-3 fw-normal mx-5">We develop modern concepts to design and develop the interface design, web development to deliver them with eye-catching innovative ideas. We believe in effective, efficient and timely solutions for various types of businesses. Our team develops a 
+                                long-term strategy to bring out spark conversation with clients, and visibility to your company.</p>
+                        </div>
+                        <div class="col-xl-3">
+                            <button class="btn btn-danger btn-lg">Contact Us</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End:: Section-5 -->
+
+            <!-- Start:: Section-6 -->
+            <section class="section " id="features">
+                <div class="text-center">
+                    <h2 class="fw-bold fs-2 mb-2">Synto Advanced Features</h2>
+                    <div class="row justify-content-center mb-5">
+                        <div class="col-xl-10">
+                            <p class="text-muted fs-16 mb-0 fw-normal">Most advanced features in Synto along with only javascript dependability and zeo jquery boosts the performance of your project.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                            <div class="p-4 text-start ">
+                                <div class="card-body">
+                                    <div class="align-items-top">
+                                        <div class="mb-2">
+                                            <div class="avatar p-1">
+                                                <svg class="feather-avatar" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24" id="award">
+                                                  <circle cx="12" cy="9.25" r="6" fill="#b7bbc0"></circle>
+                                                  <path fill="#9399a1" d="m19.574 17.013-2.565-4.453-.01.004A5.992 5.992 0 0 1 12 15.25c-.129 0-.254-.011-.381-.02l.39.67 2.374 4.112a.5.5 0 0 0 .862.006L16.57 17.8l2.579-.038a.5.5 0 0 0 .426-.75z">
+                                                  </path>
+                                                  <path fill="#4b5563" d="M11.619 15.23a5.99 5.99 0 0 1-4.62-2.668l-2.564 4.45a.5.5 0 0 0 .426.75l2.579.038 1.324 2.218a.5.5 0 0 0 .862-.006L12 15.9l.004-.007-.385-.662z">
+                                                  </path>
+                                                </svg>
+                                              </div>
+                                        </div>
+                                        <div>
+                                            <h5 class="fw-semibold mb-1">
+                                                Quality & Clean Code
+                                            </h5>
+                                            <p class="mb-2 text-muted fs-16">In Synto code is maintained very cLearn and well-structured & Properly Commented.</p>
+                                            <a class="font-semibold text-primary d-flex fw-semibold fs-14" href="javascript:void(0);">
+                                                Learn More<i class="ri ri-arrow-right-line my-auto ms-2"></i>
+                                              </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                            <div class="p-4 text-start ">
+                                <div class="card-body">
+                                    <div class="align-items-top">
+                                        <div class="mb-2">
+                                            <div class="avatar p-1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24" id="layer-group">
+                                                    <path fill="#b7bbc0" d="M12,14.19531c-0.17551-0.00004-0.34793-0.04618-0.5-0.13379l-9-5.19726C2.02161,8.58794,1.85779,7.97612,2.13411,7.49773C2.22187,7.34579,2.34806,7.2196,2.5,7.13184l9-5.19336c0.30964-0.17774,0.69036-0.17774,1,0l9,5.19336c0.4784,0.27632,0.64221,0.88814,0.36589,1.36653C21.77813,8.65031,21.65194,8.7765,21.5,8.86426l-9,5.19726C12.34793,14.14913,12.17551,14.19527,12,14.19531z">
+                                                    </path>
+                                                    <path fill="#9399a1" d="M21.5,11.13184l-1.96411-1.13337L12.5,14.06152c-0.30947,0.17839-0.69053,0.17839-1,0L4.46411,9.99847L2.5,11.13184c-0.47839,0.27632-0.64221,0.88814-0.36589,1.36653C2.22187,12.65031,2.34806,12.7765,2.5,12.86426l9,5.19726c0.30947,0.17838,0.69053,0.17838,1,0l9-5.19726c0.4784-0.27632,0.64221-0.88814,0.36589-1.36653C21.77813,11.34579,21.65194,11.2196,21.5,11.13184z">
+                                                    </path>
+                                                    <path fill="#4b5563" d="M21.5,15.13184l-1.96411-1.13337L12.5,18.06152c-0.30947,0.17838-0.69053,0.17838-1,0l-7.03589-4.06305L2.5,15.13184c-0.47839,0.27632-0.64221,0.88814-0.36589,1.36653C2.22187,16.65031,2.34806,16.7765,2.5,16.86426l9,5.19726c0.30947,0.17838,0.69053,0.17838,1,0l9-5.19726c0.4784-0.27632,0.64221-0.88814,0.36589-1.36653C21.77813,15.34579,21.65194,15.2196,21.5,15.13184z">
+                                                    </path>
+                                                  </svg>
+                                              </div>
+                                        </div>
+                                        <div>
+                                            <h5 class="fw-semibold mb-1">
+                                                Multiple Demos
+                                            </h5>
+                                            <p class="mb-2 text-muted fs-16">We included multiple demos to give a quick overview of our Synto admin template...</p>
+                                            <a class="font-semibold text-primary d-flex fw-semibold fs-14" href="javascript:void(0);">
+                                                Learn More<i class="ri ri-arrow-right-line my-auto ms-2"></i>
+                                              </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                            <div class="p-4 text-start ">
+                                <div class="card-body">
+                                    <div class="align-items-top">
+                                        <div class="mb-2">
+                                            <div class="avatar p-1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24" id="calculator">
+                                                    <path fill="#b7bbc0" d="M16 11H8a1 1 0 0 1-1-.999V6a1 1 0 0 1 .999-1H16a1 1 0 0 1 1 .999V10a1 1 0 0 1-.999 1H16z">
+                                                    </path>
+                                                    <path fill="#9399a1" d="M18 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm-1 4v4a1 1 0 0 1-.999 1H8a1 1 0 0 1-1-.999V6a1 1 0 0 1 .999-1H16a1 1 0 0 1 1 .999V6z">
+                                                    </path>
+                                                    <circle cx="8" cy="14" r="1" fill="#4b5563"></circle>
+                                                    <circle cx="8" cy="18" r="1" fill="#4b5563"></circle>
+                                                    <circle cx="12" cy="18" r="1" fill="#4b5563"></circle>
+                                                    <circle cx="16" cy="18" r="1" fill="#4b5563"></circle>
+                                                    <circle cx="16" cy="14" r="1" fill="#4b5563"></circle>
+                                                    <circle cx="12" cy="14" r="1" fill="#4b5563"></circle>
+                                                  </svg>
+                                              </div>
+                                        </div>
+                                        <div>
+                                            <h5 class="fw-semibold mb-1">
+                                                Tailwind Framework
+                                            </h5>
+                                            <p class="mb-2 text-muted fs-16">Thanks to the Tailwind framework, because it gives us the ability to create responsive designs.</p>
+                                            <a class="font-semibold text-primary d-flex fw-semibold fs-14" href="javascript:void(0);">
+                                                Learn More<i class="ri ri-arrow-right-line my-auto ms-2"></i>
+                                              </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                            <div class="p-4 text-start ">
+                                <div class="card-body">
+                                    <div class="align-items-top">
+                                        <div class="mb-2">
+                                            <div class="avatar p-1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24" id="processor">
+                                                    <path fill="#4b5563" d="M8 5h1V3c0-.55231-.44769-1-1-1S7 2.44769 7 3v2.18463C7.31421 5.07269 7.64746 5.00037 8 5zM3 9h2V8c.00037-.35254.07269-.68579.18463-1H3C2.44769 7 2 7.44769 2 8S2.44769 9 3 9zM16 5c.35254.00037.68579.07269 1 .18463V3c0-.55231-.44769-1-1-1s-1 .44769-1 1v2H16zM19 8v1h2c.55231 0 1-.44769 1-1s-.44769-1-1-1h-2.18463C18.92731 7.31421 18.99963 7.64746 19 8zM3 13h2v-2H3c-.55231 0-1 .44769-1 1S2.44769 13 3 13zM13 5V3c0-.55231-.44769-1-1-1s-1 .44769-1 1v2H13zM8 19c-.35254-.00037-.68579-.07269-1-.18463V21c0 .00018 0 .00037 0 .00055C7.00012 21.55267 7.44788 22.00012 8 22c.00018 0 .00037 0 .00055 0C8.55267 21.99988 9.00012 21.55212 9 21v-2H8zM21 15h-2v1c-.00037.35254-.07269.68579-.18463 1H21c.55231 0 1-.44769 1-1S21.55231 15 21 15zM5 16v-1H3c-.55231 0-1 .44769-1 1s.44769 1 1 1h2.18463C5.07269 16.68579 5.00037 16.35254 5 16zM21 11h-2v2h2c.55231 0 1-.44769 1-1S21.55231 11 21 11zM16 19h-1v2c0 .00018 0 .00037 0 .00055.00012.55212.44788.99957 1 .99945.00018 0 .00037 0 .00055 0 .55212-.00012.99957-.44788.99945-1v-2.18463C16.68579 18.92731 16.35254 18.99963 16 19zM11 19v2c0 .00018 0 .00037 0 .00055.00012.55212.44788.99957 1 .99945.00018 0 .00037 0 .00055 0 .55212-.00012.99957-.44788.99945-1v-2H11z">
+                                                    </path>
+                                                    <path fill="#b7bbc0" d="M14,15h-4c-0.55214,0.00014-0.99986-0.44734-1-0.99948C9,14.00035,9,14.00017,9,14v-4C8.99986,9.44786,9.44734,9.00014,9.99948,9C9.99965,9,9.99983,9,10,9h4c0.55214-0.00014,0.99986,0.44734,1,0.99948C15,9.99965,15,9.99983,15,10v4c0.00014,0.55214-0.44734,0.99986-0.99948,1C14.00035,15,14.00017,15,14,15z">
+                                                    </path>
+                                                    <path fill="#9399a1" d="M16,5H8C6.34387,5.00183,5.00183,6.34387,5,8v8c0.00183,1.65613,1.34387,2.99817,3,3h8c1.65613-0.00183,2.99817-1.34387,3-3V8C18.99817,6.34387,17.65613,5.00183,16,5z M15,10v4c0.00012,0.55212-0.44733,0.99988-0.99945,1C14.00037,15,14.00018,15,14,15h-4c-0.55212,0.00012-0.99988-0.44733-1-0.99945C9,14.00037,9,14.00018,9,14v-4C8.99988,9.44788,9.44733,9.00012,9.99945,9C9.99963,9,9.99982,9,10,9h4c0.55212-0.00012,0.99988,0.44733,1,0.99945C15,9.99963,15,9.99982,15,10z">
+                                                    </path>
+                                                  </svg>
+                                              </div>
+                                        </div>
+                                        <div>
+                                            <h5 class="fw-semibold mb-1">
+                                                2 types of Icons
+                                            </h5>
+                                            <p class="mb-2 text-muted fs-16">More than 2 types of best Icons are included in this template to enhance design standards.</p>
+                                            <a class="font-semibold text-primary d-flex fw-semibold fs-14" href="javascript:void(0);">
+                                                Learn More<i class="ri ri-arrow-right-line my-auto ms-2"></i>
+                                              </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                            <div class="p-4 text-start ">
+                                <div class="card-body">
+                                    <div class="align-items-top">
+                                        <div class="mb-2">
+                                            <div class="avatar p-1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24" id="newspaper">
+                                                    <path fill="#b7bbc0" d="M8.444 3.111a2 2 0 0 0-2 2v13.556a2.222 2.222 0 0 1-2.222 2.222h14.445A3.333 3.333 0 0 0 22 17.556V5.11a2 2 0 0 0-2-2H8.444z">
+                                                    </path>
+                                                    <path fill="#9399a1" d="M6.444 18.667V7.556H4a2 2 0 0 0-2 2v9.333a2 2 0 0 0 2 2h.222a2.222 2.222 0 0 0 2.222-2.222z">
+                                                    </path>
+                                                    <path fill="#4b5563" d="M17 9h-6a1 1 0 1 1 0-2h6a1 1 0 0 1 0 2zm0 4h-1a1 1 0 1 1 0-2h1a1 1 0 1 1 0 2zm-5 0h-1a1 1 0 1 1 0-2h1a1 1 0 1 1 0 2zm5 4h-1a1 1 0 1 1 0-2h1a1 1 0 1 1 0 2zm-5 0h-1a1 1 0 1 1 0-2h1a1 1 0 1 1 0 2z">
+                                                    </path>
+                                                  </svg>
+                                              </div>
+                                        </div>
+                                        <div>
+                                            <h5 class="fw-semibold mb-1">
+                                                Advanced Pages
+                                            </h5>
+                                            <p class="mb-2 text-muted fs-16">More advanced pages are included in this template for easy development adn customization.</p>
+                                            <a class="font-semibold text-primary d-flex fw-semibold fs-14" href="javascript:void(0);">
+                                                Learn More<i class="ri ri-arrow-right-line my-auto ms-2"></i>
+                                              </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                            <div class="p-4 text-start ">
+                                <div class="card-body">
+                                    <div class="align-items-top">
+                                        <div class="mb-2">
+                                            <div class="avatar p-1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24" id="coins">
+                                                    <path fill="#4b5563" d="M5 4h6a2 2 0 1 1 0 4H5a2 2 0 1 1 0-4z"></path>
+                                                    <path fill="#9399a1" d="M5 8h6a2 2 0 1 1 0 4H5a2 2 0 1 1 0-4z"></path>
+                                                    <path fill="#4b5563" d="M5 12h6a2 2 0 1 1 0 4H5a2 2 0 1 1 0-4z"></path>
+                                                    <path fill="#9399a1" d="M5 16h6a2 2 0 1 1 0 4H5a2 2 0 1 1 0-4z"></path>
+                                                    <path fill="#4b5563" d="M19 16h-6a1.98 1.98 0 0 0-1 .277 1.984 1.984 0 0 1 0 3.446c.303.18.648.275 1 .277h6a2 2 0 1 0 0-4z">
+                                                    </path>
+                                                    <path fill="#9399a1" d="M19 12h-6a1.98 1.98 0 0 0-1 .277 1.984 1.984 0 0 1 0 3.446c.303.18.648.275 1 .277h6a2 2 0 1 0 0-4z">
+                                                    </path>
+                                                    <path fill="#4b5563" d="M19 8h-6a1.98 1.98 0 0 0-1 .277 1.984 1.984 0 0 1 0 3.446c.303.18.648.275 1 .277h6a2 2 0 1 0 0-4z">
+                                                    </path>
+                                                  </svg>
+                                              </div>
+                                        </div>
+                                        <div>
+                                            <h5 class="fw-semibold mb-1">
+                                                Built for developers
+                                            </h5>
+                                            <p class="mb-2 text-muted fs-16">Variables, elements, documentation, and reusability are additional features.</p>
+                                            <a class="font-semibold text-primary d-flex fw-semibold fs-14" href="javascript:void(0);">
+                                                Learn More<i class="ri ri-arrow-right-line my-auto ms-2"></i>
+                                              </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                            <div class="p-4 text-start ">
+                                <div class="card-body">
+                                    <div class="align-items-top">
+                                        <div class="mb-2">
+                                            <div class="avatar p-1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24" id="server-alt">
+                                                    <path fill="#9399a1" d="M18,9H6C4.89543,9,4,8.10457,4,7V5c0-1.10457,0.89543-2,2-2h12c1.10457,0,2,0.89543,2,2v2C20,8.10457,19.10457,9,18,9z">
+                                                    </path>
+                                                    <path fill="#b7bbc0" d="M18,15H6c-1.10457,0-2-0.89543-2-2v-2c0-1.10457,0.89543-2,2-2h12c1.10457,0,2,0.89543,2,2v2C20,14.10457,19.10457,15,18,15z">
+                                                    </path>
+                                                    <path fill="#9399a1" d="M18,21H6c-1.10457,0-2-0.89543-2-2v-2c0-1.10457,0.89543-2,2-2h12c1.10457,0,2,0.89543,2,2v2C20,20.10457,19.10457,21,18,21z">
+                                                    </path>
+                                                    <circle cx="8" cy="6" r="1" fill="#4b5563"></circle>
+                                                    <circle cx="8" cy="12" r="1" fill="#4b5563"></circle>
+                                                    <circle cx="8" cy="18" r="1" fill="#4b5563"></circle>
+                                                  </svg>
+                                              </div>
+                                        </div>
+                                        <div>
+                                            <h5 class="fw-semibold mb-1">
+                                                Documentation
+                                            </h5>
+                                            <p class="mb-2 text-muted fs-16">The documentation provides clear-cut material for the Synto admin template user can understand .</p>
+                                            <a class="font-semibold text-primary d-flex fw-semibold fs-14" href="javascript:void(0);">
+                                                Learn More<i class="ri ri-arrow-right-line my-auto ms-2"></i>
+                                              </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                            <div class="p-4 text-start ">
+                                <div class="card-body">
+                                    <div class="align-items-top">
+                                        <div class="mb-2">
+                                            <div class="avatar p-1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24" id="chart-pie">
+                                                    <path fill="#b7bbc0" d="M12 12V2c5.523 0 10 4.477 10 10H12z"></path>
+                                                    <path fill="#9399a1" d="m12 12 5 8.66A10.01 10.01 0 0 0 22 12H12z"></path>
+                                                    <path fill="#4b5563" d="M17 20.66 12 12V2c-5.523.002-9.999 4.48-9.997 10.003.002 5.523 4.48 9.999 10.004 9.997A10 10 0 0 0 17 20.662l.003-.005-.004.003z">
+                                                    </path>
+                                                  </svg>
+                                              </div>
+                                        </div>
+                                        <div>
+                                            <h5 class="fw-semibold mb-1">
+                                                5 Types Of Charts
+                                            </h5>
+                                            <p class="mb-2 text-muted fs-16">We included five (5) types of the best possible chart options for your project..</p>
+                                            <a class="font-semibold text-primary d-flex fw-semibold fs-14" href="javascript:void(0);">
+                                                Learn More<i class="ri ri-arrow-right-line my-auto ms-2"></i>
+                                              </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End:: Section-6 -->
+            
+            <!-- Start:: Section-7 -->
+            <section class="section landing-Features px-0" id="statistics">
+                <div class="container text-center">
+                    <h2 class="fw-bold fs-2 mb-2 text-fixed-white ">Why Does People Love US ...!!</h2>
+                    <div class="row justify-content-center">
+                        <div class="col-xl-10">
+                            <p class="text-fixed-white op-8 fs-15 mb-3 fw-normal">We are proud to have top class clients and customers,which motivates us to work more on projects.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-3">
+                            <p class="fs-34 text-fixed-white mb-0 fw-bold"><span class="count-up" data-count="137">137</span>+</p>
+                            <span class="fs-20 fw-semibold text-fixed-white op-8">Total Projects</span>
+                        </div>
+                        <div class="col-xl-3">
+                            <p class="fs-34 text-fixed-white mb-0 fw-bold"><span class="count-up" data-count="201">201</span>+</p>
+                            <span class="fs-20 fw-semibold text-fixed-white op-8">Profesional Team</span>
+                        </div>
+                        <div class="col-xl-3">
+                            <p class="fs-34 text-fixed-white mb-0 fw-bold"><span class="count-up" data-count="1000">1000</span>+</p>
+                            <span class="fs-20 fw-semibold text-fixed-white op-8">Happy Customers</span>
+                        </div>
+                        <div class="col-xl-3">
+                            <p class="fs-34 text-fixed-white mb-0 fw-bold"><span class="count-up" data-count="5">5</span>+</p>
+                            <span class="fs-20 fw-semibold text-fixed-white op-8">Years of Experience</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End:: Section-7 -->
+
+            <!-- Start:: Section-8 -->
+            <section class="section landing-testimonials section-bg" id="testimonials">
+                <div class=" text-center">
+                    <h3 class="fw-bold fs-2 mb-2">What Our Clients Say ...!</h3>
+                    <div class="row justify-content-center">
+                        <div class="col-xl-8">
+                            <p class="text-muted fs-16 mb-5 fw-normal">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur quam saepe enim maxime! Eligendi quas itaque voluptatibus, aspernatur illo, natus cumque odio, molestiae obcaecati ducimus sit ratione recusandae perferendis culpa?</p>
+                        </div>
+                    </div>
+                    <div class="swiper pagination-dynamic text-start">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card custom-card testimonial-card">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <span class="text-warning d-block ms-1">
+                                                    <i class="ri-star-fill fs-16"></i>
+                                                    <i class="ri-star-fill fs-16"></i>
+                                                    <i class="ri-star-fill fs-16"></i>
+                                                    <i class="ri-star-fill fs-16"></i>
+                                                    <i class="ri-star-fill fs-16"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <span class="text-muted fs-16">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                                Tempore vel ut impedit. Sapiente id libero reprehenderit accusantium nisi. Dolorum hic voluptas quia id.</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="d-flex align-items-center">
+                                            <span class="avatar avatar-sm avatar-rounded me-3">
+                                                <img src="../assets/img/users/13.jpg" alt="">
+                                            </span>
+                                            <div>
+                                                <p class="mb-0 fw-semibold fs-14">Mc Greggor</p>
+                                                <p class="mb-0 fs-10 fw-semibold text-muted">UI Developer</p>
+                                            </div>
+                                            <p class="text-muted ms-auto mb-0">20 mins ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card custom-card testimonial-card">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <span class="text-warning d-block ms-1">
+                                                    <i class="ri-star-fill fs-16"></i>
+                                                    <i class="ri-star-fill fs-16"></i>
+                                                    <i class="ri-star-fill fs-16"></i>
+                                                    <i class="ri-star-fill fs-16"></i>
+                                                    <i class="ri-star-fill fs-16"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <span class="text-muted fs-16">There are many variations of passages of Lorem Ipsum available, but the majority have suffered by
+                                                injected humour which don't even slightly believable</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="d-flex align-items-center">
+                                            <span class="avatar avatar-sm avatar-rounded me-3">
+                                                <img src="../assets/img/users/3.jpg" alt="">
+                                            </span>
+                                            <div>
+                                                <p class="mb-0 fw-semibold fs-14">Airi Satou</p>
+                                                <p class="mb-0 fs-10 fw-semibold text-muted">UI Developer</p>
+                                            </div>
+                                            <p class="text-muted ms-auto mb-0">10 hours ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card custom-card testimonial-card">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <span class="text-warning d-block ms-1">
+                                                    <i class="ri-star-fill fs-16"></i>
+                                                    <i class="ri-star-fill fs-16"></i>
+                                                    <i class="ri-star-fill fs-16"></i>
+                                                    <i class="ri-star-fill fs-16"></i>
+                                                    <i class="ri-star-fill fs-16"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <span class="text-muted fs-16"> If you are going to use a passage of Lorem Ipsum, you need to as necessary All the Lorem
+                                                generators on the Internet to repeat Various versions have evolved over the years.</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="d-flex align-items-center">
+                                            <span class="avatar avatar-sm avatar-rounded me-3">
+                                                <img src="../assets/img/users/4.jpg" alt="">
+                                            </span>
+                                            <div>
+                                                <p class="mb-0 fw-semibold fs-14">Samantha Paul</p>
+                                                <p class="mb-0 fs-10 fw-semibold text-muted">UI Developer</p>
+                                            </div>
+                                            <p class="text-muted ms-auto mb-0">10 hours ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card custom-card testimonial-card">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <span class="text-warning d-block ms-1">
+                                                    <i class="ri-star-fill fs-16"></i>
+                                                    <i class="ri-star-fill fs-16"></i>
+                                                    <i class="ri-star-fill fs-16"></i>
+                                                    <i class="ri-star-fill fs-16"></i>
+                                                    <i class="ri-star-fill fs-16"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <span class="text-muted fs-16"> Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out
+                                                fixie 90's microdosing. Tacos pinterest fanny pack venmo.</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="d-flex align-items-center">
+                                            <span class="avatar avatar-sm avatar-rounded me-3">
+                                                <img src="../assets/img/users/14.jpg" alt="">
+                                            </span>
+                                            <div>
+                                                <p class="mb-0 fw-semibold fs-14">Eos Tempor</p>
+                                                <p class="mb-0 fs-10 fw-semibold text-muted">UI Developer</p>
+                                            </div>
+                                            <p class="text-muted ms-auto mb-0">10 hours ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card custom-card testimonial-card">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <span class="text-warning d-block ms-1">
+                                                    <i class="ri-star-fill fs-16"></i>
+                                                    <i class="ri-star-fill fs-16"></i>
+                                                    <i class="ri-star-fill fs-16"></i>
+                                                    <i class="ri-star-fill fs-16"></i>
+                                                    <i class="ri-star-fill fs-16"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <span class="text-muted fs-16"> There are many variations of passages of Lorem Ipsum available, but the majority have suffered by
+                                                injected humour which don't even slightly believable.</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="d-flex align-items-center">
+                                            <span class="avatar avatar-sm avatar-rounded me-3">
+                                                <img src="../assets/img/users/2.jpg" alt="">
+                                            </span>
+                                            <div>
+                                                <p class="mb-0 fw-semibold fs-14">Socrates Itumay
+                                                </p>
+                                                <p class="mb-0 fs-10 fw-semibold text-muted">UI Developer</p>
+                                            </div>
+                                            <p class="text-muted ms-auto mb-0">10 hours ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination mt-4"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- End:: Section-8-->
+
+            <!-- Start:: Section-9 -->
+            <section class="section  " id="pricing">
+                <div class="">
+                    <div class="row align-items-center">
+                        <div class="col-xxl-4 col-xl-4 col-lg-6 pt-5 pb-0 px-lg-2 px-5 text-start">
+                        <h2 class="fw-bold mb-2">Pricing Plans</h2>
+                        <h5 class="text-lg-start fw-semibold mb-2 op-8">To Get All Access Select A plan</h5>
+                           <p class="text-muted fs-16">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. .</p> 
+                         <button class="mt-2 btn btn-primary mb-3">Read More<i class="ri-arrow-right-line"></i></button>
+                    </div>
+                        <div class="col-xl-8">
+                            <div class="row justify-content-center">
+                                <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                    <div class="card custom-card overflow-hidden">
+                                        <div class="card-body p-0">
+                                            <div class="p-4 border-bottom">
+                                                <div class="mb-3">
+                                                    <div class="fs-24 fw-semibold mb-1">Basic</div>
+                                                    <p class="text-muted fw-medium">Sed duo rebum et et dolores sed amet rebum magna. Et sea elitr.</p>
+                                                </div>
+                                                <div class="fs-1 fw-bold">$10<sub class="text-muted fw-semibold fs-11 ms-1">/Month</sub></div>
+                                            </div>
+                                            <div class="p-4">
+                                                <h6>What's Included</h6>
+                                            <ul class="list-unstyled mb-0">
+                                                <li class="d-flex align-items-center mb-3">
+                                                    <span class="me-2">
+                                                        <i class="ri ri-checkbox-circle-line text-success fs-16"></i>
+                                                    </span>
+                                                    <span class="fs-14">2 Free Domain Name</span>
+                                                </li>
+                                                <li class="d-flex align-items-center mb-3">
+                                                    <span class="me-2">
+                                                        <i class="ri ri-checkbox-circle-line text-success fs-16"></i>
+                                                    </span>
+                                                    <span class="fs-14">3 One-Click Apps</span>
+                                                </li>
+                                                <li class="d-flex align-items-center mb-3">
+                                                    <span class="me-2">
+                                                        <i class="ri ri-checkbox-circle-line text-success fs-16"></i>
+                                                    </span>
+                                                    <span class="fs-14">1 Databases</span>
+                                                </li>
+                                                <li class="d-flex align-items-center mb-3">
+                                                    <span class="me-2">
+                                                        <i class="ri ri-checkbox-circle-line text-success fs-16"></i>
+                                                    </span>
+                                                    <span class="fs-14">Money BackGuarantee</span>
+                                                </li>
+                                                <li class="d-flex align-items-center mb-3">
+                                                    <span class="me-2">
+                                                        <i class="ri ri-checkbox-circle-line text-success fs-16"></i>
+                                                    </span>
+                                                    <span class="fs-14">24/7 support</span>
+                                                </li>
+                                                <li class="d-flex align-items-center mb-3">
+                                                    <span class="me-2">
+                                                        <i class="ri ri-checkbox-circle-line text-success fs-16"></i>
+                                                    </span>
+                                                    <span class="fs-14">Premium support: <span class="fw-semibold">3 Months</span></span>
+                                                </li>
+                                                <li class="d-flex align-items-center mb-3">
+                                                    <span class="me-2">
+                                                        <i class="ri ri-checkbox-circle-line text-success fs-16"></i>
+                                                    </span>
+                                                    <span class="fs-14">Free Updates: <span class="fw-semibold">3 Months</span></span>
+                                                </li>
+                                            </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="d-grid">
+                                                <button class="btn btn-primary btn-wave">Choose Plan</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                    <div class="card custom-card overflow-hidden">
+                                        <div class="card-body p-0">
+                                            <div class="p-4 border-bottom">
+                                                <div class="mb-3">
+                                                    <div class="fs-24 fw-semibold mb-1">Standard</div>
+                                                    <p class="text-muted fw-medium">Sed duo rebum et et dolores sed amet rebum magna. Et sea elitr.</p>
+                                                </div>
+                                                <div class="fs-1 fw-bold">$25<sub class="text-muted fw-semibold fs-11 ms-1">/Month</sub></div>
+                                                </div>
+                                                <div class="p-4">
+                                                    <h6>What's Included</h6>
+                                                <ul class="list-unstyled mb-0">
+                                                    <li class="d-flex align-items-center mb-3">
+                                                        <span class="me-2">
+                                                            <i class="ri ri-checkbox-circle-line  text-success fs-16"></i>
+                                                        </span>
+                                                        <span class="fs-14">2 Free Domain Name</span>
+                                                    </li>
+                                                    <li class="d-flex align-items-center mb-3">
+                                                        <span class="me-2">
+                                                            <i class="ri ri-checkbox-circle-line  text-success fs-16"></i>
+                                                        </span>
+                                                        <span class="fs-14">3 One-Click Apps</span>
+                                                    </li>
+                                                    <li class="d-flex align-items-center mb-3">
+                                                        <span class="me-2">
+                                                            <i class="ri ri-checkbox-circle-line  text-success fs-16"></i>
+                                                        </span>
+                                                        <span class="fs-14">1 Databases</span>
+                                                    </li>
+                                                    <li class="d-flex align-items-center mb-3">
+                                                        <span class="me-2">
+                                                            <i class="ri ri-checkbox-circle-line  text-success fs-16"></i>
+                                                        </span>
+                                                        <span class="fs-14">Money BackGuarantee</span>
+                                                    </li>
+                                                    <li class="d-flex align-items-center mb-3">
+                                                        <span class="me-2">
+                                                            <i class="ri ri-checkbox-circle-line  text-success fs-16"></i>
+                                                        </span>
+                                                        <span class="fs-14">24/7 support</span>
+                                                    </li>
+                                                    <li class="d-flex align-items-center mb-3">
+                                                        <span class="me-2">
+                                                            <i class="ri ri-checkbox-circle-line  text-success fs-16"></i>
+                                                        </span>
+                                                        <span class="fs-14">Premium support: <span class="fw-semibold">3 Months</span></span>
+                                                    </li>
+                                                    <li class="d-flex align-items-center mb-3">
+                                                        <span class="me-2">
+                                                            <i class="ri ri-checkbox-circle-line  text-success fs-16"></i>
+                                                        </span>
+                                                        <span class="fs-14">Free Updates: <span class="fw-semibold">3 Months</span></span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="d-grid">
+                                                <button class="btn btn-primary btn-wave">Choose Plan</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                    <div class="card custom-card overflow-hidden">
+                                        <div class="card-body p-0">
+                                            <div class="p-4 border-bottom">
+                                                <div class="mb-3">
+                                                    <div class="fs-24 fw-semibold mb-1">Premium</div>
+                                                    <p class="text-muted fw-medium">Sed duo rebum et et dolores sed amet rebum magna. Et sea elitr.</p>
+                                                </div>
+                                                <div class="fs-1 fw-bold">$50<sub class="text-muted fw-semibold fs-11 ms-1">/Month</sub></div>
+                                                </div>
+                                                <div class="p-4">
+                                                    <h6>What's Included</h6>
+                                                <ul class="list-unstyled mb-0">
+                                                    <li class="d-flex align-items-center mb-3">
+                                                        <span class="me-2">
+                                                            <i class="ri ri-checkbox-circle-line  text-success fs-16"></i>
+                                                        </span>
+                                                        <span class="fs-14">2 Free Domain Name</span>
+                                                    </li>
+                                                    <li class="d-flex align-items-center mb-3">
+                                                        <span class="me-2">
+                                                            <i class="ri ri-checkbox-circle-line  text-success fs-16"></i>
+                                                        </span>
+                                                        <span class="fs-14">3 One-Click Apps</span>
+                                                    </li>
+                                                    <li class="d-flex align-items-center mb-3">
+                                                        <span class="me-2">
+                                                            <i class="ri ri-checkbox-circle-line  text-success fs-16"></i>
+                                                        </span>
+                                                        <span class="fs-14">1 Databases</span>
+                                                    </li>
+                                                    <li class="d-flex align-items-center mb-3">
+                                                        <span class="me-2">
+                                                            <i class="ri ri-checkbox-circle-line  text-success fs-16"></i>
+                                                        </span>
+                                                        <span class="fs-14">Money BackGuarantee</span>
+                                                    </li>
+                                                    <li class="d-flex align-items-center mb-3">
+                                                        <span class="me-2">
+                                                            <i class="ri ri-checkbox-circle-line  text-success fs-16"></i>
+                                                        </span>
+                                                        <span class="fs-14">24/7 support</span>
+                                                    </li>
+                                                    <li class="d-flex align-items-center mb-3">
+                                                        <span class="me-2">
+                                                            <i class="ri ri-checkbox-circle-line  text-success fs-16"></i>
+                                                        </span>
+                                                        <span class="fs-14">Premium support: <span class="fw-semibold">3 Months</span></span>
+                                                    </li>
+                                                    <li class="d-flex align-items-center mb-3">
+                                                        <span class="me-2">
+                                                            <i class="ri ri-checkbox-circle-line  text-success fs-16"></i>
+                                                        </span>
+                                                        <span class="fs-14">Free Updates: <span class="fw-semibold">3 Months</span></span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="d-grid">
+                                                <button class="btn btn-primary btn-wave">Choose Plan</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End:: Section-9 -->
+
+            <!-- Start:: Section-10 -->
+            <section class="section section-bg " id="team">
+                <div class="text-center position-relative">
+                    <h2 class="fw-semibold mb-2">Master Brains Behind The Project..!</h2>
+                    <div class="row justify-content-center">
+                        <div class="col-xl-10">
+                            <p class="text-muted fs-15 mb-5 fw-normal">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur quam saepe enim maxime! Eligendi quas itaque voluptatibus, aspernatur illo, natus cumque odio, molestiae obcaecati ducimus sit ratione recusandae perferendis culpa?</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-evenly">
+                        <div class="col">
+                            <div class="p-3 text-center rounded-2">
+                                <span class="avatar avatar-sm avatar-rounded me-3">
+                                    <img src="../assets/img/users/1.jpg" alt="">
+                                </span>
+                                <div>
+                                    <p class="mb-0 fw-semibold fs-16">Socrat Itumay</p>
+                                    <p class="mb-0 fs-14 text-muted">Founder & CEO</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-3 text-center rounded-2">
+                                <span class="avatar avatar-sm avatar-rounded me-3">
+                                    <img src="../assets/img/users/10.jpg" alt="">
+                                </span>
+                                <div>
+                                    <p class="mb-0 fw-semibold fs-16">Eos Tempor</p>
+                                    <p class="mb-0 fs-14 text-muted">Director</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-3 text-center rounded-2">
+                                <span class="avatar avatar-sm avatar-rounded me-3">
+                                    <img src="../assets/img/users/2.jpg" alt="">
+                                </span>
+                                <div>
+                                    <p class="mb-0 fw-semibold fs-16">Airi Satou</p>
+                                    <p class="mb-0 fs-14 text-muted">Hr</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-3 text-center rounded-2">
+                                <span class="avatar avatar-sm avatar-rounded me-3">
+                                    <img src="../assets/img/users/12.jpg" alt="">
+                                </span>
+                                <div>
+                                    <p class="mb-0 fw-semibold fs-16">Et Kasd</p>
+                                    <p class="mb-0 fs-14 text-muted">Manager</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-3 text-center rounded-2">
+                                <span class="avatar avatar-sm avatar-rounded me-3">
+                                    <img src="../assets/img/users/3.jpg" alt="">
+                                </span>
+                                <div>
+                                    <p class="mb-0 fw-semibold fs-16">Aderson tumay</p>
+                                    <p class="mb-0 fs-14 text-muted">Team Lead</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-3 text-center rounded-2">
+                                <span class="avatar avatar-sm avatar-rounded me-3">
+                                    <img src="../assets/img/users/4.jpg" alt="">
+                                </span>
+                                <div>
+                                    <p class="mb-0 fw-semibold fs-16">Samantha Paul</p>
+                                    <p class="mb-0 fs-14 text-muted">Sr.Ui Developer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-3 text-center rounded-2">
+                                <span class="avatar avatar-sm avatar-rounded me-3">
+                                    <img src="../assets/img/users/15.jpg" alt="">
+                                </span>
+                                <div>
+                                    <p class="mb-0 fw-semibold fs-16">Mc Greggor</p>
+                                    <p class="mb-0 fs-14 text-muted">Java Developer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-3 text-center rounded-2">
+                                <span class="avatar avatar-sm avatar-rounded me-3">
+                                    <img src="../assets/img/users/6.jpg" alt="">
+                                </span>
+                                <div>
+                                    <p class="mb-0 fw-semibold fs-16">Emiley Jackson</p>
+                                    <p class="mb-0 fs-14 text-muted">Full Stacker</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-3 text-center rounded-2">
+                                <span class="avatar avatar-sm avatar-rounded me-3">
+                                    <img src="../assets/img/users/7.jpg" alt="">
+                                </span>
+                                <div>
+                                    <p class="mb-0 fw-semibold fs-16">Lilly Donovan</p>
+                                    <p class="mb-0 fs-14 text-muted">javascript</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End:: Section-10 -->
+
+            <!-- Start:: Section-11 -->
+            <section class="section" id="faq">
+                <div class="container text-center">
+                    <h3 class="fw-bold fs-2 mb-2">Frequently Asked Questions..!</h3>
+                    <div class="row justify-content-center">
+                        <div class="col-xl-10">
+                            <p class="text-muted fs-15 mb-5 fw-normal">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur quam saepe enim maxime! Eligendi quas itaque voluptatibus, aspernatur illo, natus cumque odio, molestiae obcaecati ducimus sit ratione recusandae perferendis culpa?</p>
+                        </div>
+                    </div>
+                    <div class="row text-start">
+                        <div class="col-xl-12">
+                            <div class="row gy-2">
+                                <div class="col-xl-6">
+                                    <div class="accordion accordion-customicon1 accordions-items-seperate" id="accordioncustomicon1Exampletwo">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingcustomicon2One">
+                                                <button class="accordion-button  fw-semibold fs-18 p-3 collapsed" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapsecustomicon2One" aria-expanded="true"
+                                                    aria-controls="collapsecustomicon2One">
+                                                    How To Insert All The Plugins?
+                                                </button>
+                                            </h2>
+                                            <div id="collapsecustomicon2One" class="accordion-collapse collapse"
+                                                aria-labelledby="headingcustomicon2One"
+                                                data-bs-parent="#accordioncustomicon1Exampletwo">
+                                                <div class="accordion-body">
+                                                    <p>I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and
+                                                        I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, 
+                                                        the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself,
+                                                        because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingcustomicon2Two">
+                                                <button class="accordion-button  fw-semibold fs-18 p-3  collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapsecustomicon2Two"
+                                                    aria-expanded="false" aria-controls="collapsecustomicon2Two">
+                                                    How Can I contact?
+                                                </button>
+                                            </h2>
+                                            <div id="collapsecustomicon2Two" class="accordion-collapse collapse"
+                                                aria-labelledby="headingcustomicon2Two"
+                                                data-bs-parent="#accordioncustomicon1Exampletwo">
+                                                <div class="accordion-body">
+                                                    <p>I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and
+                                                        I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, 
+                                                        the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself,
+                                                        because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences.
+                                                    </p>
+                                                </div>
+                                                </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingcustomicon2Three">
+                                                <button class="accordion-button  fw-semibold fs-18 p-3  collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapsecustomicon2Three"
+                                                    aria-expanded="false" aria-controls="collapsecustomicon2Three">
+                                                    Can I use this Plugins in Another Template?
+                                                </button>
+                                            </h2>
+                                            <div id="collapsecustomicon2Three" class="accordion-collapse collapse"
+                                                aria-labelledby="headingcustomicon2Three"
+                                                data-bs-parent="#accordioncustomicon1Exampletwo">
+                                                <div class="accordion-body">
+                                                    <p>I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and
+                                                        I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, 
+                                                        the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself,
+                                                        because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingcustomicon2four">
+                                                <button class="accordion-button  fw-semibold fs-18 p-3  collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapsecustomicon2four"
+                                                    aria-expanded="false" aria-controls="collapsecustomicon2four">
+                                                    Does it Easy to Customizable?
+                                                </button>
+                                            </h2>
+                                            <div id="collapsecustomicon2four" class="accordion-collapse collapse"
+                                                aria-labelledby="headingcustomicon2four"
+                                                data-bs-parent="#accordioncustomicon1Exampletwo">
+                                                <div class="accordion-body">
+                                                    <p>I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and
+                                                        I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, 
+                                                        the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself,
+                                                        because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="accordion accordion-customicon1 accordions-items-seperate" id="accordioncustomicon1Examplethree">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingcustomicon3five">
+                                                <button class="accordion-button  fw-semibold fs-18 p-3  collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapsecustomicon3five"
+                                                    aria-expanded="false" aria-controls="collapsecustomicon3five">
+                                                   How Can I Add another page in Template?
+                                                </button>
+                                            </h2>
+                                            <div id="collapsecustomicon3five" class="accordion-collapse collapse"
+                                                aria-labelledby="headingcustomicon3five"
+                                                data-bs-parent="#accordioncustomicon1Examplethree">
+                                                <div class="accordion-body">
+                                                    <p>I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and
+                                                        I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, 
+                                                        the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself,
+                                                        because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingcustomicon3six">
+                                                <button class="accordion-button  fw-semibold fs-18 p-3  collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapsecustomicon3six"
+                                                    aria-expanded="false" aria-controls="collapsecustomicon3six">
+                                                    How can I download This template?
+                                                </button>
+                                            </h2>
+                                            <div id="collapsecustomicon3six" class="accordion-collapse collapse"
+                                                aria-labelledby="headingcustomicon3six"
+                                                data-bs-parent="#accordioncustomicon1Examplethree">
+                                                <div class="accordion-body">
+                                                    <p>I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and
+                                                        I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, 
+                                                        the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself,
+                                                        because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingcustomicon3seven">
+                                                <button class="accordion-button  fw-semibold fs-18 p-3  collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapsecustomicon3seven"
+                                                    aria-expanded="false" aria-controls="collapsecustomicon3seven">
+                                                    How To Add additional plugins?
+                                                </button>
+                                            </h2>
+                                            <div id="collapsecustomicon3seven" class="accordion-collapse collapse"
+                                                aria-labelledby="headingcustomicon3seven"
+                                                data-bs-parent="#accordioncustomicon1Examplethree">
+                                                <div class="accordion-body">
+                                                    <p>I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and
+                                                        I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, 
+                                                        the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself,
+                                                        because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingcustomicon3One">
+                                                <button class="accordion-button  fw-semibold fs-18 p-3 collapsed" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapsecustomicon3One" aria-expanded="true"
+                                                    aria-controls="collapsecustomicon3One">
+                                                    How To Insert All The Plugins?
+                                                </button>
+                                            </h2>
+                                            <div id="collapsecustomicon3One" class="accordion-collapse collapse"
+                                                aria-labelledby="headingcustomicon3One"
+                                                data-bs-parent="#accordioncustomicon1Examplethree">
+                                                <div class="accordion-body">
+                                                    <p>I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and
+                                                        I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, 
+                                                        the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself,
+                                                        because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End:: Section-11 -->
+            
+            <!-- Start:: Section-12 -->
+            <section class="section  section-bg " id="blog">
+                <div class="container position-relative">
+                    <h2 class="fw-semibold mb-2 text-center">Latest Blog news</h2>
+                    <div class="row justify-content-center text-center">
+                        <div class="col-xl-10">
+                            <p class="text-muted fs-15 mb-5 fw-normal">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur quam saepe enim maxime! Eligendi quas itaque voluptatibus, aspernatur illo, natus cumque odio, molestiae obcaecati ducimus sit ratione recusandae perferendis culpa?</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <div class="card custom-card overlay-card">
+                                 <img src="../assets/img/gallery/2.jpg" class="card-img" alt="...">
+                                <div class="card-img-overlay d-flex flex-column over-content-bottom"> 
+                                    <h5 class="fw-seibold text-fixed-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                                    <p class="text-fixed-white">Published <span class="text-fixed-white">12.04.2023</span> by <span class="text-fixed-white">Mark Equel</span></p>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="row">
+                                <div class="col-xl-6">
+                                    <div class="card custom-card overlay-card">
+                                         <img src="../assets/img/gallery/3.jpg" class="card-img" alt="...">
+                                        <div class="card-img-overlay d-flex flex-column over-content-bottom"> 
+                                            <h5 class="fw-seibold text-fixed-white">Ui Review Presentations.</h5>
+                                            <p class="text-fixed-white">Published <span class="text-fixed-white">12.04.2023</span> by <span class="text-fixed-white">Mark Equel</span></p>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="card custom-card overlay-card">
+                                         <img src="../assets/img/gallery/8.jpg" class="card-img" alt="...">
+                                        <div class="card-img-overlay d-flex flex-column over-content-bottom"> 
+                                            <h5 class="fw-seibold text-fixed-white">Study In Nature</h5>
+                                            <p class="text-fixed-white">Published <span class="text-fixed-white">12.04.2023</span> by <span class="text-fixed-white">Mark Equel</span></p>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="card custom-card overlay-card">
+                                         <img src="../assets/img/gallery/9.jpg" class="card-img" alt="...">
+                                        <div class="card-img-overlay d-flex flex-column over-content-bottom"> 
+                                            <h5 class="fw-seibold text-fixed-white">Bussines Of Design</h5>
+                                            <p class="text-fixed-white">Published <span class="text-fixed-white">12.04.2023</span> by <span class="text-fixed-white">Mark Equel</span></p>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="card custom-card overlay-card">
+                                         <img src="../assets/img/gallery/10.jpg" class="card-img" alt="...">
+                                        <div class="card-img-overlay d-flex flex-column over-content-bottom"> 
+                                            <h5 class="fw-seibold text-fixed-white">Stories That Matters</h5>
+                                            <p class="text-fixed-white">Published <span class="text-fixed-white">12.04.2023</span> by <span class="text-fixed-white">Mark Equel</span></p>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End:: Section-12 -->
+
+            <!-- Start:: Section-13 -->
+            <section class="section" id="contact">
+                <div class="container text-center">
+                    <h2 class="fw-semibold mb-2">Feel Free To Contact Us..!</h2>
+                    <div class="row justify-content-center">
+                        <div class="col-xl-9">
+                            <p class="text-muted fs-15 mb-5 fw-normal">You can contact us anytime regarding any queries or deals,dont hesitate to clear your doubts before trying our product.</p>
+                        </div>
+                    </div>
+                    <div class="row text-start justify-content-center">
+                        <div class="col-xxl-8 col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                            <div class="row gy-3 mt-2 px-3">
+                                <div class="d-sm-flex justify-content-center">
+                                    <div class="d-flex align-items-center  mb-3 me-sm-5">
+                                        <span class="avatar avatar-md avatar-rounded me-3 bg-primary-transparent">
+                                            <i class="ri-smartphone-line fs-20"></i>
+                                        </span>
+                                        <div>
+                                            <p class="mb-0 fw-semibold fs-16">Phone number</p>
+                                            <p class="mb-0 fs-13  text-muted">+ 01 234 567 88</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center  mb-3">
+                                        <span class="avatar avatar-md avatar-rounded me-3 bg-primary-transparent">
+                                            <i class="ri-mail-line  fs-20"></i>
+                                        </span>
+                                        <div>
+                                            <p class="mb-0 fw-semibold fs-16">Email Address</p>
+                                            <p class="mb-0 fs-13  text-muted">info12323@example.com</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="row gy-3">
+                                        <div class="col-xl-12">
+                                            <input type="text" class="form-control " id="contact-address-name" placeholder="Enter Full Name">
+                                        </div>
+                                        <div class="col-xl-12">
+                                            <input type="text" class="form-control " id="contact-address-Email" placeholder="Enter Email Id">
+                                        </div>
+                                        <div class="col-xl-12">
+                                            <input type="text" class="form-control " id="contact-address-phone" placeholder="Enter Phone Number">
+                                        </div>
+                                        <div class="col-xl-12">
+                                            <textarea class="form-control " id="contact-address-address"  placeholder="Enter your Message" rows="1"></textarea>
+                                        </div>
+                                        <div class="col-xl-12 d-grid">
+                                            <a href="javascript:void(0);" class="btn btn-primary">Send message</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End:: Section-13 -->
+            
+            <!-- Start:: Section-14 -->
+            <section class="section landing-Features px-0">
+                <div class="container text-center">
+                    <h2 class="fw-semibold mb-2 text-fixed-white ">Get Notify When Project is Updated</h2>
+                    <div class="row justify-content-center">
+                        <div class="col-xl-10">
+                            <p class="text-fixed-white op-8 fs-15 mb-3 fw-normal mx-5"> 
+                                We develop modern concepts to design and develop the interface design, web development to deliver them with eye-catching innovative ideas. We believe in effective,
+                                 efficient and timely solutions for various types of businesses. Our team develops a long-term strategy to bring out spark conversation with clients,
+                                  and visibility to your company.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center mt-4 mx-4">
+                        <div class="col-lg-4 col-sm-6">
+                                <input type="email" class="form-control m-1" id="contact-address-email" placeholder="Enter Email Id">
+                        </div>
+                        <div class="col-lg-2 col-sm-4 text-start">
+                                <button class="btn btn-danger btn-lg m-1" type="button">Notify Me</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End:: Section-14 -->
+
+            <!-- Start:: Section-15 -->
+            <section class="section landing-footer text-fixed-white">
+                <div class="">
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-6 col-12 mb-md-0 mb-3">
+                            <div class="px-4">
+                                <h6 class="fw-medium fs-18 mb-0 text-fixed-white">About</h6>
+                                <hr class="w-2 border border-2 border-primary d-inline-block mt-2">
+                                <p class="fw-semibold mb-3"><a href="index.html"><img src="../assets/img/brand-logos/desktop-dark.png" alt=""></a></p>
+                                <p class="mb-2 op-6 fw-normal fs-16">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit et magnam, fuga est mollitia eius, quo illum illo inventore optio aut quas omnis rem. Dolores accusantium aspernatur minus ea incidunt.
+                                </p>
+                                <div class="btn-list my-3">
+                                    <button class="btn btn-icon btn-dark-light rounded-pill btn-wave waves-effect waves-light">
+                                        <i class="ri ri-github-line fs-18 lh-1"></i>
+                                    </button>
+                                    <button class="btn btn-icon btn-dark-light rounded-pill btn-wave waves-effect waves-light">
+                                        <i class="ri ri-instagram-line fs-18 lh-1"></i>
+                                    </button>
+                                    <button class="btn btn-icon btn-dark-light rounded-pill btn-wave waves-effect waves-light">
+                                        <i class="ri ri-twitter-x-line fs-18 lh-1"></i>
+                                    </button>
+                                    <button class="btn btn-icon btn-dark-light rounded-pill btn-wave waves-effect waves-light">
+                                        <i class="ri ri-linkedin-line  fs-18 lh-1"></i>
+                                    </button>
+                                    <button class="btn btn-icon btn-dark-light rounded-pill btn-wave waves-effect waves-light">
+                                        <i class="ri ri-google-line fs-18 lh-1"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-sm-6 col-12">
+                            <div class="px-4">
+                                <h6 class="fw-medium fs-18 mb-0 text-fixed-white">Our Services</h6>
+                                <hr class="w-2  border border-2 border-primary d-inline-block mt-2">
+                                <ul class="list-unstyled op-6 fw-normal landing-footer-list">
+                                    <li>
+                                        <a href="javascript:void(0);" class="text-fixed-white">Our Team</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="text-fixed-white">Contact US</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="text-fixed-white">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="text-fixed-white">Services</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="text-fixed-white">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="text-fixed-white">Terms and Services</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-sm-6 col-12">
+                            <div class="px-4">
+                                <h6 class="fw-medium fs-18 mb-0 text-fixed-white">Our Pages</h6>
+                                <hr class="w-2  border border-2 border-primary d-inline-block mt-2">
+                                <ul class="list-unstyled op-6 fw-normal landing-footer-list">
+                                    <li>
+                                        <a href="javascript:void(0);" class="text-fixed-white">Email</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="text-fixed-white">Profile</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="text-fixed-white">Timeline</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="text-fixed-white">Projects</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="text-fixed-white">Contacts</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="text-fixed-white">Protfolio</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="px-4">
+                                <h6 class="fw-medium fs-18 mb-0 text-fixed-white">Contact Us</h6>
+                                <hr class="w-2  border border-2 border-primary d-inline-block mt-2">
+                                <ul class="list-unstyled fw-normal landing-footer-list">
+                                    <li>
+                                        <a href="javascript:void(0);" class="text-fixed-white"><i class="ri-home-4-line me-1 align-middle"></i> <span class="op-6"> New York, Weq Street, NY 10012, US</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="text-fixed-white"><i class="ri-mail-line me-1 align-middle"></i><span class="op-6"> info12323@example.com</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="text-fixed-white"><i class="ri-phone-line me-1 align-middle"></i><span class="op-6">+ 01 234 567 88</span> </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="text-fixed-white"><i class="ri-printer-line me-1 align-middle"></i> <span class="op-6">+ 01 234 567 88</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="text-fixed-white"><i class="ri-global-line  me-1 align-middle"></i><span class="op-6"> https://Synto.com/</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End:: Section-15 -->
+
+            <div class="text-center landing-main-footer py-3">
+                <span class="text-fixed-white fs-15 mx-3"> Copyright © <span id="year"></span> <a
+                    href="javascript:void(0);" class="text-primary fw-semibold"><u>synto</u></a>.
+                Designed with <span class="fa fa-heart text-danger"></span> by <a href="javascript:void(0);" class="text-primary fw-semibold"><u>
+                Spruko</u>
+                </a> All
+                rights
+                reserved
+                </span>
+            </div>
+
+        </div>
+        <!-- End::app-content -->
+
+    </div>
+
+    <div class="scrollToTop">
+        <span class="arrow"><i class="ri-arrow-up-s-fill fs-20"></i></span>
+    </div>
+    <div id="responsive-overlay"></div>
+
+    <!-- Popper JS -->
+    <script src="../assets/libs/@popperjs/core/umd/popper.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Color Picker JS -->
+    <script src="../assets/libs/@simonwep/pickr/pickr.es5.min.js"></script>
+
+    <!-- Choices JS -->
+    <script src="../assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="../assets/libs/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Defaultmenu JS -->
+    <script src="../assets/js/defaultmenu.min.js"></script>
+
+    <!-- Internal Landing JS -->
+    <script src="../assets/js/landing.js"></script>
+
+    <!-- Node Waves JS-->
+    <script src="../assets/libs/node-waves/waves.min.js"></script>
+
+    <!-- Sticky JS -->
+    <script src="../assets/js/sticky.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,2428 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-nav-layout="vertical" data-theme-mode="light" data-header-styles="light" data-menu-styles="dark" data-toggled="close">
+
+<head>
+
+    <!-- Meta Data -->
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> synto - Bootstrap 5 Premium Admin & Dashboard Template </title>
+    <meta name="Description" content="Bootstrap Responsive Admin Web Dashboard HTML5 Template">
+    <meta name="Author" content="Spruko Technologies Private Limited">
+	<meta name="keywords" content="admin template,admin dashboard,template dashboard,admin panel,bootstrap admin,admin,dashboard,html,admin dashboard template,html template,bootstrap template,admin panel template,bootstrap admin template,bootstrap 5 admin template,html and css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/img/brand-logos/favicon.ico" type="image/x-icon">
+    
+    <!-- Choices JS -->
+    <script src="../assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
+
+    <!-- Main Theme Js -->
+    <script src="../assets/js/main.js"></script>
+    
+    <!-- Bootstrap Css -->
+    <link id="style" href="../assets/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" >
+
+    <!-- Style Css -->
+    <link href="../assets/css/styles.css" rel="stylesheet" >
+
+    <!-- Icons Css -->
+    <link href="../assets/css/icons.css" rel="stylesheet" >
+
+    <!-- Node Waves Css -->
+    <link href="../assets/libs/node-waves/waves.min.css" rel="stylesheet" > 
+
+    <!-- Simplebar Css -->
+    <link href="../assets/libs/simplebar/simplebar.min.css" rel="stylesheet" >
+    
+    <!-- Color Picker Css -->
+    <link rel="stylesheet" href="../assets/libs/flatpickr/flatpickr.min.css">
+    <link rel="stylesheet" href="../assets/libs/@simonwep/pickr/themes/nano.min.css">
+
+    <!-- Choices Css -->
+    <link rel="stylesheet" href="../assets/libs/choices.js/public/assets/styles/choices.min.css">
+
+
+</head>
+
+<body>
+
+    <!-- Start Switcher -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="switcher-canvas" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header border-bottom">
+        <h5 class="offcanvas-title text-default" id="offcanvasRightLabel">Switcher</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <nav class="border-bottom border-block-end-dashed">
+            <div class="nav nav-tabs nav-justified" id="switcher-main-tab" role="tablist">
+                <button class="nav-link active" id="switcher-home-tab" data-bs-toggle="tab" data-bs-target="#switcher-home"
+                    type="button" role="tab" aria-controls="switcher-home" aria-selected="true">Theme Styles</button>
+                <button class="nav-link" id="switcher-profile-tab" data-bs-toggle="tab" data-bs-target="#switcher-profile"
+                    type="button" role="tab" aria-controls="switcher-profile" aria-selected="false">Theme Colors</button>
+            </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active border-0" id="switcher-home" role="tabpanel" aria-labelledby="switcher-home-tab"
+                tabindex="0">
+                <div class="">
+                    <p class="switcher-style-head">Theme Color Mode:</p>
+                    <div class="row switcher-style gx-0">
+                        <div class="col-4">
+                            <div class="form-check switch-select">
+                                <label class="form-check-label" for="switcher-light-theme">
+                                    Light
+                                </label>
+                                <input class="form-check-input" type="radio" name="theme-style" id="switcher-light-theme"
+                                    checked>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-check switch-select">
+                                <label class="form-check-label" for="switcher-dark-theme">
+                                    Dark
+                                </label>
+                                <input class="form-check-input" type="radio" name="theme-style" id="switcher-dark-theme">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <p class="switcher-style-head">Directions:</p>
+                    <div class="row switcher-style gx-0">
+                        <div class="col-4">
+                            <div class="form-check switch-select">
+                                <label class="form-check-label" for="switcher-ltr">
+                                    LTR
+                                </label>
+                                <input class="form-check-input" type="radio" name="direction" id="switcher-ltr" checked>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-check switch-select">
+                                <label class="form-check-label" for="switcher-rtl">
+                                    RTL
+                                </label>
+                                <input class="form-check-input" type="radio" name="direction" id="switcher-rtl">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <p class="switcher-style-head">Navigation Styles:</p>
+                    <div class="row switcher-style gx-0">
+                        <div class="col-4">
+                            <div class="form-check switch-select">
+                                <label class="form-check-label" for="switcher-vertical">
+                                    Vertical
+                                </label>
+                                <input class="form-check-input" type="radio" name="navigation-style" id="switcher-vertical"
+                                    checked>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-check switch-select">
+                                <label class="form-check-label" for="switcher-horizontal">
+                                    Horizontal
+                                </label>
+                                <input class="form-check-input" type="radio" name="navigation-style"
+                                    id="switcher-horizontal">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="navigation-menu-styles">
+                    <p class="switcher-style-head">Vertical & Horizontal Menu Styles:</p>
+                    <div class="row switcher-style gx-0 pb-2 gy-2">
+                        <div class="col-4">
+                            <div class="form-check switch-select">
+                                <label class="form-check-label" for="switcher-menu-click">
+                                    Menu Click
+                                </label>
+                                <input class="form-check-input" type="radio" name="navigation-menu-styles"
+                                    id="switcher-menu-click">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-check switch-select">
+                                <label class="form-check-label" for="switcher-menu-hover">
+                                    Menu Hover
+                                </label>
+                                <input class="form-check-input" type="radio" name="navigation-menu-styles"
+                                    id="switcher-menu-hover">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-check switch-select">
+                                <label class="form-check-label" for="switcher-icon-click">
+                                    Icon Click
+                                </label>
+                                <input class="form-check-input" type="radio" name="navigation-menu-styles"
+                                    id="switcher-icon-click">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-check switch-select">
+                                <label class="form-check-label" for="switcher-icon-hover">
+                                    Icon Hover
+                                </label>
+                                <input class="form-check-input" type="radio" name="navigation-menu-styles"
+                                    id="switcher-icon-hover">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidemenu-layout-styles">
+                    <p class="switcher-style-head">Sidemenu Layout Styles:</p>
+                    <div class="row switcher-style gx-0 pb-2 gy-2">
+                        <div class="col-sm-6">
+                            <div class="form-check switch-select">
+                                <label class="form-check-label" for="switcher-default-menu">
+                                    Default Menu
+                                </label>
+                                <input class="form-check-input" type="radio" name="sidemenu-layout-styles"
+                                    id="switcher-default-menu" checked>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-check switch-select">
+                                <label class="form-check-label" for="switcher-closed-menu">
+                                    Closed Menu
+                                </label>
+                                <input class="form-check-input" type="radio" name="sidemenu-layout-styles"
+                                    id="switcher-closed-menu">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-check switch-select">
+                                <label class="form-check-label" for="switcher-icontext-menu">
+                                    Icon Text
+                                </label>
+                                <input class="form-check-input" type="radio" name="sidemenu-layout-styles"
+                                    id="switcher-icontext-menu">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-check switch-select">
+                                <label class="form-check-label" for="switcher-icon-overlay">
+                                    Icon Overlay
+                                </label>
+                                <input class="form-check-input" type="radio" name="sidemenu-layout-styles"
+                                    id="switcher-icon-overlay">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-check switch-select">
+                                <label class="form-check-label" for="switcher-detached">
+                                    Detached
+                                </label>
+                                <input class="form-check-input" type="radio" name="sidemenu-layout-styles"
+                                    id="switcher-detached">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-check switch-select">
+                                <label class="form-check-label" for="switcher-double-menu">
+                                    Double Menu
+                                </label>
+                                <input class="form-check-input" type="radio" name="sidemenu-layout-styles"
+                                    id="switcher-double-menu">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <p class="switcher-style-head">Page Styles:</p>
+                    <div class="row switcher-style gx-0">
+                        <div class="col-4">
+                            <div class="form-check switch-select">
+                                <label class="form-check-label" for="switcher-regular">
+                                    Regular
+                                </label>
+                                <input class="form-check-input" type="radio" name="page-styles" id="switcher-regular"
+                                    checked>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-check switch-select">
+                                <label class="form-check-label" for="switcher-classic">
+                                    Classic
+                                </label>
+                                <input class="form-check-input" type="radio" name="page-styles" id="switcher-classic">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-check switch-select">
+                                <label class="form-check-label" for="switcher-modern">
+                                    Modern
+                                </label>
+                                <input class="form-check-input" type="radio" name="page-styles" id="switcher-modern">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <p class="switcher-style-head">Layout Width Styles:</p>
+                    <div class="row switcher-style gx-0">
+                        <div class="col-4">
+                            <div class="form-check switch-select">
+                                <label class="form-check-label" for="switcher-full-width">
+                                    Full Width
+                                </label>
+                                <input class="form-check-input" type="radio" name="layout-width" id="switcher-full-width"
+                                    checked>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-check switch-select">
+                                <label class="form-check-label" for="switcher-boxed">
+                                    Boxed
+                                </label>
+                                <input class="form-check-input" type="radio" name="layout-width" id="switcher-boxed">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <p class="switcher-style-head">Menu Positions:</p>
+                    <div class="row switcher-style gx-0">
+                        <div class="col-4">
+                            <div class="form-check switch-select">
+                                <label class="form-check-label" for="switcher-menu-fixed">
+                                    Fixed
+                                </label>
+                                <input class="form-check-input" type="radio" name="menu-positions" id="switcher-menu-fixed"
+                                    checked>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-check switch-select">
+                                <label class="form-check-label" for="switcher-menu-scroll">
+                                    Scrollable
+                                </label>
+                                <input class="form-check-input" type="radio" name="menu-positions" id="switcher-menu-scroll">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <p class="switcher-style-head">Header Positions:</p>
+                    <div class="row switcher-style gx-0">
+                        <div class="col-4">
+                            <div class="form-check switch-select">
+                                <label class="form-check-label" for="switcher-header-fixed">
+                                    Fixed
+                                </label>
+                                <input class="form-check-input" type="radio" name="header-positions"
+                                    id="switcher-header-fixed" checked>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-check switch-select">
+                                <label class="form-check-label" for="switcher-header-scroll">
+                                    Scrollable
+                                </label>
+                                <input class="form-check-input" type="radio" name="header-positions"
+                                    id="switcher-header-scroll">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <p class="switcher-style-head">Loader:</p>
+                    <div class="row switcher-style gx-0">
+                        <div class="col-4">
+                            <div class="form-check switch-select">
+                                <label class="form-check-label" for="switcher-loader-enable">
+                                    Enable
+                                </label>
+                                <input class="form-check-input" type="radio" name="page-loader"
+                                    id="switcher-loader-enable">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-check switch-select">
+                                <label class="form-check-label" for="switcher-loader-disable">
+                                    Disable
+                                </label>
+                                <input class="form-check-input" type="radio" name="page-loader"
+                                    id="switcher-loader-disable" checked>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade border-0" id="switcher-profile" role="tabpanel" aria-labelledby="switcher-profile-tab" tabindex="0">
+                <div>
+                    <div class="theme-colors">
+                        <p class="switcher-style-head">Menu Colors:</p>
+                        <div class="d-flex switcher-style pb-2">
+                            <div class="form-check switch-select me-3">
+                                <input class="form-check-input color-input color-white" data-bs-toggle="tooltip"
+                                    data-bs-placement="top" title="Light Menu" type="radio" name="menu-colors"
+                                    id="switcher-menu-light">
+                            </div>
+                            <div class="form-check switch-select me-3">
+                                <input class="form-check-input color-input color-dark" data-bs-toggle="tooltip"
+                                    data-bs-placement="top" title="Dark Menu" type="radio" name="menu-colors"
+                                    id="switcher-menu-dark" checked>
+                            </div>
+                            <div class="form-check switch-select me-3">
+                                <input class="form-check-input color-input color-primary" data-bs-toggle="tooltip"
+                                    data-bs-placement="top" title="Color Menu" type="radio" name="menu-colors"
+                                    id="switcher-menu-primary">
+                            </div>
+                            <div class="form-check switch-select me-3">
+                                <input class="form-check-input color-input color-gradient" data-bs-toggle="tooltip"
+                                    data-bs-placement="top" title="Gradient Menu" type="radio" name="menu-colors"
+                                    id="switcher-menu-gradient">
+                            </div>
+                            <div class="form-check switch-select me-3">
+                                <input class="form-check-input color-input color-transparent"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" title="Transparent Menu"
+                                    type="radio" name="menu-colors" id="switcher-menu-transparent">
+                            </div>
+                        </div>
+                        <div class="px-4 pb-3 text-muted fs-11">Note:If you want to change color Menu dynamically change from below Theme Primary color picker</div>
+                    </div>
+                    <div class="theme-colors">
+                        <p class="switcher-style-head">Header Colors:</p>
+                        <div class="d-flex switcher-style pb-2">
+                            <div class="form-check switch-select me-3">
+                                <input class="form-check-input color-input color-white" data-bs-toggle="tooltip"
+                                    data-bs-placement="top" title="Light Header" type="radio" name="header-colors"
+                                    id="switcher-header-light" checked>
+                            </div>
+                            <div class="form-check switch-select me-3">
+                                <input class="form-check-input color-input color-dark" data-bs-toggle="tooltip"
+                                    data-bs-placement="top" title="Dark Header" type="radio" name="header-colors"
+                                    id="switcher-header-dark">
+                            </div>
+                            <div class="form-check switch-select me-3">
+                                <input class="form-check-input color-input color-primary" data-bs-toggle="tooltip"
+                                    data-bs-placement="top" title="Color Header" type="radio" name="header-colors"
+                                    id="switcher-header-primary">
+                            </div>
+                            <div class="form-check switch-select me-3">
+                                <input class="form-check-input color-input color-gradient" data-bs-toggle="tooltip"
+                                    data-bs-placement="top" title="Gradient Header" type="radio" name="header-colors"
+                                    id="switcher-header-gradient">
+                            </div>
+                            <div class="form-check switch-select me-3">
+                                <input class="form-check-input color-input color-transparent" data-bs-toggle="tooltip"
+                                    data-bs-placement="top" title="Transparent Header" type="radio" name="header-colors"
+                                    id="switcher-header-transparent">
+                            </div>
+                        </div>
+                        <div class="px-4 pb-3 text-muted fs-11">Note:If you want to change color Header dynamically change from below Theme Primary color picker</div>
+                    </div>
+                    <div class="theme-colors">
+                        <p class="switcher-style-head">Theme Primary:</p>
+                        <div class="d-flex flex-wrap align-items-center switcher-style">
+                            <div class="form-check switch-select me-3">
+                                <input class="form-check-input color-input color-primary-1" type="radio"
+                                    name="theme-primary" id="switcher-primary">
+                            </div>
+                            <div class="form-check switch-select me-3">
+                                <input class="form-check-input color-input color-primary-2" type="radio"
+                                    name="theme-primary" id="switcher-primary1">
+                            </div>
+                            <div class="form-check switch-select me-3">
+                                <input class="form-check-input color-input color-primary-3" type="radio" name="theme-primary"
+                                    id="switcher-primary2">
+                            </div>
+                            <div class="form-check switch-select me-3">
+                                <input class="form-check-input color-input color-primary-4" type="radio" name="theme-primary"
+                                    id="switcher-primary3">
+                            </div>
+                            <div class="form-check switch-select me-3">
+                                <input class="form-check-input color-input color-primary-5" type="radio" name="theme-primary"
+                                    id="switcher-primary4">
+                            </div>
+                            <div class="form-check switch-select ps-0 mt-1 color-primary-light">
+                                <div class="theme-container-primary"></div>
+                                <div class="pickr-container-primary"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-colors">
+                        <p class="switcher-style-head">Theme Background:</p>
+                        <div class="d-flex flex-wrap align-items-center switcher-style">
+                            <div class="form-check switch-select me-3">
+                                <input class="form-check-input color-input color-bg-1" type="radio"
+                                    name="theme-background" id="switcher-background">
+                            </div>
+                            <div class="form-check switch-select me-3">
+                                <input class="form-check-input color-input color-bg-2" type="radio"
+                                    name="theme-background" id="switcher-background1">
+                            </div>
+                            <div class="form-check switch-select me-3">
+                                <input class="form-check-input color-input color-bg-3" type="radio" 
+                                     name="theme-background" id="switcher-background2">
+                            </div>
+                            <div class="form-check switch-select me-3">
+                                <input class="form-check-input color-input color-bg-4" type="radio"
+                                    name="theme-background" id="switcher-background3">
+                            </div>
+                            <div class="form-check switch-select me-3">
+                                <input class="form-check-input color-input color-bg-5" type="radio"
+                                    name="theme-background" id="switcher-background4">
+                            </div>
+                            <div class="form-check switch-select ps-0 mt-1 tooltip-static-demo color-bg-transparent">
+                                <div class="theme-container-background"></div>
+                                <div class="pickr-container-background"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-image mb-3">
+                        <p class="switcher-style-head">Menu With Background Image:</p>
+                        <div class="d-flex flex-wrap align-items-center switcher-style">
+                            <div class="form-check switch-select m-2">
+                                <input class="form-check-input bgimage-input bg-img1" type="radio"
+                                    name="theme-bgimage" id="switcher-bg-img">
+                            </div>
+                            <div class="form-check switch-select m-2">
+                                <input class="form-check-input bgimage-input bg-img2" type="radio"
+                                    name="theme-bgimage" id="switcher-bg-img1">
+                            </div>
+                            <div class="form-check switch-select m-2">
+                                <input class="form-check-input bgimage-input bg-img3" type="radio" name="theme-bgimage"
+                                    id="switcher-bg-img2">
+                            </div>
+                            <div class="form-check switch-select m-2">
+                                <input class="form-check-input bgimage-input bg-img4" type="radio"
+                                    name="theme-bgimage" id="switcher-bg-img3">
+                            </div>
+                            <div class="form-check switch-select m-2">
+                                <input class="form-check-input bgimage-input bg-img5" type="radio"
+                                    name="theme-bgimage" id="switcher-bg-img4">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-grid canvas-footer"> 
+                <a href="javascript:void(0);" id="reset-all" class="btn btn-danger">Reset</a> 
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Switcher -->
+
+
+     <!-- Loader -->
+<div id="loader" >
+    <img src="../assets/img/media/loader.svg" alt="">
+</div>
+<!-- Loader -->
+
+    <div class="page">
+         <!-- app-header -->
+ <header class="app-header">
+
+    <!-- Start::main-header-container -->
+    <div class="main-header-container container-fluid">
+
+        <!-- Start::header-content-left -->
+        <div class="header-content-left">
+
+            <!-- Start::header-element -->
+            <div class="header-element">
+                <div class="horizontal-logo">
+                    <a href="index.html" class="header-logo">
+                        <img src="../assets/img/brand-logos/desktop-logo.png" alt="logo" class="desktop-logo">
+                        <img src="../assets/img/brand-logos/toggle-logo.png" alt="logo" class="toggle-logo">
+                        <img src="../assets/img/brand-logos/desktop-dark.png" alt="logo" class="desktop-dark">
+                        <img src="../assets/img/brand-logos/toggle-dark.png" alt="logo" class="toggle-dark">
+                        <img src="../assets/img/brand-logos/desktop-white.png" alt="logo" class="desktop-white">
+                        <img src="../assets/img/brand-logos/toggle-white.png" alt="logo" class="toggle-white">
+                    </a>
+                </div>
+            </div>
+            <!-- End::header-element -->
+            <!-- Start::header-element -->
+            <div class="header-element">
+                <!-- Start::header-link -->
+                <div class="">
+                    <a class="sidebar-toggle sidemenu-toggle header-link" data-bs-toggle="sidebar" href="javascript:void(0);">
+                      <span class="sr-only">Toggle Navigation</span>
+                      <i class="ri-arrow-right-circle-line header-icon"></i>
+                    </a>
+                  </div>
+                <!-- <a aria-label="Hide Sidebar" class="sidemenu-toggle header-link animated-arrow hor-toggle horizontal-navtoggle" data-bs-toggle="sidebar" href="javascript:void(0);"><span></span></a> -->
+                <!-- End::header-link -->
+            </div>
+            <!-- End::header-element -->
+
+
+        </div>
+        <!-- End::header-content-left -->
+
+        <!-- Start::header-content-right -->
+        <div class="header-content-right">
+
+
+            <!-- Start::header-element -->
+            <div class="header-element country-selector">
+                <!-- Start::header-link|dropdown-toggle -->
+                <a href="javascript:void(0);" class="header-link dropdown-toggle" data-bs-auto-close="outside" data-bs-toggle="dropdown">
+                    <img src="../assets/img/flags/10.png" alt="img" class="rounded-circle header-link-icon">
+                </a>
+                <!-- End::header-link|dropdown-toggle -->
+                <ul class="main-header-dropdown dropdown-menu dropdown-menu-end" data-popper-placement="none">
+                    <li>
+                        <a class="dropdown-item d-flex align-items-center" href="javascript:void(0);">
+                            <span class=" lh-1 me-2">
+                                <img src="../assets/img/flags/10.png" alt="img">
+                            </span>
+                            English
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item d-flex align-items-center" href="javascript:void(0);">
+                            <span class=" lh-1 me-2">
+                                <img src="../assets/img/flags/1.png" alt="img" >
+                            </span>
+                            Spanish
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item d-flex align-items-center" href="javascript:void(0);">
+                            <span class=" lh-1 me-2">
+                                <img src="../assets/img/flags/2.png" alt="img" >
+                            </span>
+                            French
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item d-flex align-items-center" href="javascript:void(0);">
+                            <span class=" lh-1 me-2">
+                                <img src="../assets/img/flags/3.png" alt="img" >
+                            </span>
+                            German
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item d-flex align-items-center" href="javascript:void(0);">
+                            <span class=" lh-1 me-2">
+                                <img src="../assets/img/flags/4.png" alt="img" >
+                            </span>
+                            Italian
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item d-flex align-items-center" href="javascript:void(0);">
+                            <span class=" lh-1 me-2">
+                                <img src="../assets/img/flags/5.png" alt="img" >
+                            </span>
+                            Russian
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- End::header-element -->
+            
+            <!-- Start::header-element -->
+            <div class="header-element header-search">
+                <!-- Start::header-link -->
+                <a href="javascript:void(0);" class="header-link" data-bs-toggle="modal" data-bs-target="#searchModal">
+                    <i class="ri-search-2-line header-link-icon"></i>
+                </a>
+                <!-- End::header-link -->
+            </div>
+            <!-- End::header-element -->
+
+            <!-- Start::header-element -->
+            <div class="header-element header-theme-mode">
+                <!-- Start::header-link|layout-setting -->
+                <a href="javascript:void(0);" class="header-link layout-setting">
+                    <span class="light-layout">
+                        <!-- Start::header-link-icon -->
+                    <i class="ri-moon-line header-link-icon"></i>
+                        <!-- End::header-link-icon -->
+                    </span>
+                    <span class="dark-layout">
+                        <!-- Start::header-link-icon -->
+                    <i class="ri-sun-line header-link-icon"></i>
+                        <!-- End::header-link-icon -->
+                    </span>
+                </a>
+                <!-- End::header-link|layout-setting -->
+            </div>
+            <!-- End::header-element -->
+            
+            <!-- Start::header-element -->
+            <div class="header-element header-fullscreen">
+                <!-- Start::header-link -->
+                <a onclick="openFullscreen();" href="javascript:void(0);" class="header-link">
+                    <i class="ri-fullscreen-line full-screen-open header-link-icon"></i>
+                    <i class="ri-fullscreen-line full-screen-close header-link-icon d-none"></i>
+                </a>
+                <!-- End::header-link -->
+            </div>
+            <!-- End::header-element -->
+
+            <!-- Start::header-element -->
+            <div class="header-element cart-dropdown">
+                <!-- Start::header-link|dropdown-toggle -->
+                <a href="javascript:void(0);" class="header-link dropdown-toggle" data-bs-auto-close="outside" data-bs-toggle="dropdown">
+                    <i class="ri-shopping-basket-line  header-link-icon"></i>
+                    <span class="badge bg-danger rounded-pill header-icon-badge" id="cart-icon-badge">4</span>
+                </a>
+                <!-- End::header-link|dropdown-toggle -->
+                <!-- Start::main-header-dropdown -->
+                <div class="main-header-dropdown dropdown-menu dropdown-menu-end" data-popper-placement="none">
+                    <div class="header-dropdown bg-primary text-fixed-white rounded-top">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <p class="mb-0 fs-15 fw-semibold">Shopping Cart</p>
+                            <span class="badge badge-light-2" id="cart-data">4 Items</span>
+                        </div>
+                    </div>
+                    <div><hr class="dropdown-divider"></div>
+                        <ul class="list-unstyled mb-0" id="header-cart-items-scroll">
+                            <li class="dropdown-item border-bottom-0">
+                                <div class="d-flex align-items-start cart-dropdown-item">
+                                    <img src="../assets/img/ecommerce/products/1.png" alt="img" class="avatar avatar  br-5 me-3 p-2 bg-gray-100">
+                                    <div class="flex-grow-1">
+                                        <div class="d-flex align-items-start justify-content-between mb-0">
+                                            <div class="mb-0 fs-14 text-default fw-medium">
+                                                <a href="cart.html">Black Heals For Women</a>
+                                            </div>
+                                            <div>
+                                                <a href="javascript:void(0);" class="header-cart-remove float-end dropdown-item-close"><i class="ri-close-circle-line"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="min-w-fit-content d-flex align-items-start justify-content-between">
+                                            <ul class="header-product-item d-flex">
+                                                <li>$699</li>
+                                                <li class="text-decoration-line-through text-muted">$999</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dropdown-item border-bottom-0">
+                                <div class="d-flex align-items-start cart-dropdown-item">
+                                    <img src="../assets/img/ecommerce/products/2.png" alt="img" class="avatar avatar  br-5 me-3 p-2 bg-gray-100">
+                                    <div class="flex-grow-1">
+                                        <div class="d-flex align-items-start justify-content-between mb-0">
+                                            <div class="mb-0 fs-14 text-default fw-medium">
+                                                <a href="cart.html">Tshirt For Men</a>
+                                            </div>
+                                            <div>
+                                                <a href="javascript:void(0);" class="header-cart-remove float-end dropdown-item-close"><i class="ri-close-circle-line"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="min-w-fit-content d-flex align-items-start justify-content-between">
+                                            <ul class="header-product-item">
+                                                <li>$245</li>
+                                                <li><span class="text-decoration-line-through text-muted">$599</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dropdown-item border-bottom-0">
+                                <div class="d-flex align-items-start cart-dropdown-item">
+                                    <img src="../assets/img/ecommerce/products/9.png" alt="img" class="avatar avatar  br-5 me-3 p-2 bg-gray-100">
+                                    <div class="flex-grow-1">
+                                        <div class="d-flex align-items-start justify-content-between mb-0">
+                                            <div class="mb-0 fs-14 text-default fw-medium">
+                                                <a href="cart.html">Travel Bag For Womens</a>
+                                            </div>
+                                            <div>
+                                                <a href="javascript:void(0);" class="header-cart-remove float-end dropdown-item-close"><i class="ri-close-circle-line"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="min-w-fit-content d-flex align-items-start justify-content-between">
+                                            <ul class="header-product-item d-flex">
+                                                <li>$299</li>
+                                                <li class="text-decoration-line-through text-muted">$399</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dropdown-item border-bottom-0">
+                                <div class="d-flex align-items-start cart-dropdown-item">
+                                    <img src="../assets/img/ecommerce/products/10.png" alt="img" class="avatar avatar  br-5 me-3 p-2 bg-gray-100">
+                                    <div class="flex-grow-1">
+                                        <div class="d-flex align-items-start justify-content-between mb-0">
+                                            <div class="mb-0 fs-14 text-default fw-medium">
+                                                <a href="cart.html">Leather Wallet For Grils</a>
+                                            </div>
+                                            <div>
+                                                <a href="javascript:void(0);" class="header-cart-remove float-end dropdown-item-close"><i class="ri-close-circle-line"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="min-w-fit-content d-flex align-items-start justify-content-between">
+                                            <ul class="header-product-item d-flex">
+                                                <li>$100</li>
+                                                <li class="text-decoration-line-through text-muted">$150</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="p-2 empty-footer-item border-top">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <span class="fs-13 fw-semibold op-9">Total</span>
+                                </div>
+                                <div class="text-end font-medium">
+                                    <span class="fs-13 fw-semibold op-9">$40,020</span>
+                                </div>
+                            </div>
+                            </div>
+                        <div class="p-3 empty-header-item border-top">
+                            <div class="d-grid">
+                                <a href="checkout.html" class="btn btn-primary">Proceed to checkout</a>
+                            </div>
+                        </div>
+                        <div class="p-5 empty-item d-none">
+                            <div class="text-center">
+                                <span class="avatar avatar-xxl avatar-rounded bg-primary-transparent">
+                                    <i class="ri-shopping-cart-2-line fs-2"></i>
+                                </span>
+                                <h6 class="fw-bold mb-1 mt-3">No Items In Cart</h6>
+                                <span class="mb-3 fw-normal fs-13 d-block">When you have Items added here , they will appear here.</span>
+                                <a href="products.html" class="btn btn-primary btn-wave btn-sm m-1" data-abc="true"><i class="bi bi-arrow-right me-1"></i>continue shopping </a>
+                            </div>
+                        </div>
+                    </div>
+                <!-- End::main-header-dropdown -->
+            </div>
+            <!-- End::header-element -->
+
+            <!-- Start::header-element -->
+            <div class="header-element notifications-dropdown">
+                <!-- Start::header-link|dropdown-toggle -->
+                <a href="javascript:void(0);" class="header-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" id="messageDropdown" aria-expanded="false">
+                    <i class="ri-notification-2-line header-link-icon animate-bell"></i>
+                    <span class="badge bg-success rounded-pill header-icon-badge pulse pulse-success" id="notification-icon-badge">4</span>
+                </a>
+                <!-- End::header-link|dropdown-toggle -->
+                <!-- Start::main-header-dropdown -->
+                <div class="main-header-dropdown dropdown-menu dropdown-menu-end" data-popper-placement="none">
+                    <div class="header-dropdown bg-primary text-fixed-white rounded-top">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <p class="mb-0 fs-15 fw-semibold">Notifications</p>
+                            <span class="badge badge-light-2" id="notifiation-data">Mark All Read</span>
+                        </div>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <ul class="list-unstyled mb-0" id="header-notification-scroll">
+                        <li class="dropdown-item"> 
+                            <div class="d-flex align-items-start">
+                                <a href="mail-inbox.html" class="stretched-link text-danger" style="position: relative;"></a>
+                                 <div class="pe-2">
+                                     <span class="avatar avatar-sm">
+                                        <img src="../assets/img/users/17.jpg" alt="img" class="rounded-sm">
+                                    </span>
+                                 </div>
+                                 <div class="flex-grow-1 d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <p class="mb-0 fw-semibold"><a href="mail-inbox.html">Elon Isk</a></p>
+                                        <span class="text-muted fw-normal fs-12 header-notification-text text-truncate">Hello there! How are you doing? Call me when...</span>
+                                         <p class="mb-0 text-muted fw-normal fs-12">2 min</p>
+                                    </div>
+                                    <div>
+                                        <a href="javascript:void(0);" class="min-w-fit-content text-muted me-1 dropdown-item-close1"><i class="ri-close-circle-line fs-16 op-8"></i></a>
+                                    </div>
+                                 </div>
+                            </div>
+                        </li>
+                        <li class="dropdown-item">
+                            <div class="d-flex align-items-start">
+                                 <div class="pe-2">
+                                     <span class="avatar avatar-sm">
+                                        <img src="../assets/img/users/2.jpg" alt="img" class="rounded-sm">
+                                    </span>
+                                 </div>
+                                 <div class="flex-grow-1 d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <p class="mb-0 fw-semibold"><a href="mail-inbox.html">Shakira Sen</a></p>
+                                        <span class="text-muted fw-normal fs-12 header-notification-text text-truncate">I would like to discuss about that assets...</span>
+                                         <p class="mb-0 text-muted fw-normal fs-12">09:43</p>
+                                    </div>
+                                    <div>
+                                        <a href="javascript:void(0);" class="min-w-fit-content text-muted me-1 dropdown-item-close1"><i class="ri-close-circle-line fs-16 op-8"></i></a>
+                                    </div>
+                                 </div>
+                            </div>
+                        </li>
+                        <li class="dropdown-item">
+                            <div class="d-flex align-items-start">
+                                 <div class="pe-2">
+                                     <span class="avatar avatar-sm">
+                                        <img src="../assets/img/users/21.jpg" alt="img" class="rounded-sm">
+                                    </span>
+                                 </div>
+                                 <div class="flex-grow-1 d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <p class="mb-0 fw-semibold"><a href="mail-inbox.html">Sebastian</a></p>
+                                        <span class="text-muted fw-normal fs-12 header-notification-text text-truncate">Shall we go to the cafe at downtown...</span>
+                                         <p class="mb-0 text-muted fw-normal fs-12">yesterday</p>
+                                    </div>
+                                    <div>
+                                        <a href="javascript:void(0);" class="min-w-fit-content text-muted me-1 dropdown-item-close1"><i class="ri-close-circle-line fs-16 op-8"></i></a>
+                                    </div>
+                                 </div>
+                            </div>
+                        </li>
+                        <li class="dropdown-item">
+                            <div class="d-flex align-items-start">
+                                 <div class="pe-2">
+                                     <span class="avatar avatar-sm">
+                                        <img src="../assets/img/users/11.jpg" alt="img" class="rounded-sm">
+                                    </span>
+                                 </div>
+                                 <div class="flex-grow-1 d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <p class="mb-0 fw-semibold"><a href="mail-inbox.html">Charlie Davieson</a></p>
+                                        <span class="text-muted fw-normal fs-12 header-notification-text text-truncate">Lorem ipsum dolor sit amet, consectetur</span>
+                                         <p class="mb-0 text-muted fw-normal fs-12">yesterday</p>
+                                    </div>
+                                    <div>
+                                        <a href="javascript:void(0);" class="min-w-fit-content text-muted me-1 dropdown-item-close1"><i class="ri-close-circle-line fs-16 op-8"></i></a>
+                                    </div>
+                                 </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="p-3 empty-header-item1 border-top">
+                        <div class="d-grid">
+                            <a href="mail-inbox.html" class="btn btn-primary">View All</a>
+                        </div>
+                    </div>
+                    <div class="p-5 empty-item1 d-none">
+                        <div class="text-center">
+                            <span class="avatar avatar-xl avatar-rounded bg-secondary-transparent">
+                                <i class="ri-notification-off-line fs-2"></i>
+                            </span>
+                            <h6 class="fw-semibold mt-3">No New Notifications</h6>
+                        </div>
+                    </div>
+                </div>
+                <!-- End::main-header-dropdown -->
+            </div>
+            <!-- End::header-element -->
+
+            <!-- Start::header-element -->
+            <div class="header-element header-shortcuts-dropdown">
+                <!-- Start::header-link|dropdown-toggle -->
+                <a href="javascript:void(0);" class="header-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" id="notificationDropdown" aria-expanded="false">
+                    <i class="ri-bookmark-line header-link-icon"></i>
+                </a>
+                <!-- End::header-link|dropdown-toggle -->
+                <!-- Start::main-header-dropdown -->
+                <div class="main-header-dropdown header-shortcuts-dropdown dropdown-menu pb-0 dropdown-menu-end" aria-labelledby="notificationDropdown">
+                    <div class="header-dropdown bg-primary text-fixed-white rounded-top">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <p class="mb-0 fs-15 fw-semibold">Related Apps</p>
+                        </div>
+                    </div>
+                    <div class="dropdown-divider mb-0"></div>
+                    <div class="main-header-shortcuts p-2" id="header-shortcut-scroll">
+                        <div class="row drop-icon-wrap my-2  p-2">
+                            <div class="col-4">
+                                <a href="mail-inbox.html" class=" d-grid justify-content-center    rounded p-1 ">
+                                    <div class="main-grid">
+                                        <span class="avatar p-2  bg-primary-transparent rounded-2 mx-auto">
+                                            <i class="ri ri-mail-line fs-24"></i>
+                                         </span>
+                                        <span class="mt-2 fs-12  fw-semibold text-center">Mail Box</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="chat.html" class=" d-grid justify-content-center mb-0   rounded p-1 ">
+                                    <div class="main-grid">
+                                        <span class="avatar p-2  bg-secondary-transparent rounded-2 mx-auto">
+                                            <i class="ri ri-chat-2-line fs-24"></i>
+                                         </span>
+                                        <span class="mt-2 fs-12  fw-semibold text-center">Chat</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="tasks.html" class=" d-grid justify-content-center   rounded p-1 ">
+                                    <div class="main-grid">
+                                        <span class="avatar p-2  bg-warning-transparent rounded-2 mx-auto">
+                                            <i class="ri ri-task-line  fs-24"></i>
+                                        </span>
+                                        <span class="mt-2 fs-12  fw-semibold text-center">Tasks</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-4 mt-3">
+                                <a href="calendar.html" class=" d-grid justify-content-center    rounded p-1 ">
+                                    <div class="main-grid">
+                                        <span class="avatar p-2  bg-danger-transparent rounded-2 mx-auto">
+                                            <i class="ri ri-calendar-event-line  fs-24"></i>
+                                        </span>
+                                        <span class="mt-2 fs-12  fw-semibold text-center">calendar</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-4 mt-3">
+                                <a href="filemanager.html" class=" d-grid justify-content-center  rounded p-1 ">
+                                    <div class="main-grid">
+                                        <span class="avatar p-2  bg-info-transparent rounded-2 mx-auto">
+                                            <i class="ri ri-file-copy-2-line   fs-24"></i>
+                                        </span>
+                                        <span class="mt-2 fs-12  fw-semibold text-center">FileManager</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-4 mt-3">
+                                <a href="contacts.html" class=" d-grid justify-content-center rounded p-1 ">
+                                    <div class="main-grid">
+                                        <span class="avatar p-2  bg-success-transparent rounded-2 mx-auto">
+                                            <i class="ri ri-group-line   fs-24"></i>
+                                        </span>
+                                        <span class="mt-2 fs-12  fw-semibold text-center">Contacts</span>
+                                    </div>
+                                </a>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="p-3 border-top">
+                        <div class="d-grid">
+                            <a href="javascript:void(0);" class="btn btn-primary">View All</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End::main-header-dropdown -->
+            </div>
+            <!-- End::header-element -->
+
+
+            <!-- Start::header-element -->
+            <div class="header-element">
+                <!-- Start::header-link|dropdown-toggle -->
+                <a href="javascript:void(0);" class="header-link dropdown-toggle" id="mainHeaderProfile" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                    <div class="d-flex align-items-center">
+                        <div class="">
+                            <img src="../assets/img/users/1.jpg" alt="img" width="30" height="30" class="rounded-circle">
+                        </div>
+                    </div>
+                </a>
+                <!-- End::header-link|dropdown-toggle -->
+                <div class="main-header-dropdown dropdown-menu pt-0 overflow-hidden header-profile-dropdown dropdown-menu-end" aria-labelledby="mainHeaderProfile">
+                    <div class="header-dropdown bg-primary text-fixed-white rounded-top">
+                        <div class="d-flex align-items-center">
+                            <div class="me-sm-2 me-0 avatar">
+                                <img src="../assets/img/users/1.jpg" alt="img" class="rounded-circle">
+                            </div>
+                            <div class="d-sm-block d-none">
+                                <p class="fw-semibold mb-0 lh-1">Json Taylor</p>
+                                <span class="op-7 fw-medium d-block fs-12">Web Designer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown-divider mb-0"></div>
+                    <ul class="list-unstyled mb-0">
+                        <li><a class="dropdown-item d-flex" href="profile.html"><i class="ti ti-user-circle fs-18 me-2"></i>Profile</a></li>
+                        <li><a class="dropdown-item d-flex" href="mail-inbox.html"><i class="ti ti-inbox fs-18 me-2"></i>Inbox</a></li>
+                        <li><a class="dropdown-item d-flex border-block-end" href="todo.html"><i class="ti ti-clipboard-check fs-18 me-2"></i>Task Manager</a></li>
+                        <li><a class="dropdown-item d-flex" href="mail-settings.html"><i class="ti ti-adjustments-horizontal fs-18 me-2"></i>Settings</a></li>
+                        <li><a class="dropdown-item d-flex border-block-end" href="index3.html"><i class="ti ti-wallet fs-18 me-2"></i>Bal: $7,12,950</a></li>
+                        <li><a class="dropdown-item d-flex" href="chat.html"><i class="ti ti-headset fs-18 me-2"></i>Support</a></li>
+                        <li><a class="dropdown-item d-flex" href="signin.html"><i class="ti ti-logout fs-18 me-2"></i>Log Out</a></li>
+                    </ul>
+                    </div>
+            </div>  
+            <!-- End::header-element -->
+
+            <!-- Start::header-element -->
+            <div class="header-element">
+                <!-- Start::header-link|switcher-icon -->
+                <a href="javascript:void(0);" class="header-link switcher-icon" data-bs-toggle="offcanvas" data-bs-target="#switcher-canvas">
+                    <i class="ri-settings-5-line animate-spin header-link-icon"></i>
+                </a>
+                <!-- End::header-link|switcher-icon -->
+            </div>
+            <!-- End::header-element -->
+
+        </div>
+        <!-- End::header-content-right -->
+
+    </div>
+    <!-- End::main-header-container -->
+
+</header>
+<!-- /app-header -->
+        <!-- Start::app-sidebar -->
+<aside class="app-sidebar" id="sidebar">
+
+    <!-- Start::main-sidebar-header -->
+    <div class="main-sidebar-header">
+        <a href="index.html" class="header-logo">
+            <img src="../assets/img/brand-logos/desktop-logo.png" alt="logo" class="main-logo desktop-logo">
+            <img src="../assets/img/brand-logos/toggle-logo.png" alt="logo" class="main-logo toggle-logo">
+            <img src="../assets/img/brand-logos/desktop-dark.png" alt="logo" class="main-logo desktop-dark">
+            <img src="../assets/img/brand-logos/toggle-dark.png" alt="logo" class="main-logo toggle-dark">
+             <img src="../assets/img/brand-logos/desktop-white.png" alt="logo" class="desktop-white"> 
+            <img src="../assets/img/brand-logos/toggle-white.png" alt="logo" class="toggle-white"> 
+        </a>
+    </div>
+    <!-- End::main-sidebar-header -->
+
+    <!-- Start::main-sidebar -->
+    <div class="main-sidebar " id="sidebar-scroll">
+
+        <!-- Start::nav -->
+        <nav class="main-menu-container nav nav-pills flex-column sub-open">
+            <div class="slide-left" id="slide-left"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191" width="24"
+                    height="24" viewBox="0 0 24 24">
+                    <path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path>
+                </svg></div>
+            <ul class="main-menu">
+                <!-- Start::slide__category -->
+                <li class="slide__category"><span class="category-name">Main</span></li>
+                <!-- End::slide__category -->
+
+                <!-- Start::slide -->
+                <li class="slide  has-sub">
+                    <a href="javascript:void(0);" class="side-menu__item">
+                        <i class="ri-home-8-line side-menu__icon"></i>
+                        <span class="side-menu__label">Dashboards</span>
+                        <i class="ri ri-arrow-right-s-line side-menu__angle"></i>
+                    </a>
+                    <ul class="slide-menu child1">
+                        <li class="slide side-menu__label1"><a href="javascript:void(0)">Dashboards</a></li>
+                        <li class="slide"><a href="index.html" class="side-menu__item">Sales</a></li>
+                        <li class="slide"><a href="index2.html" class="side-menu__item">Ecommerce</a></li>
+                        <li class="slide"><a href="index3.html" class="side-menu__item">Crypto</a></li>
+                        <li class="slide"><a href="index4.html" class="side-menu__item">Jobs</a></li>
+                        <li class="slide"><a href="index5.html" class="side-menu__item">NFT</a></li>
+                        <li class="slide"><a href="index6.html" class="side-menu__item">Analytics</a></li>
+                        <li class="slide"><a href="index7.html" class="side-menu__item">Projects</a></li>
+                        <li class="slide"><a href="index8.html" class="side-menu__item">HRM</a></li>
+                        <li class="slide"><a href="index9.html" class="side-menu__item">CRM</a></li>
+                        <li class="slide"><a href="index10.html" class="side-menu__item">Personal</a></li>
+                        <li class="slide"><a href="index11.html" class="side-menu__item">Stocks</a></li>
+                        <li class="slide"><a href="index12.html" class="side-menu__item">Course</a></li>
+                    </ul>
+                </li>
+                <!-- End::slide -->
+
+                <!-- Start::slide -->
+                <li class="slide">
+                    <a href="widgets.html" class="side-menu__item">
+                        <i class="ri-apps-2-line side-menu__icon"></i>
+                        <span class="side-menu__label">Widgets</span>
+                    </a>
+                </li>
+                <!-- End::slide -->
+
+                <!-- Start::slide__category -->
+                <li class="slide__category"><span class="category-name">General</span></li>
+                <!-- End::slide__category -->
+
+                <!-- Start::slide -->
+                <li class="slide has-sub">
+                    <a href="javascript:void(0);" class="side-menu__item">
+                        <i class="ri-inbox-line side-menu__icon"></i>
+                        <span class="side-menu__label">Components</span>
+                        <i class="ri ri-arrow-right-s-line side-menu__angle"></i>
+                    </a>
+                    <ul class="slide-menu child1">
+                        <li class="slide side-menu__label1"><a href="javascript:void(0)">Components</a></li>
+                        <li class="slide"><a href="accordion.html" class="side-menu__item">Accordion</a></li>
+                        <li class="slide"><a href="alerts.html" class="side-menu__item">Alerts</a></li>
+                        <li class="slide"><a href="avatars.html" class="side-menu__item">Avatars</a></li>
+                        <li class="slide"><a href="badges.html" class="side-menu__item">Badges</a></li>
+                        <li class="slide"><a href="blockquotes.html" class="side-menu__item">Blockquotes</a></li>
+                        <li class="slide"><a href="buttons.html" class="side-menu__item">Buttons</a></li>
+                        <li class="slide"><a href="borders.html" class="side-menu__item">Borders</a></li>
+                        <li class="slide"><a href="cards.html" class="side-menu__item">Cards</a></li>
+                        <li class="slide"><a href="collapse.html" class="side-menu__item">Collapse</a></li>
+                        <li class="slide"><a href="list-group.html" class="side-menu__item">List Group</a></li>
+                        <li class="slide"><a href="list.html" class="side-menu__item">List</a></li>
+                        <li class="slide"><a href="indicators.html" class="side-menu__item">Indicators</a></li>
+                        <li class="slide"><a href="progress.html" class="side-menu__item">Progress</a></li>
+                        <li class="slide"><a href="skeleton.html" class="side-menu__item">Skeleton</a></li>
+                        <li class="slide"><a href="spinners.html" class="side-menu__item">Spinners</a></li>
+                        <li class="slide"><a href="toast.html" class="side-menu__item">Toast</a></li>
+                        <li class="slide"><a href="typography.html" class="side-menu__item">Typography</a></li>
+                    </ul>
+                </li>
+                <!-- End::slide -->
+
+                <!-- Start::slide -->
+                <li class="slide has-sub">
+                    <a href="javascript:void(0);" class="side-menu__item">
+                        <i class="ri-cpu-line side-menu__icon"></i>
+                        <span class="side-menu__label">Elements</span>
+                        <i class="ri ri-arrow-right-s-line side-menu__angle"></i>
+                    </a>
+                    <ul class="slide-menu child1">
+                        <li class="slide side-menu__label1"><a href="javascript:void(0)">Elements</a></li>
+                        <li class="slide"><a href="navbar.html" class="side-menu__item">Navbar</a></li>
+                        <li class="slide"><a href="tabs.html" class="side-menu__item">Navs &amp;Tabs</a></li>
+                        <li class="slide"><a href="scrollspy.html" class="side-menu__item">Scrollspy</a></li>
+                        <li class="slide"><a href="breadcrumb.html" class="side-menu__item">Breadcrumb</a></li>
+                        <li class="slide"><a href="pagination.html" class="side-menu__item">Pagination</a></li>
+                        <li class="slide"><a href="grid.html" class="side-menu__item">Grids</a></li>
+                        <li class="slide"><a href="columns.html" class="side-menu__item"> Columns</a></li>
+                    </ul>
+                </li>
+                <!-- End::slide -->
+
+                <!-- Start::slide -->
+                <li class="slide has-sub">
+                    <a href="javascript:void(0);" class="side-menu__item">
+                        <i class="ri-file-text-line side-menu__icon"></i>
+                        <span class="side-menu__label">Forms</span>
+                        <i class="ri ri-arrow-right-s-line side-menu__angle"></i>
+                    </a>
+                    <ul class="slide-menu child1">
+                        <li class="slide side-menu__label1"><a href="javascript:void(0)">Forms</a></li>
+                        <li class="slide"><a href="form-elements.html" class="side-menu__item">Form Elements</a></li>
+                        <li class="slide"><a href="advanced-forms.html" class="side-menu__item">Advanced Forms</a></li>
+                        <li class="slide"><a href="form-input-group.html" class="side-menu__item">Form-Input-Group</a></li>
+                        <li class="slide"><a href="file-upload.html" class="side-menu__item">File Uploads</a></li>
+                        <li class="slide"><a href="form-checkbox.html" class="side-menu__item">Form-Checkbox</a></li>
+                        <li class="slide"><a href="form-radio.html" class="side-menu__item">Form-Radio</a></li>
+                        <li class="slide"><a href="form-switch.html" class="side-menu__item">Form-Switch</a></li>
+                        <li class="slide"><a href="form-select.html" class="side-menu__item">Form-Select</a></li>
+                        <li class="slide"><a href="form_select2.html" class="side-menu__item">Form-Select2</a></li>
+                        <li class="slide"><a href="form-layouts.html" class="side-menu__item">Form-Layouts</a></li>
+                        <li class="slide"><a href="form-validations.html" class="side-menu__item">Form-Validations</a>
+                        </li>
+                        <li class="slide"><a href="quil-editor.html" class="side-menu__item">Form-Editor</a></li>
+                    </ul>
+                </li>
+                <!-- End::slide -->
+
+                <!-- Start::slide -->
+                <li class="slide has-sub">
+                    <a href="javascript:void(0);" class="side-menu__item">
+                        <i class="ri-stack-line side-menu__icon"></i>
+                        <span class="side-menu__label">Advanced Ui</span>
+                        <i class="ri ri-arrow-right-s-line side-menu__angle"></i>
+                    </a>
+                    <ul class="slide-menu child1">
+                        <li class="slide side-menu__label1"><a href="javascript:void(0)">Advanced Ui</a></li>
+                        <li class="slide"><a href="rangeslider.html" class="side-menu__item">Range slider</a></li>
+                        <li class="slide"><a href="calendar.html" class="side-menu__item">Calendar</a></li>
+                        <li class="slide"><a href="carousel.html" class="side-menu__item">Carousel</a></li>
+                        <li class="slide"><a href="gallery.html" class="side-menu__item">Gallery</a></li>
+                        <li class="slide"><a href="sweetalert.html" class="side-menu__item">Sweetalert</a></li>
+                        <li class="slide"><a href="ratings.html" class="side-menu__item">Rating</a></li>
+                        <li class="slide"><a href="draggable.html" class="side-menu__item">Draggable Cards</a></li>
+                        <li class="slide"><a href="notifications.html" class="side-menu__item">Notifications</a></li>
+                        <li class="slide"><a href="treeview.html" class="side-menu__item">Treeview</a></li>
+                        <li class="slide"><a href="swiperjs.html" class="side-menu__item">Swiperjs</a></li>
+                        <li class="slide has-sub"><a href="javascript:void(0);" class="side-menu__item">File manager<i
+                                    class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
+                            <ul class="slide-menu child2">
+                                <li class="slide"><a href="filemanager.html" class="side-menu__item">File manager</a>
+                                </li>
+                                <li class="slide"><a href="filemanager-list.html" class="side-menu__item">File manager
+                                        List</a></li>
+                                <li class="slide"><a href="file-details.html" class="side-menu__item">File Details</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <!-- End::slide -->
+
+                <!-- Start::slide -->
+                <li class="slide has-sub">
+                    <a href="javascript:void(0);" class="side-menu__item">
+                        <i class="ri-file-list-3-line side-menu__icon"></i>
+                        <span class="side-menu__label">Basic Ui</span>
+                        <i class="ri ri-arrow-right-s-line side-menu__angle"></i>
+                    </a>
+                    <ul class="slide-menu child1">
+                        <li class="slide side-menu__label1"><a href="javascript:void(0)">Basic Ui</a></li>
+                        <li class="slide"><a href="dropdown.html" class="side-menu__item">Dropdown</a></li>
+                        <li class="slide"><a href="modal.html" class="side-menu__item">Modal</a></li>
+                        <li class="slide"><a href="offcanvas.html" class="side-menu__item">Offcanvas</a></li>
+                        <li class="slide"><a href="tooltips.html" class="side-menu__item"> Tooltips</a></li>
+                        <li class="slide"><a href="popovers.html" class="side-menu__item">Popovers </a></li>
+                        <li class="slide has-sub"><a href="javascript:void(0);" class="side-menu__item">Tables<i
+                                    class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
+                            <ul class="slide-menu child2">
+                                <li class="slide"><a href="tables.html" class="side-menu__item">Basic Tables</a></li>
+                                <li class="slide"><a href="datatables.html" class="side-menu__item">Data Tables</a></li>
+                                <li class="slide"><a href="edittable.html" class="side-menu__item">Edit Table</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <!-- End::slide -->
+
+
+                <!-- Start::slide__category -->
+                <li class="slide__category"><span class="category-name">Levels</span></li>
+                <!-- End::slide__category -->
+
+                <!-- Start::slide -->
+                <li class="slide has-sub">
+                    <a href="javascript:void(0);" class="side-menu__item">
+                        <i class="ri-node-tree side-menu__icon"></i>
+                        <span class="side-menu__label">NestedMenu</span>
+                        <i class="ri ri-arrow-right-s-line side-menu__angle"></i>
+                    </a>
+                    <ul class="slide-menu child1">
+                        <li class="slide side-menu__label1"><a href="javascript:void(0)">Nested Menu</a></li>
+                        <li class="slide"><a href="javascript:void(0);" class="side-menu__item">Nested-1</a></li>
+                        <li class="slide has-sub"><a href="javascript:void(0);" class="side-menu__item">Nested-2<i
+                                    class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
+                            <ul class="slide-menu child2">
+                                <li class="slide"><a href="javascript:void(0);" class="side-menu__item">Nested-2-1</a>
+                                </li>
+                                <li class="slide has-sub"><a href="javascript:void(0);"
+                                        class="side-menu__item">Nested-2-2<i
+                                            class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
+                                    <ul class="slide-menu child3">
+                                        <li class="slide"><a href="javascript:void(0);"
+                                                class="side-menu__item">Nested-2-2-1</a></li>
+                                        <li class="slide"><a href="javascript:void(0);"
+                                                class="side-menu__item">Nested-2-2-2</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <!-- End::slide -->
+
+                <!-- Start::slide__category -->
+                <li class="slide__category"><span class="category-name">Maps &amp; charts</span></li>
+                <!-- End::slide__category -->
+
+                <!-- Start::slide -->
+                <li class="slide has-sub">
+                    <a href="javascript:void(0);" class="side-menu__item">
+                        <i class="ri-map-pin-user-line side-menu__icon"></i>
+                        <span class="side-menu__label">Maps</span>
+                        <i class="ri ri-arrow-right-s-line side-menu__angle"></i>
+                    </a>
+                    <ul class="slide-menu child1">
+                        <li class="slide side-menu__label1"><a href="javascript:void(0)">Maps</a></li>
+                        <li class="slide"><a href="google-maps.html" class="side-menu__item">Google Maps</a></li>
+                        <li class="slide"><a href="leaflet-maps.html" class="side-menu__item">Leaflet Maps</a></li>
+                        <li class="slide"><a href="vector-maps.html" class="side-menu__item">Vector Maps</a></li>
+                    </ul>
+                </li>
+                <!-- End::slide -->
+
+                <!-- Start::slide -->
+                <li class="slide has-sub">
+                    <a href="javascript:void(0);" class="side-menu__item">
+                        <i class="ri-pie-chart-2-line side-menu__icon"></i>
+                        <span class="side-menu__label">Charts</span>
+                        <i class="ri ri-arrow-right-s-line side-menu__angle"></i>
+                    </a>
+                    <ul class="slide-menu child1">
+                        <li class="slide side-menu__label1"><a href="javascript:void(0)">Charts</a></li>
+                        <li class="slide"><a href="apex-charts.html" class="side-menu__item">ApexCharts</a></li>
+                        <li class="slide"><a href="chartjs.html" class="side-menu__item">ChartJS</a></li>
+                        <li class="slide"><a href="echartjs.html" class="side-menu__item">EchartJs</a></li>
+                    </ul>
+                </li>
+                <!-- End::slide -->
+
+
+                <!-- Start::slide__category -->
+                <li class="slide__category"><span class="category-name">Pages</span></li>
+                <!-- End::slide__category -->
+
+                <!-- Start::slide -->
+                <li class="slide has-sub">
+                    <a href="javascript:void(0);" class="side-menu__item">
+                        <i class="ri-book-open-line side-menu__icon"></i>
+                        <span class="side-menu__label">Pages</span>
+                        <i class="ri ri-arrow-right-s-line side-menu__angle"></i>
+                    </a>
+                    <ul class="slide-menu child1">
+                        <li class="slide side-menu__label1"><a href="javascript:void(0)">Pages</a></li>
+                        <li class="slide has-sub"><a href="javascript:void(0);" class="side-menu__item">Profile<i
+                                    class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
+                            <ul class="slide-menu child2">
+                                <li class="slide"><a href="profile.html" class="side-menu__item">Home</a></li>
+                                <li class="slide"><a href="profile-settings.html" class="side-menu__item">Profile
+                                        Settings</a></li>
+                            </ul>
+                        </li>
+                        <li class="slide has-sub"><a href="javascript:void(0);" class="side-menu__item">Invoice<i
+                                    class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
+                            <ul class="slide-menu child2">
+                                <li class="slide"><a href="invoice-list.html" class="side-menu__item">Invoice List</a>
+                                </li>
+                                <li class="slide"><a href="invoice.html" class="side-menu__item">Invoice Details</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="slide has-sub"><a href="javascript:void(0);" class="side-menu__item">Blog<i
+                                    class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
+                            <ul class="slide-menu child2">
+                                <li class="slide"><a href="blog.html" class="side-menu__item">Blog</a></li>
+                                <li class="slide"><a href="blog-details.html" class="side-menu__item">Blog Details</a>
+                                </li>
+                                <li class="slide"><a href="blog-edit.html" class="side-menu__item">Edit Blog</a></li>
+                            </ul>
+                        </li>
+                        <li class="slide has-sub"><a href="javascript:void(0);" class="side-menu__item">Mail<i
+                                    class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
+                            <ul class="slide-menu child2">
+                                <li class="slide"><a href="mail-inbox.html" class="side-menu__item">Mail</a></li>
+                                <li class="slide"><a href="chat.html" class="side-menu__item">Chat</a></li>
+                                <li class="slide"><a href="mail-settings.html" class="side-menu__item">Mail-settings</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="slide has-sub"><a href="javascript:void(0);" class="side-menu__item">Ecommerce<i
+                                    class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
+                            <ul class="slide-menu child2">
+                                <li class="slide"><a href="products.html" class="side-menu__item">Products</a></li>
+                                <li class="slide"><a href="product-list.html" class="side-menu__item">Product list</a>
+                                </li>
+                                <li class="slide"><a href="add-product.html" class="side-menu__item">Add Product</a>
+                                </li>
+                                <li class="slide"><a href="edit-product.html" class="side-menu__item">Edit Product</a>
+                                </li>
+                                <li class="slide"><a href="products-details.html"
+                                        class="side-menu__item">product-details</a></li>
+                                <li class="slide"><a href="cart.html" class="side-menu__item">Cart</a></li>
+                                <li class="slide"><a href="checkout.html" class="side-menu__item">Checkout</a></li>
+                                <li class="slide"><a href="orders.html" class="side-menu__item">Orders</a></li>
+                                <li class="slide"><a href="order-details.html" class="side-menu__item">Order Details</a>
+                                </li>
+                                <li class="slide"><a href="wishlist.html" class="side-menu__item">Wishlist</a></li>
+                            </ul>
+                        </li>
+                        <li class="slide"><a href="about.html" class="side-menu__item">About Us</a></li>
+                        <li class="slide"><a href="contacts.html" class="side-menu__item">Contacts</a></li>
+                        <li class="slide"><a href="pricing.html" class="side-menu__item">Pricing tables</a></li>
+                        <li class="slide"><a href="timeline.html" class="side-menu__item">Timeline</a></li>
+                        <li class="slide"><a href="team.html" class="side-menu__item">Team</a></li>
+                        <li class="slide"><a href="landing.html" class="side-menu__item">Landing</a></li>
+                        <li class="slide"><a href="todo.html" class="side-menu__item">Todo list</a></li>
+                        <li class="slide"><a href="tasks.html" class="side-menu__item">Tasks</a></li>
+                        <li class="slide"><a href="reviews.html" class="side-menu__item">Reviews</a></li>
+                        <li class="slide"><a href="faqs.html" class="side-menu__item">Faq's</a></li>
+                        <li class="slide"><a href="contactus.html" class="side-menu__item">Contact Us</a></li>
+                        <li class="slide"><a href="terms.html" class="side-menu__item">Terms &amp; conditions</a></li>
+                        <li class="slide"><a href="empty.html" class="side-menu__item">Empty</a></li>
+                    </ul>
+                </li>
+                <!-- End::slide -->
+
+                <!-- Start::slide -->
+                <li class="slide has-sub">
+                    <a href="javascript:void(0);" class="side-menu__item">
+                        <i class="ri-camera-lens-line side-menu__icon"></i>
+                        <span class="side-menu__label">Icons</span>
+                        <i class="ri ri-arrow-right-s-line side-menu__angle"></i>
+                    </a>
+                    <ul class="slide-menu child1">
+                        <li class="slide side-menu__label1"><a href="javascript:void(0)">Icons</a></li>
+                        <li class="slide"><a href="tabler-icons.html" class="side-menu__item">Tabler Icons</a></li>
+                        <li class="slide"><a href="remix-icons.html" class="side-menu__item">Remix Icons</a></li>
+                    </ul>
+                </li>
+                <!-- End::slide -->
+
+                <!-- Start::slide -->
+                <li class="slide has-sub">
+                    <a href="javascript:void(0);" class="side-menu__item">
+                        <i class="ri-error-warning-line side-menu__icon"></i>
+                        <span class="side-menu__label">Authentication</span>
+                        <i class="ri ri-arrow-right-s-line side-menu__angle"></i>
+                    </a>
+                    <ul class="slide-menu child1">
+                        <li class="slide side-menu__label1"><a href="javascript:void(0)">Authentication</a></li>
+                        <li class="slide has-sub"><a href="javascript:void(0);" class="side-menu__item">Sign-In<i
+                                    class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
+                            <ul class="slide-menu child2">
+                                <li class="slide"><a href="signin.html" class="side-menu__item">Basic</a></li>
+                                <li class="slide"><a href="signin-cover.html" class="side-menu__item">Cover-1</a></li>
+                                <li class="slide"><a href="signin-cover2.html" class="side-menu__item">Cover-2</a></li>
+                            </ul>
+                        </li>
+                        <li class="slide has-sub"><a href="javascript:void(0);" class="side-menu__item">Sign-Up<i
+                                    class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
+                            <ul class="slide-menu child2">
+                                <li class="slide"><a href="signup.html" class="side-menu__item">Basic</a></li>
+                                <li class="slide"><a href="signup-cover.html" class="side-menu__item">Cover-1</a></li>
+                                <li class="slide"><a href="signup-cover2.html" class="side-menu__item">Cover-2</a></li>
+                            </ul>
+                        </li>
+                        <li class="slide has-sub"><a href="javascript:void(0);" class="side-menu__item">Create
+                                Password<i class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
+                            <ul class="slide-menu child2">
+                                <li class="slide"><a href="createpassword.html" class="side-menu__item">Basic</a></li>
+                                <li class="slide"><a href="createpassword-cover.html"
+                                        class="side-menu__item">Cover-1</a></li>
+                                <li class="slide"><a href="createpassword-cover2.html"
+                                        class="side-menu__item">Cover-2</a></li>
+                            </ul>
+                        </li>
+                        <li class="slide has-sub"><a href="javascript:void(0);" class="side-menu__item">Forgot
+                                Password<i class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
+                            <ul class="slide-menu child2">
+                                <li class="slide"><a href="forgot.html" class="side-menu__item">Basic</a></li>
+                                <li class="slide"><a href="forgot-cover.html" class="side-menu__item">Cover-1</a></li>
+                                <li class="slide"><a href="forgot-cover2.html" class="side-menu__item">Cover-2</a></li>
+                            </ul>
+                        </li>
+                        <li class="slide has-sub"><a href="javascript:void(0);" class="side-menu__item">Reset Password<i
+                                    class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
+                            <ul class="slide-menu child2">
+                                <li class="slide"><a href="reset.html" class="side-menu__item">Basic</a></li>
+                                <li class="slide"><a href="reset-cover.html" class="side-menu__item">Cover-1</a></li>
+                                <li class="slide"><a href="reset-cover2.html" class="side-menu__item">Cover-2</a></li>
+                            </ul>
+                        </li>
+                        <li class="slide has-sub"><a href="javascript:void(0);" class="side-menu__item">Lockscreen<i
+                                    class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
+                            <ul class="slide-menu child2">
+                                <li class="slide"><a href="lockscreen.html" class="side-menu__item">Basic</a></li>
+                                <li class="slide"><a href="lockscreen-cover.html" class="side-menu__item">Cover-1</a>
+                                </li>
+                                <li class="slide"><a href="lockscreen-cover2.html" class="side-menu__item">Cover-2</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="slide has-sub"><a href="javascript:void(0);" class="side-menu__item">Two-Step
+                                Verfication<i class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
+                            <ul class="slide-menu child2">
+                                <li class="slide"><a href="verification.html" class="side-menu__item">Basic</a></li>
+                                <li class="slide"><a href="verification-cover.html" class="side-menu__item">Cover-1</a>
+                                </li>
+                                <li class="slide"><a href="verification-cover2.html" class="side-menu__item">Cover-2</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="slide"><a href="maintenance.html" class="side-menu__item">Under Maintenance</a></li>
+                        <li class="slide"><a href="construction.html" class="side-menu__item">Under Construction</a>
+                        </li>
+                        <li class="slide"><a href="comingsoon.html" class="side-menu__item">Coming Soon</a></li>
+                        <li class="slide has-sub"><a href="javascript:void(0);" class="side-menu__item">Error Pages<i
+                                    class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
+                            <ul class="slide-menu child2">
+                                <li class="slide"><a href="404.html" class="side-menu__item">404Error</a></li>
+                                <li class="slide"><a href="500.html" class="side-menu__item">500Error</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <!-- End::slide -->
+
+            </ul>
+            <div class="slide-right" id="slide-right"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191" width="24"
+                    height="24" viewBox="0 0 24 24">
+                    <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path>
+                </svg></div>
+        </nav>
+        <!-- End::nav -->
+
+    </div>
+    <!-- End::main-sidebar -->
+
+</aside>
+<!-- End::app-sidebar -->
+
+        <!-- Start::app-content -->
+        <div class="main-content app-content">
+            <div class="container-fluid">
+                
+                <!-- Start::page-header -->
+                <!-- Page Header -->
+                <div class="d-md-flex d-block align-items-center justify-content-between my-4 page-header-breadcrumb">
+                    <h1 class="page-title fw-medium fs-24 mb-0">Contacts</h1>
+                    <div class="ms-md-1 ms-0">
+                        <nav>
+                            <ol class="breadcrumb mb-0">
+                                <li class="breadcrumb-item"><a href="javascript:void(0);">Pages</a></li>
+                                <li class="breadcrumb-item active d-inline-flex" aria-current="page">Contacts</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+                <!-- Page Header Close -->
+                  <!-- End::page-header -->
+
+                <!-- Start::row-1 -->
+                <div class="row">
+                    <div class="col-xxl-9 col-lg-12">
+                        <div class="card custom-card">
+                        <div class="card-header justify-content-between">
+                            <div class="contact-search">
+                                <div class="search-icon">
+                                    <svg class="" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
+                                      <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z">
+                                      </path>
+                                    </svg>
+                                  </div>
+                                <div class="input-group">
+                                    <input type="text" class="form-control p-2" placeholder="Enter Your Text">
+                                </div>
+                            </div>
+                            <div class="d-sm-flex">
+                                <div class="dropdown me-2 my-1">
+                                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> Sort By </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="javascript:void(0);">A to Z</a></li>
+                                        <li><a class="dropdown-item" href="javascript:void(0);">Z to A</a></li>
+                                        <li><a class="dropdown-item" href="javascript:void(0);">Favorites</a></li>
+                                        <li><a class="dropdown-item" href="javascript:void(0);">All</a></li>
+                                    </ul>
+                                </div>
+                                <button class="btn btn-secondary  me-2 my-1"><i class="ti ti-circle-plus me-2"> </i>Add New Contact</button>
+                                <div class="dropdown  me-2 my-1">
+                                    <button type="button" class="btn btn-outline-light" data-bs-toggle="dropdown" aria-expanded="false"> <i class="ri ri-more-2-line"></i> </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-folder-shared-line me-2 align-middle"></i>Move To</a></li>
+                                        <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-file-copy-line me-2 align-middle"></i>Copy All</a></li>
+                                        <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-delete-bin-5-line me-2 align-middle"></i>Delete All</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-xxl-4 col-xl-6 col-md-6">
+                                        <div class="card custom-card">
+                                            <div class="card-body">
+                                                <div class="d-flex align-items-top">
+                                                    <div class="d-sm-flex">
+                                                        <div class="me-3">
+                                                            <span class="avatar avatar-xl">
+                                                                <img src="../assets/img/users/1.jpg" alt="">
+                                                            </span>
+                                                        </div>
+                                                        <div>
+                                                            <div class="mb-1 fs-14 fw-semibold">
+                                                                <a href="javascript:void(0);">Julia Walker</a>
+                                                            </div>
+                                                            <div class="mb-1">
+                                                                <span class="me-1 fw-medium text-break">juliawalker@gmail.com</span>
+                                                            </div>
+                                                            <div class="">
+                                                                <span class="me-1 text-primary  fw-medium">+121 2525252352</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a href="javascript:void(0);" class="ms-auto"><i class="ri ri-heart-fill text-danger fs-16"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer">
+                                                <div class="row">
+                                                    <div class="col-sm-3 col-4 text-end">
+                                                        <button class="btn btn-icon btn-outline-light shadow-sm border"><i class="ri ri-phone-line text-muted"></i></button>
+                                                    </div>
+                                                    <div class="col-sm-6 col-4 d-grid">
+                                                        <div class="btn btn-outline-light shadow-sm border text-muted"><i class="ri-chat-2-line text-muted me-2"></i><span><span class="d-none d-sm-inline-flex">Message</span></span></div>
+                                                    </div>
+                                                    <div class="col-sm-3 col-4">
+                                                        <div class="dropdown">
+                                                            <button type="button" class="btn btn-outline-light btn-icon shadow-sm border" data-bs-toggle="dropdown" aria-expanded="false"> <i class="ri ri-more-2-line"></i> </button>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-share-line me-2 align-middle"></i>Share</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-video-chat-line me-2 align-middle"></i>Video Call</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-delete-bin-5-line me-2 align-middle"></i>Delete All</a></li>
+                                                            </ul>
+                                                        </div> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-4 col-xl-6 col-md-6">
+                                        <div class="card custom-card">
+                                            <div class="card-body">
+                                                <div class="d-flex align-items-top">
+                                                    <div class="d-sm-flex">
+                                                        <div class="me-3">
+                                                            <span class="avatar avatar-xl">
+                                                                <img src="../assets/img/users/11.jpg" alt="">
+                                                            </span>
+                                                        </div>
+                                                        <div>
+                                                            <div class="mb-1 fs-14 fw-semibold">
+                                                                <a href="javascript:void(0);">Ben Dover</a>
+                                                            </div>
+                                                            <div class="mb-1">
+                                                                <span class="me-1 fw-medium text-break">BenDover@gmail.com</span>
+                                                            </div>
+                                                            <div class="">
+                                                                <span class="me-1 text-primary  fw-medium">+121 9585652655</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a href="javascript:void(0);" class="ms-auto"><i class="ri ri-heart-fill text-muted fs-16 op-5"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer">
+                                                <div class="row">
+                                                    <div class="col-sm-3 col-4 text-end">
+                                                        <button class="btn btn-icon btn-outline-light shadow-sm border"><i class="ri ri-phone-line text-muted"></i></button>
+                                                    </div>
+                                                    <div class="col-sm-6 col-4 d-grid">
+                                                        <div class="btn btn-outline-light shadow-sm border text-muted"><i class="ri-chat-2-line text-muted me-2"></i><span class="d-none d-sm-inline-flex">Message</span></div>
+                                                    </div>
+                                                    <div class="col-sm-3 col-4">
+                                                        <div class="dropdown">
+                                                            <button type="button" class="btn btn-outline-light btn-icon shadow-sm border" data-bs-toggle="dropdown" aria-expanded="false"> <i class="ri ri-more-2-line"></i> </button>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-share-line me-2 align-middle"></i>Share</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-video-chat-line me-2 align-middle"></i>Video Call</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-delete-bin-5-line me-2 align-middle"></i>Delete All</a></li>
+                                                            </ul>
+                                                        </div> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-4 col-xl-6 col-md-6">
+                                        <div class="card custom-card">
+                                            <div class="card-body">
+                                                <div class="d-flex align-items-top">
+                                                    <div class="d-sm-flex">
+                                                        <div class="me-3">
+                                                            <span class="avatar avatar-xl">
+                                                                <img src="../assets/img/users/12.jpg" alt="">
+                                                            </span>
+                                                        </div>
+                                                        <div>
+                                                            <div class="mb-1 fs-14 fw-semibold">
+                                                                <a href="javascript:void(0);">Eos Tempor</a>
+                                                            </div>
+                                                            <div class="mb-1">
+                                                                <span class="me-1 fw-medium text-break">EosTempor@gmail.com</span>
+                                                            </div>
+                                                            <div class="">
+                                                                <span class="me-1 text-primary  fw-medium">+121 9585652655</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a href="javascript:void(0);" class="ms-auto"><i class="ri ri-heart-fill text-muted fs-16 op-5"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer">
+                                                <div class="row">
+                                                    <div class="col-sm-3 col-4 text-end">
+                                                        <button class="btn btn-icon btn-outline-light shadow-sm border"><i class="ri ri-phone-line text-muted"></i></button>
+                                                    </div>
+                                                    <div class="col-sm-6 col-4 d-grid">
+                                                        <div class="btn btn-outline-light shadow-sm border text-muted"><i class="ri-chat-2-line text-muted me-2"></i><span class="d-none d-sm-inline-flex">Message</span></div>
+                                                    </div>
+                                                    <div class="col-sm-3 col-4">
+                                                        <div class="dropdown">
+                                                            <button type="button" class="btn btn-outline-light btn-icon shadow-sm border" data-bs-toggle="dropdown" aria-expanded="false"> <i class="ri ri-more-2-line"></i> </button>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-share-line me-2 align-middle"></i>Share</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-video-chat-line me-2 align-middle"></i>Video Call</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-delete-bin-5-line me-2 align-middle"></i>Delete All</a></li>
+                                                            </ul>
+                                                        </div> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-4 col-xl-6 col-md-6">
+                                        <div class="card custom-card">
+                                            <div class="card-body">
+                                                <div class="d-flex align-items-top">
+                                                    <div class="d-sm-flex">
+                                                        <div class="me-3">
+                                                            <span class="avatar avatar-xl">
+                                                                <img src="../assets/img/users/1.jpg" alt="">
+                                                            </span>
+                                                        </div>
+                                                        <div>
+                                                            <div class="mb-1 fs-14 fw-semibold">
+                                                                <a href="javascript:void(0);">Json Taylor</a>
+                                                            </div>
+                                                            <div class="mb-1">
+                                                                <span class="me-1 fw-medium text-break">JsonTaylor2023@gmail.com</span>
+                                                            </div>
+                                                            <div class="">
+                                                                <span class="me-1 text-primary  fw-medium">+121 9585652655</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a href="javascript:void(0);" class="ms-auto"><i class="ri ri-heart-fill text-muted fs-16 op-5"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer">
+                                                <div class="row">
+                                                    <div class="col-sm-3 col-4 text-end">
+                                                        <button class="btn btn-icon btn-outline-light shadow-sm border"><i class="ri ri-phone-line text-muted"></i></button>
+                                                    </div>
+                                                    <div class="col-sm-6 col-4 d-grid">
+                                                        <div class="btn btn-outline-light shadow-sm border text-muted"><i class="ri-chat-2-line text-muted me-2"></i><span class="d-none d-sm-inline-flex">Message</span></div>
+                                                    </div>
+                                                    <div class="col-sm-3 col-4">
+                                                        <div class="dropdown">
+                                                            <button type="button" class="btn btn-outline-light btn-icon shadow-sm border" data-bs-toggle="dropdown" aria-expanded="false"> <i class="ri ri-more-2-line"></i> </button>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-share-line me-2 align-middle"></i>Share</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-video-chat-line me-2 align-middle"></i>Video Call</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-delete-bin-5-line me-2 align-middle"></i>Delete All</a></li>
+                                                            </ul>
+                                                        </div> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-4 col-xl-6 col-md-6">
+                                        <div class="card custom-card">
+                                            <div class="card-body">
+                                                <div class="d-flex align-items-top">
+                                                    <div class="d-sm-flex">
+                                                        <div class="me-3">
+                                                            <span class="avatar avatar-xl">
+                                                                <img src="../assets/img/users/2.jpg" alt="">
+                                                            </span>
+                                                        </div>
+                                                        <div>
+                                                            <div class="mb-1 fs-14 fw-semibold">
+                                                                <a href="javascript:void(0);">Socrates Itumay</a>
+                                                            </div>
+                                                            <div class="mb-1">
+                                                                <span class="me-1 fw-medium text-break">SocratesItumay2023@gmail.com</span>
+                                                            </div>
+                                                            <div class="">
+                                                                <span class="me-1 text-primary  fw-medium">+121 9585652655</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a href="javascript:void(0);" class="ms-auto"><i class="ri ri-heart-fill text-danger"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer">
+                                                <div class="row">
+                                                    <div class="col-sm-3 col-4 text-end">
+                                                        <button class="btn btn-icon btn-outline-light shadow-sm border"><i class="ri ri-phone-line text-muted"></i></button>
+                                                    </div>
+                                                    <div class="col-sm-6 col-4 d-grid">
+                                                        <div class="btn btn-outline-light shadow-sm border text-muted"><i class="ri-chat-2-line text-muted me-2"></i><span class="d-none d-sm-inline-flex">Message</span></div>
+                                                    </div>
+                                                    <div class="col-sm-3 col-4">
+                                                        <div class="dropdown">
+                                                            <button type="button" class="btn btn-outline-light btn-icon shadow-sm border" data-bs-toggle="dropdown" aria-expanded="false"> <i class="ri ri-more-2-line"></i> </button>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-share-line me-2 align-middle"></i>Share</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-video-chat-line me-2 align-middle"></i>Video Call</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-delete-bin-5-line me-2 align-middle"></i>Delete All</a></li>
+                                                            </ul>
+                                                        </div> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-4 col-xl-6 col-md-6">
+                                        <div class="card custom-card">
+                                            <div class="card-body">
+                                                <div class="d-flex align-items-top">
+                                                    <div class="d-sm-flex">
+                                                        <div class="me-3">
+                                                            <span class="avatar avatar-xl">
+                                                                <img src="../assets/img/users/3.jpg" alt="">
+                                                            </span>
+                                                        </div>
+                                                        <div>
+                                                            <div class="mb-1 fs-14 fw-semibold">
+                                                                <a href="javascript:void(0);">Wiley Waites</a>
+                                                            </div>
+                                                            <div class="mb-1">
+                                                                <span class="me-1 fw-medium text-break">WileyWaites2023@gmail.com</span>
+                                                            </div>
+                                                            <div class="">
+                                                                <span class="me-1 text-primary  fw-medium">+121 9585652655</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a href="javascript:void(0);" class="ms-auto"><i class="ri ri-heart-fill text-muted fs-16 op-5"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer">
+                                                <div class="row">
+                                                    <div class="col-sm-3 col-4 text-end">
+                                                        <button class="btn btn-icon btn-outline-light shadow-sm border"><i class="ri ri-phone-line text-muted"></i></button>
+                                                    </div>
+                                                    <div class="col-sm-6 col-4 d-grid">
+                                                        <div class="btn btn-outline-light shadow-sm border text-muted"><i class="ri-chat-2-line text-muted me-2"></i><span class="d-none d-sm-inline-flex">Message</span></div>
+                                                    </div>
+                                                    <div class="col-sm-3 col-4">
+                                                        <div class="dropdown">
+                                                            <button type="button" class="btn btn-outline-light btn-icon shadow-sm border" data-bs-toggle="dropdown" aria-expanded="false"> <i class="ri ri-more-2-line"></i> </button>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-share-line me-2 align-middle"></i>Share</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-video-chat-line me-2 align-middle"></i>Video Call</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-delete-bin-5-line me-2 align-middle"></i>Delete All</a></li>
+                                                            </ul>
+                                                        </div> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-4 col-xl-6 col-md-6">
+                                        <div class="card custom-card">
+                                            <div class="card-body">
+                                                <div class="d-flex align-items-top">
+                                                    <div class="d-sm-flex">
+                                                        <div class="me-3">
+                                                            <span class="avatar avatar-xl">
+                                                                <img src="../assets/img/users/4.jpg" alt="">
+                                                            </span>
+                                                        </div>
+                                                        <div>
+                                                            <div class="mb-1 fs-14 fw-semibold">
+                                                                <a href="javascript:void(0);">Alica Nestle</a>
+                                                            </div>
+                                                            <div class="mb-1">
+                                                                <span class="me-1 fw-medium text-break">AlicaNestle2023@gmail.com</span>
+                                                            </div>
+                                                            <div class="">
+                                                                <span class="me-1 text-primary  fw-medium">+121 9585652655</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a href="javascript:void(0);" class="ms-auto"><i class="ri ri-heart-fill text-muted fs-16 op-5"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer">
+                                                <div class="row">
+                                                    <div class="col-sm-3 col-4 text-end">
+                                                        <button class="btn btn-icon btn-outline-light shadow-sm border"><i class="ri ri-phone-line text-muted"></i></button>
+                                                    </div>
+                                                    <div class="col-sm-6 col-4 d-grid">
+                                                        <div class="btn btn-outline-light shadow-sm border text-muted"><i class="ri-chat-2-line text-muted me-2"></i><span class="d-none d-sm-inline-flex">Message</span></div>
+                                                    </div>
+                                                    <div class="col-sm-3 col-4">
+                                                        <div class="dropdown">
+                                                            <button type="button" class="btn btn-outline-light btn-icon shadow-sm border" data-bs-toggle="dropdown" aria-expanded="false"> <i class="ri ri-more-2-line"></i> </button>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-share-line me-2 align-middle"></i>Share</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-video-chat-line me-2 align-middle"></i>Video Call</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-delete-bin-5-line me-2 align-middle"></i>Delete All</a></li>
+                                                            </ul>
+                                                        </div> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-4 col-xl-6 col-md-6">
+                                        <div class="card custom-card">
+                                            <div class="card-body">
+                                                <div class="d-flex align-items-top">
+                                                    <div class="d-sm-flex">
+                                                        <div class="me-3">
+                                                            <span class="avatar avatar-xl">
+                                                                <img src="../assets/img/users/21.jpg" alt="">
+                                                            </span>
+                                                        </div>
+                                                        <div>
+                                                            <div class="mb-1 fs-14 fw-semibold">
+                                                                <a href="javascript:void(0);">Edgardo Huel</a>
+                                                            </div>
+                                                            <div class="mb-1">
+                                                                <span class="me-1 fw-medium text-break">EdgardoHuel2023@gmail.com</span>
+                                                            </div>
+                                                            <div class="">
+                                                                <span class="me-1 text-primary  fw-medium">+121 9585652655</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a href="javascript:void(0);" class="ms-auto"><i class="ri ri-heart-fill text-muted fs-16 op-5"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer">
+                                                <div class="row">
+                                                    <div class="col-sm-3 col-4 text-end">
+                                                        <button class="btn btn-icon btn-outline-light shadow-sm border"><i class="ri ri-phone-line text-muted"></i></button>
+                                                    </div>
+                                                    <div class="col-sm-6 col-4 d-grid">
+                                                        <div class="btn btn-outline-light shadow-sm border text-muted"><i class="ri-chat-2-line text-muted me-2"></i><span class="d-none d-sm-inline-flex">Message</span></div>
+                                                    </div>
+                                                    <div class="col-sm-3 col-4">
+                                                        <div class="dropdown">
+                                                            <button type="button" class="btn btn-outline-light btn-icon shadow-sm border" data-bs-toggle="dropdown" aria-expanded="false"> <i class="ri ri-more-2-line"></i> </button>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-share-line me-2 align-middle"></i>Share</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-video-chat-line me-2 align-middle"></i>Video Call</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-delete-bin-5-line me-2 align-middle"></i>Delete All</a></li>
+                                                            </ul>
+                                                        </div> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-4 col-xl-6 col-md-6">
+                                        <div class="card custom-card">
+                                            <div class="card-body">
+                                                <div class="d-flex align-items-top">
+                                                    <div class="d-sm-flex">
+                                                        <div class="me-3">
+                                                            <span class="avatar avatar-xl">
+                                                                <img src="../assets/img/users/5.jpg" alt="">
+                                                            </span>
+                                                        </div>
+                                                        <div>
+                                                            <div class="mb-1 fs-14 fw-semibold">
+                                                                <a href="javascript:void(0);">Willie Makit</a>
+                                                            </div>
+                                                            <div class="mb-1">
+                                                                <span class="me-1 fw-medium text-break">Williemakit2023@gmail.coom</span>
+                                                            </div>
+                                                            <div class="">
+                                                                <span class="me-1 text-primary  fw-medium">+121 9585652655</span>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <a href="javascript:void(0);" class="ms-auto"><i class="ri ri-heart-fill text-danger fs-16"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer">
+                                                <div class="row">
+                                                    <div class="col-sm-3 col-4 text-end">
+                                                        <button class="btn btn-icon btn-outline-light shadow-sm border"><i class="ri ri-phone-line text-muted"></i></button>
+                                                    </div>
+                                                    <div class="col-sm-6 col-4 d-grid">
+                                                        <div class="btn btn-outline-light shadow-sm border text-muted"><i class="ri-chat-2-line text-muted me-2"></i><span class="d-none d-sm-inline-flex">Message</span></div>
+                                                    </div>
+                                                    <div class="col-sm-3 col-4">
+                                                        <div class="dropdown">
+                                                            <button type="button" class="btn btn-outline-light btn-icon shadow-sm border" data-bs-toggle="dropdown" aria-expanded="false"> <i class="ri ri-more-2-line"></i> </button>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-share-line me-2 align-middle"></i>Share</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-video-chat-line me-2 align-middle"></i>Video Call</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-delete-bin-5-line me-2 align-middle"></i>Delete All</a></li>
+                                                            </ul>
+                                                        </div> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-4 col-xl-6 col-md-6">
+                                        <div class="card custom-card">
+                                            <div class="card-body">
+                                                <div class="d-flex align-items-top">
+                                                    <div class="d-sm-flex">
+                                                        <div class="me-3">
+                                                            <span class="avatar avatar-xl">
+                                                                <img src="../assets/img/users/6.jpg" alt="">
+                                                            </span>
+                                                        </div>
+                                                        <div>
+                                                            <div class="mb-1 fs-14 fw-semibold">
+                                                                <a href="javascript:void(0);">Katherina Kat</a>
+                                                            </div>
+                                                            <div class="mb-1">
+                                                                <span class="me-1 fw-medium text-break">KatherinaKat2023@gmail.com</span>
+                                                            </div>
+                                                            <div class="">
+                                                                <span class="me-1 text-primary  fw-medium">+121 9585652655</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a href="javascript:void(0);" class="ms-auto"><i class="ri ri-heart-fill text-muted op-5 fs-16"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer">
+                                                <div class="row">
+                                                    <div class="col-sm-3 col-4 text-end">
+                                                        <button class="btn btn-icon btn-outline-light shadow-sm border"><i class="ri ri-phone-line text-muted"></i></button>
+                                                    </div>
+                                                    <div class="col-sm-6 col-4 d-grid">
+                                                        <div class="btn btn-outline-light shadow-sm border text-muted"><i class="ri-chat-2-line text-muted me-2"></i><span class="d-none d-sm-inline-flex">Message</span></div>
+                                                    </div>
+                                                    <div class="col-sm-3 col-4">
+                                                        <div class="dropdown">
+                                                            <button type="button" class="btn btn-outline-light btn-icon shadow-sm border" data-bs-toggle="dropdown" aria-expanded="false"> <i class="ri ri-more-2-line"></i> </button>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-share-line me-2 align-middle"></i>Share</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-video-chat-line me-2 align-middle"></i>Video Call</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-delete-bin-5-line me-2 align-middle"></i>Delete All</a></li>
+                                                            </ul>
+                                                        </div> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-4 col-xl-6 col-md-6">
+                                        <div class="card custom-card">
+                                            <div class="card-body">
+                                                <div class="d-flex align-items-top">
+                                                    <div class="d-sm-flex">
+                                                        <div class="me-3">
+                                                            <span class="avatar avatar-xl">
+                                                                <img src="../assets/img/users/13.jpg" alt="">
+                                                            </span>
+                                                        </div>
+                                                        <div>
+                                                            <div class="mb-1 fs-14 fw-semibold">
+                                                                <a href="javascript:void(0);">Wiley Dover</a>
+                                                            </div>
+                                                            <div class="mb-1">
+                                                                <span class="me-1 fw-medium text-break">Wileydover2023@gmail.com</span>
+                                                            </div>
+                                                            <div class="">
+                                                                <span class="me-1 text-primary  fw-medium">+121 9585652655</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a href="javascript:void(0);" class="ms-auto"><i class="ri ri-heart-fill text-danger fs-16"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer">
+                                                <div class="row">
+                                                    <div class="col-sm-3 col-4 text-end">
+                                                        <button class="btn btn-icon btn-outline-light shadow-sm border"><i class="ri ri-phone-line text-muted"></i></button>
+                                                    </div>
+                                                    <div class="col-sm-6 col-4 d-grid">
+                                                        <div class="btn btn-outline-light shadow-sm border text-muted"><i class="ri-chat-2-line text-muted me-2"></i><span class="d-none d-sm-inline-flex">Message</span></div>
+                                                    </div>
+                                                    <div class="col-sm-3 col-4">
+                                                        <div class="dropdown">
+                                                            <button type="button" class="btn btn-outline-light btn-icon shadow-sm border" data-bs-toggle="dropdown" aria-expanded="false"> <i class="ri ri-more-2-line"></i> </button>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-share-line me-2 align-middle"></i>Share</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-video-chat-line me-2 align-middle"></i>Video Call</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-delete-bin-5-line me-2 align-middle"></i>Delete All</a></li>
+                                                            </ul>
+                                                        </div> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-4 col-xl-6 col-md-6">
+                                        <div class="card custom-card">
+                                            <div class="card-body">
+                                                <div class="d-flex align-items-top">
+                                                    <div class="d-sm-flex">
+                                                        <div class="me-3">
+                                                            <span class="avatar avatar-xl">
+                                                                <img src="../assets/img/users/21.jpg" alt="">
+                                                            </span>
+                                                        </div>
+                                                        <div>
+                                                            <div class="mb-1 fs-14 fw-semibold">
+                                                                <a href="javascript:void(0);">Benz Makit</a>
+                                                            </div>
+                                                            <div class="mb-1">
+                                                                <span class="me-1 fw-medium text-break">BenzMakit2023@gmail.com</span>
+                                                            </div>
+                                                            <div class="">
+                                                                <span class="me-1 text-primary  fw-medium">+121 9585652655</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a href="javascript:void(0);" class="ms-auto"><i class="ri ri-heart-fill text-danger fs-16"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer">
+                                                <div class="row">
+                                                    <div class="col-sm-3 col-4 text-end">
+                                                        <button class="btn btn-icon btn-outline-light shadow-sm border"><i class="ri ri-phone-line text-muted"></i></button>
+                                                    </div>
+                                                    <div class="col-sm-6 col-4 d-grid">
+                                                        <div class="btn btn-outline-light shadow-sm border text-muted"><i class="ri-chat-2-line text-muted me-2"></i><span class="d-none d-sm-inline-flex">Message</span></div>
+                                                    </div>
+                                                    <div class="col-sm-3 col-4">
+                                                        <div class="dropdown">
+                                                            <button type="button" class="btn btn-outline-light btn-icon shadow-sm border" data-bs-toggle="dropdown" aria-expanded="false"> <i class="ri ri-more-2-line"></i> </button>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-share-line me-2 align-middle"></i>Share</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-video-chat-line me-2 align-middle"></i>Video Call</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-delete-bin-5-line me-2 align-middle"></i>Delete All</a></li>
+                                                            </ul>
+                                                        </div> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3">
+                        <div class="card custom-card">
+                            <div class="card-body">
+                                <div class="profile-container mb-4">
+                                    <div class="contact-profile-cover">
+                                        <img src="../assets/img/png-images/14.jpg" alt="" class="" id="profile-img2">
+                                        <span class="background-upload">
+                                            <i class="ri ri-pencil-line"></i>
+                                            <input type="file" name="photo" class="" id="profile-change2">
+                                        </span>
+                                        <div class="main-profile-cover-content">
+                                            <div class="text-center">
+                                                <span class="avatar avatar-rounded chatstatusperson">
+                                                    <img class="chatimageperson" src="../assets/img/users/1.jpg" alt="img" id="profile-img">
+                                                    <span class="profile-upload">
+                                                        <i class="ri ri-pencil-line cursor-pointer"></i>
+                                                        <input type="file" class="absolute inset-0 w-full h-full opacity-0 " id="profile-change">
+                                                      </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center mt-5">
+                                    <h5 class="fw-semibold op-8 mt-1 mb-0">Airi Satou</h5>
+                                    <p class="fw-semibold text-muted">Team Lead</p>
+                                </div>
+                                <h6 class="fw-semibold mb-3">Contact Information</h6>
+                                <div class="d-flex align-items-top mb-3">
+                                    <div class="me-3">
+                                        <span class="avatar avatar-sm bg-light text-default">
+                                            <i class="ri ri-phone-line fs-18 text-muted"></i>
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <div class="mb-1 fs-14 fw-semibold">
+                                            <a href="javascript:void(0);"  class="text-muted">Phone Number</a>
+                                        </div>
+                                        <div class="mb-1">
+                                            <span class="me-1 fw-medium text-break text-muted">+121 9585652655</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-top">
+                                    <div class="me-3">
+                                        <span class="avatar avatar-sm bg-light text-default">
+                                            <i class="ri ri-mail-line  fs-18 text-muted"></i>
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <div class="mb-1 fs-14 fw-semibold ">
+                                            <a href="javascript:void(0);" class="text-muted">Email Id</a>
+                                        </div>
+                                        <div class="mb-1">
+                                            <span class="me-1 fw-medium text-break text-muted">juliawalker@gmail.com</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h6 class="fw-semibold mb-3">WebSite Information</h6>
+                                <div class="d-flex align-items-top mb-3">
+                                    <div class="me-3">
+                                        <span class="avatar avatar-sm bg-primary-transparent">
+                                            <i class="ri ri-github-line fs-18"></i>
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <div class=" fs-14 fw-semibold">
+                                            <a href="javascript:void(0);"  class="op-8">Github Id</a>
+                                        </div>
+                                        <div class="">
+                                            <a href="javascript:void(0);" class="me-1 fw-medium text-break text-muted fs-12">https://github.com/ </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-top mb-3">
+                                    <div class="me-3">
+                                        <span class="avatar avatar-sm bg-secondary-transparent">
+                                            <i class="ri ri-facebook-line fs-18"></i>
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <div class=" fs-14 fw-semibold">
+                                            <a href="javascript:void(0);"  class="op-8">Facebook Id</a>
+                                        </div>
+                                        <div class="">
+                                            <a href="javascript:void(0);" class="me-1 fw-medium text-break text-muted fs-12">https://facebook.com/</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-top mb-3">
+                                    <div class="me-3">
+                                        <span class="avatar avatar-sm bg-danger-transparent">
+                                            <i class="ri ri-instagram-line fs-18"></i>
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <div class=" fs-14 fw-semibold">
+                                            <a href="javascript:void(0);"  class="op-8">instagram Id</a>
+                                        </div>
+                                        <div class="">
+                                            <a href="javascript:void(0);" class="me-1 fw-medium text-break text-muted fs-12">https://instagram.com/</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-top mb-3">
+                                    <div class="me-3">
+                                        <span class="avatar avatar-sm bg-info-transparent">
+                                            <i class="ri ri-twitter-x-line fs-18"></i>
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <div class=" fs-14 fw-semibold">
+                                            <a href="javascript:void(0);"  class="op-8">X Id</a>
+                                        </div>
+                                        <div class="">
+                                            <a href="javascript:void(0);" class="me-1 fw-medium text-break text-muted fs-12">https://twitter.com/</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-top mb-3">
+                                    <div class="me-3">
+                                        <span class="avatar avatar-sm bg-warning-transparent">
+                                            <i class="ri ri-linkedin-line  fs-18"></i>
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <div class=" fs-14 fw-semibold">
+                                            <a href="javascript:void(0);"  class="op-8"> linkedin Id</a>
+                                        </div>
+                                        <div class="">
+                                            <a href="javascript:void(0);" class="me-1 fw-medium text-break text-muted fs-12">https://linkedin.com/</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="d-grid">
+                                    <button class="btn btn-primary m-1"><i class="ti ti-report me-2"></i> Report</button>
+                                    <button class="btn btn-outline-light  m-1"><i class="ti ti-ban me-2"></i> Block</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination justify-content-end">
+                            <li class="page-item disabled"><a class="page-link" href="javascript:void(0);">Previous</a></li>
+                            <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
+                            <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+                            <li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!--End::row-1 -->
+
+            </div>
+        </div>
+        <!-- End::app-content -->
+
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="input-group">
+            <a href="javascript:void(0);" class="input-group-text border-0 bg-transparent" id="Search-Grid"><i class="ri ri-search-2-line header-link-icon fs-14"></i></a>
+            <input type="search" class="form-control form-control-sm border-0 px-2" placeholder="Search" aria-label="Username">
+            <a href="javascript:void(0);" class="input-group-text border-0 bg-transparent" id="voice-search"><i class="ri ri-mic-2-line  header-link-icon"></i></a>
+            <a href="javascript:void(0);" class="btn btn-light btn-icon border-0 bg-transparent" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="ri ri-more-2-line"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="javascript:void(0);">Action</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0);">Another action</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0);">Something else here</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="javascript:void(0);">Separated link</a></li>
+            </ul>
+          </div>
+          <div class="mt-4">
+            <p class="fw-semibold text-muted mb-2">Are You Looking For...</p>
+            <span class="search-tags"><i class="ri ri-user-line me-2"></i>Team<a href="javascript:void(0)" class="tag-addon bg-transparent header-remove-btn"><i class="fe fe-x"></i></a></span>
+            <span class="search-tags"><i class="ri ri-file-text-line me-2"></i>Forms<a href="javascript:void(0)" class="tag-addon bg-transparent header-remove-btn"><i class="fe fe-x"></i></a></span>
+            <span class="search-tags"><i class="ri ri-map-pin-line me-2"></i>Maps<a href="javascript:void(0)" class="tag-addon bg-transparent header-remove-btn"><i class="fe fe-x"></i></a></span>
+            <span class="search-tags"><i class="ri ri-server-line me-2"></i>Widgets<a href="javascript:void(0)" class="tag-addon bg-transparent header-remove-btn"><i class="fe fe-x"></i></a></span>
+          </div>
+          <div class="my-4">
+            <p class="fw-semibold text-muted mb-2">Recent Search :</p>
+            <div class="p-2 border br-5 d-flex align-items-center text-muted mb-2 alert">
+              <a href="notifications.html"><span>Notifications</span></a>
+              <a class="ms-auto lh-1" href="javascript:void(0);" data-bs-dismiss="alert" aria-label="Close"><i class="fe fe-x text-muted"></i></a>
+            </div>
+            <div class="p-2 border br-5 d-flex align-items-center text-muted mb-2 alert">
+              <a href="alerts.html"><span>Alerts</span></a>
+              <a class="ms-auto lh-1" href="javascript:void(0);" data-bs-dismiss="alert" aria-label="Close"><i class="fe fe-x text-muted"></i></a>
+            </div>
+            <div class="p-2 border br-5 d-flex align-items-center text-muted mb-0 alert">
+              <a href="mail-inbox.html"><span>Mail</span></a>
+              <a class="ms-auto lh-1" href="javascript:void(0);" data-bs-dismiss="alert" aria-label="Close"><i class="fe fe-x text-muted"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="btn-group ms-auto">
+            <button class="btn btn-sm btn-primary-light">Search</button>
+            <button class="btn btn-sm btn-primary">Clear Recents</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+        <!-- Footer Start -->
+<footer class="footer mt-auto py-3 bg-white text-center">
+    <div class="container">
+        <span class="text-center">Copyright © <span id="year">2023</span>
+             <a href="javascript:void(0)" class="text-primary">Synto</a>.
+              Designed with <span class="ri ri-heart-fill text-danger"></span> by
+             <a class="text-primary" href="javascript:void(0)"> Spruko </a> All rights reserved </span>
+    </div>
+</footer>
+<!-- Footer End -->
+
+    </div>
+
+    
+<!-- Scroll To Top -->
+<div class="scrollToTop">
+    <span class="arrow"><i class="ri-arrow-up-s-fill fs-20"></i></span>
+</div>
+<div id="responsive-overlay"></div>
+<!-- Scroll To Top -->
+
+<!-- Popper JS -->
+<script src="../assets/libs/@popperjs/core/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Defaultmenu JS -->
+<script src="../assets/js/defaultmenu.min.js"></script>
+
+<!-- Node Waves JS-->
+<script src="../assets/libs/node-waves/waves.min.js"></script>
+
+<!-- Sticky JS -->
+<script src="../assets/js/sticky.js"></script>
+
+<!-- Simplebar JS -->
+<script src="../assets/libs/simplebar/simplebar.min.js"></script>
+<script src="../assets/js/simplebar.js"></script>
+
+<!-- Color Picker JS -->
+<script src="../assets/libs/@simonwep/pickr/pickr.es5.min.js"></script>
+
+
+    
+<!-- Custom-Switcher JS -->
+<script src="../assets/js/custom-switcher.min.js"></script>
+
+    <!-- Contacts JS -->
+    <script src="../assets/js/contacts.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../assets/js/custom.js"></script>
+
+</body>
+
+</html>
